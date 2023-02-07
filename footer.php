@@ -13,7 +13,6 @@
 </head>
 
 <footer>
-
     <ul class="nav justify-content-center" style="background-color: #6D071A; ">
         <div class="col-3">
             <li class="nav-item">
