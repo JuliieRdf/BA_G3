@@ -21,8 +21,7 @@ $lastP3 = sql_select("Article","*",null, "dtCreArt DESC", 3)[2]['urlPhotArt'];
 <!DOCTYPE html>
 <html>
 
-
-
+<h1></h1>
 <body>
     <div class="slideshow">
         <div class="slideshow-container">
