@@ -1,0 +1,52 @@
+header .trait {
+    background-color: #6D071A;
+    width: 120%;
+    height: 3px;
+}
+
+
+header h1 {
+    font-family: 'Tiro Tamil';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 86px;
+    text-align: center;
+
+    color: #000000;
+}
+
+header h3 {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+
+
+}
+
+@media(max-width:1113px) {
+
+    header h3 {
+        font-family: 'Verdana';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 29px;
+    }
+
+    header h1 {
+        display: none;
+    }
+}
+
+
+@media(max-width:666px) {
+
+    .logo {
+
+        margin-left: 22vw;
+    }
+
+}

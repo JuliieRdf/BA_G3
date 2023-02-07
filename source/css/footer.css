@@ -1,0 +1,31 @@
+footer a {
+
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    }
+    
+    @media(max-width:1024px) {
+        footer a{
+    
+            padding-top: 6vh;
+            display: flex;
+            align-items:center;
+            justify-content:space-around;
+        }
+    
+        footer img {
+            width: 100%;
+                }
+    
+        footer a {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+    
+        }
+    
+    
+    }
