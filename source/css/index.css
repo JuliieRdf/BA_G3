@@ -29,7 +29,7 @@
     font-family: 'Inter';
     font-size: 25px;
     color: white;
-    border-radius: 27px;
+    border-radius: 0.375rem;
     width: 7.6vw;
     height: 44px;
     position: relative;
@@ -108,7 +108,7 @@
 .admin-article button{ 
     /*mettre ici une sorte de if pour faire un display:none; si l'utilisateur n'est pas admin*/
     margin: auto;
-    border-radius:27px ;
+    border-radius:0.375rem ;
     border: 0px;
     background-color: #6D071A;
     font-size: 25px;
@@ -232,7 +232,7 @@ font-size: 42px;
     font-family: 'Inter';
     font-size: 25px;
     color: white;
-    border-radius: 27px;
+    border-radius: 0.375rem;
     width: 11vw;
     height: 67px;
     position: relative;
