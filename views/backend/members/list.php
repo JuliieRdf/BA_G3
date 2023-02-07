@@ -15,12 +15,12 @@ $members = sql_select("MEMBRE", "*");
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Members</h1>
+            <h1>Liste des membres</h1>
             <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Name</th>
+                        <th>Nom</th>
                         <th>E-mail</th>
                         <th>Statut</th>
                         <th>Actions</th>
@@ -34,16 +34,14 @@ $members = sql_select("MEMBRE", "*");
                             <td><?php echo $member['eMailMemb']; ?></td>
                             <td><?php echo $member['numStat']; ?></td>
                             <td>
-                                <a href="edit.php?numMemb=<?php echo $member['numMemb']; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numMemb=<?php echo $member['numMemb']; ?>" class="btn btn-danger">Delete</a>
+                                <a href="edit.php?numMemb=<?php echo $member['numMemb']; ?>" class="btn btn-primary">Modifier</a>
+                                <a href="delete.php?numMemb=<?php echo $member['numMemb']; ?>" class="btn btn-danger">Supprimer</a>
                             </td>
                         </tr>
                     <?php } ?>
                 </tbody>
             </table>
-            <a href="create.php" class="btn btn-success">Create</a>
+            <a href="create.php" class="btn btn-success">Créer</a>
         </div>
     </div>
 
-<?php
-include '../../../footer.php'; // contains the footer

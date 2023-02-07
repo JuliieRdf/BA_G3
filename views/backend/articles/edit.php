@@ -58,7 +58,7 @@ $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Edit Status</h1>
+            <h1>Modifer un article</h1>
         </div>
         <div class="col-md-12">
             <!--Form to delete status-->
@@ -66,42 +66,42 @@ $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
                 <div class="form-group">
                     <input id="numArt" class="form-control" style="display: none;" type="text" name="numArt" value="<?php echo ($numArt); ?>" readonly="readonly">
 
-                    <label for="libTitrArt">Change <?php echo $libTitrArt ?> ?</label>
+                    <label for="libTitrArt">Changer <?php echo $libTitrArt ?> ?</label>
                     <input id="libTitrArt" class="form-control" type="text" value=<?php echo $libTitrArt ?> name="libTitrArt">
 
-                    <label for="libChapoArt">Change <?php echo $libChapoArt ?> ?</label>
+                    <label for="libChapoArt">Changer <?php echo $libChapoArt ?> ?</label>
                     <input id="libChapoArt" class="form-control" type="text" value=<?php echo $libChapoArt ?> name="libChapoArt">
 
-                    <label for="libAccrochArt">Change <?php echo $libAccrochArt ?> ?</label>
+                    <label for="libAccrochArt">Changer <?php echo $libAccrochArt ?> ?</label>
                     <input id="libAccrochArt" class="form-control" type="text" value=<?php echo $libAccrochArt ?> name="libAccrochArt">
 
-                    <label for="parag1Art">Change <?php echo $parag1Art ?> ?</label>
+                    <label for="parag1Art">Changer <?php echo $parag1Art ?> ?</label>
                     <input id="parag1Art" class="form-control" type="text" value=<?php echo $parag1Art ?> name="parag1Art">
 
-                    <label for="libSsTitr1Art">Change <?php echo $libSsTitr1Art ?> ?</label>
+                    <label for="libSsTitr1Art">Changer <?php echo $libSsTitr1Art ?> ?</label>
                     <input id="libSsTitr1Art" class="form-control" type="text" value=<?php echo $libSsTitr1Art ?> name="libSsTitr1Art">
 
-                    <label for="parag2Art">Change <?php echo $parag2Art ?> ?</label>
+                    <label for="parag2Art">Changer <?php echo $parag2Art ?> ?</label>
                     <input id="parag2Art" class="form-control" type="text" value=<?php echo $parag2Art ?> name="parag2Art">
 
-                    <label for="libSsTitr2Art">Change <?php echo $libSsTitr2Art ?> ?</label>
+                    <label for="libSsTitr2Art">Changer <?php echo $libSsTitr2Art ?> ?</label>
                     <input id="libSsTitr2Art" class="form-control" type="text" value=<?php echo $libSsTitr2Art ?> name="libSsTitr2Art">
 
-                    <label for="parag3Art">Change <?php echo $parag3Art ?> ?</label>
+                    <label for="parag3Art">Changer <?php echo $parag3Art ?> ?</label>
                     <input id="parag3Art" class="form-control" type="text" value=<?php echo $parag3Art ?> name="parag3Art">
 
-                    <label for="libConclArt">Change <?php echo $libConclArt ?> ?</label>
+                    <label for="libConclArt">Changer <?php echo $libConclArt ?> ?</label>
                     <input id="libConclArt" class="form-control" type="text" value=<?php echo $libConclArt ?> name="libConclArt">
 
-                    <label for="urlPhotArt">Change <?php echo $urlPhotArt ?> ?</label>
+                    <label for="urlPhotArt">Changer <?php echo $urlPhotArt ?> ?</label>
                     <input id="urlPhotArt" class="form-control" type="text" value=<?php echo $urlPhotArt ?> name="urlPhotArt">
 
-                    <label for="numThem">Change <?php echo $numThem ?> ?</label>
+                    <label for="numThem">Changer <?php echo $numThem ?> ?</label>
                     <input id="numThem" class="form-control" type="text" value=<?php echo $numThem ?> name="numThem">
 
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-danger">Edit</button>
+                    <button type="submit" class="btn btn-success">Confirmer</button>
                 </div>
             </form>
         </div>
