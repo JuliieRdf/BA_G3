@@ -12,9 +12,10 @@
     line-height: 51px;
     text-align: center;
     color: #000000;
+
 }
 
-.deco{
+.deco-verti{
 
     margin-top: 30% ;
     background-color: #6D071A;
@@ -38,5 +39,12 @@
     width:15px;
     height:15px;
   }
+
+  .deco-hori{
+    border-right: 3px solid #6D071A;
+    padding-top: 50vh;
+}
+
+
 
 
