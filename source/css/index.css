@@ -1,0 +1,241 @@
+
+.row{
+    border: 8px;
+}
+.col{
+    border:5px;
+}
+.gutter{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.collone-d{
+    
+    font-family: 'Inter';
+}
+.inscription{
+    height: 268px;
+    width:  21.6vw;
+    display: flex;
+}
+.inscription-form{
+    margin: auto;
+}
+.inscription-i{
+    margin: 0px;
+    margin-top: 20px;
+    background: none;
+    background-color: #6D071A;
+    font-family: 'Inter';
+    font-size: 25px;
+    color: white;
+    border-radius: 27px;
+    width: 7.6vw;
+    height: 44px;
+    position: relative;
+    left: auto;
+    min-width: 135px ;
+    font-family: 'Inter';
+    border: none;
+}
+.inscription-txt{
+    margin-top: 13px;
+        background-color: rgb(255, 255, 255);
+        border-color: #6D071A;
+        border-width: 3px;
+        width: 21.6vw;
+        
+        font-family: 'Inter';
+        font-size: 25px;
+        height: 30px;
+        
+}
+.colonne-d{
+    display: flex;
+    flex-direction: column;
+}
+.actus{
+    height: 714px;
+    width:  21.6vw;
+    
+    display: flex;
+    flex-direction: column;
+}
+.actus-titl{
+    font-size:26px ;
+}
+.actus h4{
+    font-size: 25px;
+    color: #6D071A;
+    margin: auto;
+}
+.actus a{
+    
+    text-decoration-color:#6D071A;
+}
+.actus p{
+    font-size: 25px;
+    height: 183px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin: auto;
+}
+.share{
+    height: 146px;
+    width:  21.6vw;
+    display: flex;
+
+
+}
+.share button{
+    display: flex;
+    background: none;
+    border: none;
+    font-size: 42px;
+    
+}
+.share img{
+    
+    margin: auto;
+    margin-right: 20px;
+}
+.admin-article{
+    height: 152px;
+    width: 19.8vw;
+    display: flex;
+}
+.admin-article button{ 
+    /*mettre ici une sorte de if pour faire un display:none; si l'utilisateur n'est pas admin*/
+    margin: auto;
+    border-radius:27px ;
+    border: 0px;
+    background-color: #6D071A;
+    font-size: 25px;
+    width: 19.8vw;
+    color: white;
+    height: 111px;
+}
+
+
+
+
+
+
+
+
+.article-pres{
+    display: flex;
+    margin-bottom: 102px;
+    width: 68.4vw;
+}
+.article-pres img{
+    width: 325px;
+    margin-right: 5vw;
+    object-fit: fill;
+    height: 238px;
+}
+.home-article p{
+font-size: 20px;
+
+}
+.home-article a{
+    color: #6D071A;
+    text-decoration-color:#6D071A;
+}
+.home-article h3{
+font-size: 26px; 
+
+}
+.home-article h2{
+font-size: 42px;
+
+}
+.home-article{
+    
+    height: 238px;
+}
+.article-txt :not(.endbox){
+    margin: 0;
+}
+.article-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 238px;
+}
+.endbox{
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+
+
+.contact{
+    font-family: 'Inter';
+    width: 100%;
+}
+.contact h3{
+    
+    font-size: 26px;
+    
+    text-align: center;
+}
+.contact{
+    
+    width: 76vw;
+}
+
+.contacter{
+    font-family: 'Inter';
+    font-size: 25px;
+    color: white;
+}
+.contacter_b{
+    padding-top: 20px;
+    background-color: #6D071A;
+    height: 514px;
+    
+}
+.contact label{
+    margin-left: 5vw;
+}
+.contact input{
+    margin-left :3vw;
+    background-color: rgb(255, 255, 255);
+    width: 70vw;
+    
+    font-family: 'Inter';
+    font-size: 25px;
+    height: 30px;
+    border: none;
+    margin-bottom: 10px;
+    
+}
+.contact textarea{
+    margin-left: 3vw;
+    background-color: rgb(255, 255, 255);
+    width: 70vw;
+    font-family: 'Inter';
+    font-size: 25px;
+    height:185px ;
+    border: none;
+    
+    
+}
+.poster{
+    margin: 0px;
+    margin-top: 20px;
+    background: none;
+    background-color: #6D071A;
+    font-family: 'Inter';
+    font-size: 25px;
+    color: white;
+    border-radius: 27px;
+    width: 11vw;
+    height: 67px;
+    position: relative;
+    left: auto;
+    min-width: 135px ;
+}
