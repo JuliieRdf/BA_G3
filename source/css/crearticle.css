@@ -1,0 +1,39 @@
+.titre {
+    margin-top: 8vh;
+    border: 3px 
+    solid black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: center;
+    color: #000000;
+}
+
+.deco{
+    margin-top: 30% ;
+    background-color: #6D071A;
+    height: 3px;
+}
+
+.cercle-g{
+  float: right;
+    margin-top: 30%;
+    background-color: #6D071A;
+    border-radius:50%;
+    width:15px;
+    height:15px;
+  }
+  .cercle-d{
+    float: left;
+    margin-top: 30%;
+    background-color: #6D071A;
+    border-radius:50%;
+    width:15px;
+    height:15px;
+  }
+

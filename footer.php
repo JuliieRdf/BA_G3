@@ -31,7 +31,7 @@
         </div>
         <div class="col-3">
             <li class="nav-item">
-                <a class="nav-link" href="/views/backend/dashboard.php" style="color: #ffffff; text-decoration:underline;">Mention Légal</a>
+                <a class="nav-link" href="crearticle.php" style="color: #ffffff; text-decoration:underline;">Mention Légal</a>
             </li>
         </div>
     </ul>
