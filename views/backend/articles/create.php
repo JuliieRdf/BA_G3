@@ -12,7 +12,7 @@ include '../../../header.php';
             <div class="deco"><div class="cercle-g"></div></div>
         </div>
         <div class="col-6">
-            <h1 class="titre">Ajoutez un nouvel article</h2>
+            <h1 class="titre">Ajouter un nouvel article</h2>
         </div>
         <div class="col-3">
         
@@ -25,7 +25,7 @@ include '../../../header.php';
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Create new Article</h1>
+            <h1>Entrez votre nouvel article</h1>
         </div>
         <div class="col-md-12">
             <!--Form to create a new status-->
@@ -34,7 +34,7 @@ include '../../../header.php';
                     <label for="libTitrArt">Titre</label>
                     <input id="libTitrArt" class="form-control" type="text" name="libTitrArt">
 
-                    <label for="libChapoArt">Chapo</label>
+                    <label for="libChapoArt">Chapeau</label>
                     <input id="libChapoArt" class="form-control" type="text" name="libChapoArt">
 
                     <label for="libAccrochArt">Accroche</label>
@@ -58,7 +58,7 @@ include '../../../header.php';
                     <label for="libConclArt">Conclusion</label>
                     <input id="libConclArt" class="form-control" type="text" name="libConclArt">
                     
-                    <label for="urlPhotArt">URL Photo</label>
+                    <label for="urlPhotArt">Photo</label>
                     <input id="urlPhotArt" class="form-control" type="text" name="urlPhotArt">
 
                     <label for="numThem">Numéro Thème</label>
@@ -67,7 +67,7 @@ include '../../../header.php';
 
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="submit" class="btn btn-success">Créer</button>
                 </div>
             </form>
         </div>
@@ -76,6 +76,3 @@ include '../../../header.php';
 
 </body>
 </html>
-<?php
-include '../../../footer.php';
-?>
