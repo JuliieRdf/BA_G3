@@ -1,5 +1,12 @@
-.btn-primary {
-    background-color: #6D071A;
-    border-color: #6D071A;
+.btn-primary{
+    background-color:#074d6d;
+    border-color:#074d6d;
+    color: white;
 }
-.btn-danger { background-color: #550514;}
+.btn-danger { background-color:#6D071A;
+border-color:#6D071A;}
+
+.btn-success {
+    background-color: #076d27;
+    border-color: #076d27;
+}

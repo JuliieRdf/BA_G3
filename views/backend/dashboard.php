@@ -58,7 +58,7 @@ include '../../header.php';
                         <tr>
                             <td>Commentaires</td>
                             <td>
-                                <a href="/views/backend/comments/list.php" class="btn btn-primary disabled">Modifer</a>
+                                <a href="/views/backend/comments/list.php" class="btn btn-primary">Modifer</a>
 
                             </td>
                             <td>Gestion des commentaires</td>
@@ -66,7 +66,7 @@ include '../../header.php';
                         <tr>
                             <td>Likes</td>
                             <td>
-                                <a href="/views/backend/likes/list.php" class="btn btn-primary disabled">Modifer</a>
+                                <a href="/views/backend/likes/list.php" class="btn btn-primary">Modifer</a>
                             </td>
                             <td>Gestion des likes</td>
                         </tr>
@@ -83,3 +83,4 @@ include '../../header.php';
     </div>
 
 </div>
+
