@@ -1,11 +1,27 @@
+<head>
+<link rel="stylesheet" href="../../../source/css/crearticle.css">
+</head>
 <?php
 include '../../../header.php';
-
-
 ?>
 
+<body>
+    <div class="row">
+    
+        <div class="col-3">
+            <div class="deco"><div class="cercle-g"></div></div>
+        </div>
+        <div class="col-6">
+            <h1 class="titre">Ajoutez un nouvel article</h2>
+        </div>
+        <div class="col-3">
+        
+            <div class="deco"><div class="cercle-d"></div></div>
+        </div>
+    </div>
 
 <!--Bootstrap form to create a new status-->
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -57,3 +73,9 @@ include '../../../header.php';
         </div>
     </div>
 </div>
+
+</body>
+</html>
+<?php
+include '../../../footer.php';
+?>

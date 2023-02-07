@@ -15,25 +15,28 @@
 }
 
 .deco{
+
     margin-top: 30% ;
     background-color: #6D071A;
     height: 3px;
 }
 
 .cercle-g{
+
+  margin-top: -6px;
   float: right;
-    margin-top: 30%;
     background-color: #6D071A;
     border-radius:50%;
     width:15px;
     height:15px;
   }
   .cercle-d{
+    margin-top: -6px;
     float: left;
-    margin-top: 30%;
     background-color: #6D071A;
     border-radius:50%;
     width:15px;
     height:15px;
   }
+
 
