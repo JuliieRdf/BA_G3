@@ -165,10 +165,16 @@ font-size: 42px;
     justify-content: space-between;
     height: 238px;
 }
-.endbox{
+h2 .endbox{
     margin-top: 0px;
     margin-bottom: 25px;
+    color:#6D071A;
 }
+
+h3 .endbox {    margin-top: 0px;
+    margin-bottom: 25px;
+    color: black;
+ }
 
 
 

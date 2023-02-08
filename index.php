@@ -5,13 +5,13 @@ sql_connect();
 //print_r(curl("https://reqres.in/api/users", "POST", '{"name": "morpheus", "job": "leader"}'));
 
 
-$lastT1 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[0]['libTitrArt'];
-$lastT2 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[1]['libTitrArt'];
-$lastT3 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[2]['libTitrArt'];
+$lastT1 = sql_select("Article","*",null, "dtCreArt DESC", 3)[0]['libTitrArt'];  //Séletionne le dernier titre
+$lastT2 = sql_select("Article","*",null, "dtCreArt DESC", 3)[1]['libTitrArt']; // Sélectionne l'avant dernier titre
+$lastT3 = sql_select("Article","*",null, "dtCreArt DESC", 3)[2]['libTitrArt'];  // Sélectionne l'avant avant dernier titre
 
-$lastP1 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[0]['urlPhotArt'];
-$lastP2 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[1]['urlPhotArt'];
-$lastP3 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[2]['urlPhotArt'];
+$lastP1 = sql_select("Article","*",null, "dtCreArt DESC", 3)[0]['urlPhotArt']; //Séletionne la dernière photo
+$lastP2 = sql_select("Article","*",null, "dtCreArt DESC", 3)[1]['urlPhotArt']; //Séletionne l'avant dernière photo
+$lastP3 = sql_select("Article","*",null, "dtCreArt DESC", 3)[2]['urlPhotArt']; // Sélectionne l'avant avant dernière photo
 
 
 
@@ -55,52 +55,25 @@ transform: translate(0px,-50px);">
 
     </div>
 
-
+    <?php $articles = sql_select("ARTICLE", "*",null,"dtCreArt DESC");?>
 
     <div class="container-fluid" style="height:100px; padding-left:  4.16vw; padding-right: 4.16vw;">
         <div class="row gx-12 ">
             <div class="col-lg-1 ">
                 <section class="home-article">
                     <div class="article-pres">
-                        <div class="article-img"><img src="https://static.tvtropes.org/pmwiki/pub/images/splattim.jpg" alt=""></div>
+                    <?php foreach ($articles as $article) { ?>
+                        <div class="article-img"><img src=<?php echo $article['urlPhotArt']; ?> alt="Photo de l'article" ></div>
                         <div class="article-txt">
                             <a href="">
-                                <h2 class="endbox">SPLAT! SPLAT!</h2>
+                            <h2 class="endbox"><?php echo $article['libTitrArt']; ?></h2>
                             </a>
-                            <h3>YOU'RE A KID NOW!</h3>
-                            <h3 class="endbox">YOU'RE A SQUID NOW!</h3>
-                            <p>YOU'RE A KID NOW! YOU'RE A SQUID NOW!</p>
-                            <p>YOU'RE A KID NOW! YOU'RE A SQUID NOW! YOU'RE A KID NOW!</p>
+                            <h3><?php echo $article['numThem']; ?></h3>
+                            <h3 class="endbox"><?php echo $article['libChapoArt']; ?></h3>
+                            <p><?php echo $article['dtCreArt']; ?></p>
                         </div>
                     </div>
-                    <div class="article-pres">
-                        <div class="article-img"><img src="https://media.sketchfab.com/models/ae6b150e50044939aa6a6a6960b1c21d/thumbnails/76febbac5382473393cb5e61c43281cf/77b717aa515d452ea374dd108a230a0c.jpeg" alt=""></div>
-                        <div class="article-txt">
-                            <a href="">
-
-                                <h2 class="endbox">INK IT ALL NOW!</h2>
-
-                            </a>
-                            <h3>UP THE WALL NOW!</h3>
-                            <h3 class="endbox">DISAPPEAR, GOING BACK, THEN YOU TURN, THEN ATTACK!</h3>
-                            <p>YOU'RE A SQUID NOW! RISE UP OFF THE INK! AMBUSH THIS DUDE!</p>
-                            <p>SPLA-TA-TA-TA-TA-TA-TA-TA-TA-TA, SPLATOON!</p>
-                        </div>
-                    </div>
-                    <div class="article-pres">
-                        <div class="article-img"><img src="https://i1.sndcdn.com/artworks-000207092706-ze3fa8-t500x500.jpg" alt=""></div>
-                        <div class="article-txt">
-                            <a href="">
-
-                                <h2 class="endbox">DOVAHKIIN</h2>
-
-                            </a>
-                            <h3>DOVAHKIIN, NAAL OK ZIN LOS VAHRIIN</h3>
-                            <h3 class="endbox">WAH DEIN VOHUL MAHFAERAAK AHST VAAL</h3>
-                            <p>AHRK FIN NOROK PAAL GRAAN FOD NUST HON ZINDRO ZAAN</p>
-                            <p>DOVAHKIIN, FAH HIN KOGAAN MU DRAAL!</p>
-                        </div>
-                    </div>
+                    <?php } ?>
                 </section>
             </div>
             <div class="col-lg-1 ">
