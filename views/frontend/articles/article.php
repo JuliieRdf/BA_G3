@@ -4,7 +4,6 @@
   <body>
  <?php
  $numArts = $_GET ['numArt'];
- p
   $pageart = sql_select("ARTICLE", "*")["numArt= $numArts"]; ?>
 
  <p class="date"><?php echo ($pageart["dtCreArt"]); ?></p>
