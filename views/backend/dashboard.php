@@ -23,7 +23,7 @@ include '../../header.php';
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Status</td>
+                            <td>Statuts</td>
                             <td>
                                 <a href="/views/backend/status/list.php" class="btn btn-primary">Modifer</a>
 
