@@ -8,13 +8,10 @@ include '../../../header.php'; // contains the header and call to config.php
 } */
 
 //Load all statuses
-$noms = sql_select('membre INNER JOIN statut ON membre.numStat = statut.numStat');
+$members = sql_select('membre INNER JOIN statut ON membre.numStat = statut.numStat', "*");
 
 
 
-
-
-$members = sql_select(" membre","*");
 //sql_select('STATUT INNER JOIN MEMBRE ON statut.numStat = membre.numStat');
 ?>
 
@@ -42,9 +39,7 @@ $members = sql_select(" membre","*");
                           
 
                             <td><?php  
-                            foreach ($noms as $nom){
-                                echo($nom['libStat']);
-                            }
+                                echo($member['libStat']);
                             ?></td>
                             <td>
                                 <a href="edit.php?numMemb=<?php echo $member['numMemb']; ?>" class="btn btn-primary">Modifier</a>

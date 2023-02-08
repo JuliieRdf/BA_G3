@@ -28,12 +28,12 @@ include '../../../header.php';
     </div>
 
 <?php
-sql_select('ARTICLE INNER JOIN MOTCLEARTICLE ON article.numArt = motclearticle.numArt');
-sql_select('MOTCLE INNER JOIN MOTCLEARTICLE ON article.numMotCle = motclearticle.libMotCle');
+// sql_select('ARTICLE INNER JOIN MOTCLEARTICLE ON article.numArt = motclearticle.numArt');
+// sql_select('MOTCLE INNER JOIN MOTCLEARTICLE ON article.numMotCle = motclearticle.libMotCle');
 
 
 
-sql_select('ARTICLE INNER JOIN THEMATIQUE ON article.numArt = thematique.numArt');
+// sql_select('ARTICLE INNER JOIN THEMATIQUE ON article.numArt = thematique.numArt');
 
 
 ?>
