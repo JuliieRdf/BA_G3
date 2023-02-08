@@ -44,9 +44,9 @@ include '../../../header.php';
                     </label>
                     <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" minlength="6" maxlength="30" required>
                     <label for="passMemb">
-                        <h3 class="nom-form">Mot de passe</h3>
+                        <h3 class="nom-form">Mot de passe (il faut MAJ, min, chiffre, charactere special et minimum - chractere)</h3>
                     </label>
-                    <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="6" maxlength="30" required>
+                    <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="6" maxlength="30" required   pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}" >
                     <div class="mb-5">
                     </div>
                 </div>
@@ -65,10 +65,11 @@ include '../../../header.php';
                     </div>
                 </div>
             </form>
-        </div>
+        
         <div class="col-3"></div>
         <div class="col-1 ">
             <div class="deco-hori-d-login"></div>
+            </div>
         </div>
     </div>
 
