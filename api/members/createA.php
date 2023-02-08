@@ -20,7 +20,7 @@ $numStat = sql_escape($_POST['numStat']);
 
 
 
-sql_insert('MEMBRE','prenomMemb,nomMemb,pseudoMemb,passMemb,eMailMemb,numStat'),
+sql_insert('MEMBRE','prenomMemb,nomMemb,pseudoMemb,passMemb,eMailMemb,numStat',
                 "'$prenomMemb','$nomMemb','$pseudoMemb','$passMemb','$eMailMemb','$numStat'");
 
 header('Location: ../../views/backend/members/list');

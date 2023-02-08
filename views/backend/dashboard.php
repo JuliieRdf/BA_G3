@@ -58,7 +58,7 @@ include '../../header.php';
                         <tr>
                             <td>Commentaires</td>
                             <td>
-                                <a href="/views/backend/comments/list.php" class="btn btn-primary">Modifer</a>
+                                <a href="/views/backend/comment/list.php" class="btn btn-primary">Modifer</a>
 
                             </td>
                             <td>Gestion des commentaires</td>
