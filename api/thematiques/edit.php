@@ -4,9 +4,9 @@
 require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
 
 
-$libThem = $_POST['libThem'];
+$libThem =sql_escape( $_POST['libThem']);
 
-$numThem = $_POST['numThem'];
+$numThem =sql_escape( $_POST['numThem']);
 
 
 sql_update('THEMATIQUE',"libThem='$libThem'","numThem =$numThem");
