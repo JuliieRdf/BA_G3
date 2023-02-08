@@ -53,14 +53,22 @@ transform: translate(0px,-50px);">
 
     </div>
 
+    <section class="slide-mobile">
+<img src="<?php echo ($lastP1); ?>" alt="" class="bande-mobile">
+<h2><?php echo ($lastT1); ?></h2>
+<p>DATE</p>
+
+</section>
+
     <?php $articles = sql_select("ARTICLE", "*",null,"dtCreArt DESC");?>
 
-    <div class="container-fluid" style="height:100px; padding-left:  4.16vw; padding-right: 4.16vw;">
+    <div class="container-fluid" style="padding-left:  4.16vw; padding-right: 4.16vw;">
         <div class="row gx-12 ">
-            <div class="col-lg-1 ">
+            <div class="col-lg-9 ">
                 <section class="home-article">
+                <?php foreach ($articles as $article) { ?>
                     <div class="article-pres">
-                    <?php foreach ($articles as $article) { ?>
+                    
                         <div class="article-img"><img src=<?php echo $article['urlPhotArt']; ?> alt="Photo de l'article" ></div>
                         <div class="article-txt">
                             <a href="">
@@ -70,35 +78,13 @@ transform: translate(0px,-50px);">
                             <h3 class="endbox"><?php echo $article['libChapoArt']; ?></h3>
                             <p><?php echo $article['dtCreArt']; ?></p>
                         </div>
+
                     </div>
-                    <?php } ?>
+                <?php } ?>
                 </section>
             </div>
-            <div class="col-lg-1 ">
-
-            </div>
-            <div class="col-lg-1 ">
-
-            </div>
-            <div class="col-lg-1 ">
-
-            </div>
-            <div class="col-lg-1 ">
-
-            </div>
-            <div class="col-lg-1 ">
-
-            </div>
-            <div class="col-lg-1 ">
-
-            </div>
-            <div class="col-lg-1 ">
-
-            </div>
-            <div class="col-lg-1 ">
-
-            </div>
-            <div class="col-lg-1 ">
+            
+            <div class="col-lg-3 ">
                 <section class="colonne-d">
                     <div class="inscription">
                         <form class="inscription-form" action="">
@@ -136,15 +122,8 @@ transform: translate(0px,-50px);">
                     </div>
                 </section>
             </div>
-            <div class="col-lg-1 ">
-
-            </div>
-            <div class="col-lg-1 ">
-
-            </div>
-
         </div>
-        <div class="row gx-12 ">
+        <div class="row gx-12 responsive-col">
             <div class="col-lg-12" style="display:flex; justify-content: center; margin-top: 50px;">
                 <section class="contact">
                     <h3 class="contact">CONTACTEZ NOUS</h3>
@@ -169,11 +148,11 @@ transform: translate(0px,-50px);">
         </div>
 
 
-        <?php require_once 'footer.php'; ?>
+        
 
     </div>
 
-
+    <?php require_once 'footer.php'; ?>
 
 
     <script>
