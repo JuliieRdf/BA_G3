@@ -1,6 +1,7 @@
 <?php
 include '../../../header.php';
 ?>
+<head>  <link rel="stylesheet" href="/source/css/textes.css"> </head>
 
 <body>
 
@@ -140,7 +141,7 @@ include '../../../header.php';
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" class="btn btn-success">Créer</button>
+                    <button type="submit" class="btn btn-success">Valider</button>
                 </div>
 
             </form>
@@ -168,7 +169,6 @@ include '../../../header.php';
 
 
 
-        <?php include '../../../footer.php'; ?>
     </body>
 
     </html>

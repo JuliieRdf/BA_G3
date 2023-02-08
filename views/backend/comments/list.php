@@ -8,7 +8,7 @@ include '../../../header.php'; // contains the header and call to config.php
 } */
 
 //Load all statuses
-$comment = sql_select("COMMENT", "*");
+$comments = sql_select("COMMENT", "*");
 ?>
 
 <!-- Bootstrap default layout to display all status in foreach -->
@@ -20,7 +20,10 @@ $comment = sql_select("COMMENT", "*");
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Noms</th>
+                        <th>Date</th>
+                        <th>Commentaire</th>
+                        <th>Date modérateur </th>
+                        <th>Notif</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -28,7 +31,12 @@ $comment = sql_select("COMMENT", "*");
                     <?php foreach ($comments as $comment) { ?>
                         <tr>
                             <td><?php echo $comment['numCom']; ?></td>
+                            <td><?php echo $comment['dtCreCom']; ?></td>
                             <td><?php echo $comment['libCom']; ?></td>
+                            <td><?php echo $comment['dtModCom']; ?></td>
+                            <td><?php echo $comment['dtModCom']; ?></td>
+                            <td><?php echo $comment['notifComKOAff']; ?></td>
+                            <td><?php echo $comment['delLogiq']; ?></td>
                             <td>
                                 <a href="edit.php?numCom=<?php echo $comment['numCom']; ?>" class="btn btn-primary">Modifier</a>
                                 <a href="delete.php?numCom=<?php echo $comment['numCom']; ?>" class="btn btn-danger">Supprimer</a>

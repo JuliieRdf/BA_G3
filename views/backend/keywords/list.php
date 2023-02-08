@@ -15,7 +15,7 @@ $MotCles = sql_select("MOTCLE", "*");
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Liste des mots clés</h1>
+            <h2>Liste des mots clés</h2>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -27,8 +27,8 @@ $MotCles = sql_select("MOTCLE", "*");
                 <tbody>
                     <?php foreach ($MotCles as $MotCle) { ?>
                         <tr>
-                            <td><?php echo $MotCle['numMotCle']; ?></td>
-                            <td><?php echo $MotCle['libMotCle']; ?></td>
+                            <td><p><?php echo $MotCle['numMotCle']; ?></p></td>
+                            <td><p><?php echo $MotCle['libMotCle']; ?></p></td>
                             <td>
                                 <a href="edit.php?numMotCle=<?php echo $MotCle['numMotCle']; ?>" class="btn btn-primary">Modifier</a>
                                 <a href="delete.php?numMotCle=<?php echo $MotCle['numMotCle']; ?>" class="btn btn-danger">Supprimer</a>

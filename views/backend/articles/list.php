@@ -15,7 +15,7 @@ $members = sql_select("ARTICLE", "*");
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1> Liste des articles</h1>
+            <h2> Liste des articles</h2>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -34,11 +34,12 @@ $members = sql_select("ARTICLE", "*");
                         <th>Thématique</th>
                         <th>Actions</th>
                     </tr>
+                    
                 </thead>
                 <tbody>
                     <?php foreach ($members as $member) { ?>
                         <tr>
-                            <td><?php echo $member['numArt']; ?></td>
+                        <td><?php echo $member['numArt']; ?></td>
                             <td><?php echo $member['dtCreArt']; ?></td>
                             <td><?php echo $member['libTitrArt']; ?></td>
                             <td><?php echo $member['libChapoArt']; ?></td>
@@ -51,6 +52,8 @@ $members = sql_select("ARTICLE", "*");
                             <td><?php echo $member['libConclArt']; ?></td>
                             <td><?php echo $member['urlPhotArt']; ?></td>
                             <td><?php echo $member['numThem']; ?></td>
+                            <td><?php echo $member['numArt']; ?></td>
+                            <td><?php echo $member['libTitrArt']; ?></td>
                             <td>
                                 <a href="edit.php?numArt=<?php echo $member['numArt']; ?>" class="btn btn-primary">Modifier</a>
                                 <a href="delete.php?numArt=<?php echo $member['numArt']; ?>" class="btn btn-danger">Supprimer</a>

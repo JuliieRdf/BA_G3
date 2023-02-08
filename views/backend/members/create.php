@@ -52,9 +52,9 @@ include '../../../header.php';
                         </label>
                         <input id="eMailMemb" class="form-control" type="email" name="eMailMemb" required>
                         <label for="passMemb">
-                            <h3 class="nom-form">Mot de passe</h3>
+                            <h3 class="nom-form">Mot de passe (il faut MAJ, min, chiffre, charactere special et minimum - chractere)</h3>
                         </label>
-                        <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="6" maxlength="30" required>
+                        <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="6" maxlength="30" required pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}">
                         <div class="mb-5">
                             <label for="statue">
                                 <h3 class="nom-form">Choix du statue</h3>

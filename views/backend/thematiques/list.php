@@ -15,7 +15,7 @@ $thematiques = sql_select("THEMATIQUE", "*");
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Thématiques</h1>
+            <h2>Thématiques</h2>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -27,8 +27,8 @@ $thematiques = sql_select("THEMATIQUE", "*");
                 <tbody>
                     <?php foreach ($thematiques as $thematique) { ?>
                         <tr>
-                            <td><?php echo $thematique['numThem']; ?></td>
-                            <td><?php echo $thematique['libThem']; ?></td>
+                            <td><p><?php echo $thematique['numThem']; ?></p></td>
+                            <td><p><?php echo $thematique['libThem']; ?></p></td>
                             <td>
                                 <a href="edit.php?numThem=<?php echo $thematique['numThem']; ?>" class="btn btn-primary">Modifier</a>
                                 <a href="delete.php?numThem=<?php echo $thematique['numThem']; ?>" class="btn btn-danger">Supprimer</a>
