@@ -1,6 +1,3 @@
-<head>
-    <link rel="stylesheet" href="../../../source/css/crearticle.css">
-</head>
 <?php
 include '../../../header.php';
 ?>
@@ -47,7 +44,7 @@ sql_select('ARTICLE INNER JOIN THEMATIQUE ON article.numArt = thematique.numArt'
 
     <div class="row">
         <div class="col-1">
-            <div class="deco-hori-g"></div>
+            <div class="deco-hori-g-create"></div>
         </div>
         <div class="col-1">
         </div>
@@ -150,7 +147,7 @@ sql_select('ARTICLE INNER JOIN THEMATIQUE ON article.numArt = thematique.numArt'
         </div>
         <div class="col-1"></div>
         <div class="col-1 ">
-            <div class="deco-hori-d"></div>
+            <div class="deco-hori-d-create"></div>
         </div>
     </div>
 

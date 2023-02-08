@@ -52,7 +52,39 @@
       height:15px;
     }
   
-    .deco-hori-g{
+    .deco-hori-g-login{
+  
+      border-right: 3px solid #6D071A;
+      padding-top: 500px;
+    }
+    .deco-hori-d-login{
+    border-left: 3px solid #6D071A;
+    padding-top: 500px;
+    }
+
+.deco-hori-g-create{
+
+  border-right: 3px solid #6D071A;
+  padding-top: 3100px;
+}
+.deco-hori-d-create{
+border-left: 3px solid #6D071A;
+padding-top: 3100px;
+}
+
+
+    .deco-hori-g-member {
+
+      border-right: 3px solid #6D071A;
+      padding-top: 750px;
+  }
+  
+  .deco-hori-d-member {
+      border-left: 3px solid #6D071A;
+      padding-top: 750px;
+  }
+    
+  .deco-hori-g{
   
       border-right: 3px solid #6D071A;
       padding-top: 500px;
