@@ -19,36 +19,42 @@ include '../../../header.php';
 
 <div class="login" class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-5"> </div>
+        <div class="col-md-3">
             <h1>Se Connecter</h1>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-5"></div>
+        <div class="col-md-3">
             <form action="/api/security/login.php" method="post">
                 <div class="form-group">
 
-                    <label for="pseudoMemb">Pseudo</label>
+                    <label for="pseudoMemb">Pseudonyme</label>
                     <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb">
 
-                    <label for="passMemb">Password</label>
+                    <label for="passMemb">Mot de passe</label>
                     <input id="passMemb" class="form-control" type="text" name="passMemb">
 
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Se connecter</button>
+                    <button type="submit" class="btn btn-success">Se connecter</button>
                 </div>
                 <div class="checkbox mb-3">
-                <label>
-                    <input type="checkbox" value="remember-me"> Remember me
-                </label>
+                    <label>
+                        <input type="checkbox" value="remember-me"> Se souvenir de moi
+                    </label>
+                </div>
+
+            </form>
+            <div class="col-md-5"></div>
+            <div class="col-md-3">
+                <form action="/views/backend/security/signup" method="post">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">S'inscrire</button>
+                    </div>
+                </form>
             </div>
 
-            </form>
 
-            <form action="/views/backend/security/signup" method="post">
-                <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">S'inscrire</button>
-                </div>
-            </form>
         </div>
     </div>
 </div>

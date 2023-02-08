@@ -3,13 +3,25 @@
     border-color:#074d6d;
     color: white;
 }
-.bs-btn-hover-bg{
-    background-color: blueviolet;
+.btn-primary:hover{
+    background-color:#074d6d;
+    border-color:#074d6d;
+    opacity: 90%;
 }
 .btn-danger { background-color:#6D071A;
 border-color:#6D071A;}
 
+.btn-danger:hover {
+     background-color:#6D071A;
+    border-color:#6D071A;
+opacity:90%;}
+
 .btn-success {
     background-color: #076d27;
     border-color: #076d27;
+}
+.btn-success:hover {
+    background-color: #076d27;
+    border-color: #076d27;
+    opacity: 90%;
 }
