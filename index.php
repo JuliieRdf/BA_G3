@@ -71,7 +71,7 @@ transform: translate(0px,-50px);">
 
                             <div class="article-img"><img src=<?php echo $article['urlPhotArt']; ?> alt="Photo de l'article"></div>
                             <div class="article-txt">
-                                <a href="article.php?numArt=<?php echo $article['numArt']; ?>">
+                                <a href="views/frontend/articles/article.php?numArt=<?php echo $article['numArt']; ?>">
                                     <h2 class="endbox"><?php echo $article['libTitrArt']; ?></h2>
                                 </a>
                                 <h3><?php echo $article['numThem']; ?></h3>
