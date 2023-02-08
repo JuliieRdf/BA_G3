@@ -12,7 +12,7 @@ $passMembPost = sql_escape($_POST['passMemb']);
 $password = sql_select("MEMBRE","passMemb","pseudoMemb = '$pseudoMembPost'")[0]['passMemb'];
 
 if (password_verify($passMembPost, $password)) {
-    $_SESSION["pseudo"] = $pseudoMemb;
+    $_SESSION["pseudo"] = $pseudoMembPost;
     header('Location: ../../views/frontend/compte.php');
 } else {
     header('Location: ../../views/backend/security/login.php');
