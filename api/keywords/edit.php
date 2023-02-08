@@ -4,8 +4,8 @@
 require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
 
 
-$libMotCle = $_POST['libMotCle'];
-$numMotCle = $_POST['numMotCle'];
+$libMotCle = sql_escape($_POST['libMotCle']);
+$numMotCle =sql_escape( $_POST['numMotCle']);
 
 
 sql_update('MOTCLE',"libMotCle='$libMotCle'","numMotCle =$numMotCle");

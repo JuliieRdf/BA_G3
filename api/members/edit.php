@@ -3,15 +3,15 @@
 require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
 
 
-$numMemb = $_POST['numMemb'];
-$prenomMemb = $_POST['prenomMemb'];
+$numMemb = sql_escape($_POST['numMemb']);
+$prenomMemb =sql_escape( $_POST['prenomMemb']);
 
 
-$nomMemb = $_POST['nomMemb'];
-$pseudoMemb = $_POST['pseudoMemb'];
-$passMemb = $_POST['passMemb'];
-$eMailMemb = $_POST['eMailMemb'];
-$numStat = $_POST['numStat'];
+$nomMemb = sql_escape($_POST['nomMemb']);
+$pseudoMemb = sql_escape($_POST['pseudoMemb']);
+$passMemb = sql_escape($_POST['passMemb']);
+$eMailMemb = sql_escape($_POST['eMailMemb']);
+$numStat = sql_escape($_POST['numStat']);
 
 
 
