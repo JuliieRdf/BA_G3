@@ -13,31 +13,6 @@ include '../../../header.php';
         <div class="col-6">
             <h1 class="titre">Créer un membre</h1>
         </div>
-        <div class="col-3"></div>
-    </div>
-
-    <div class="row">
-        <div class="col-3">
-            <div class="deco-verti-haut">
-                <div class="cercle-g"></div>
-            </div>
-        </div>
-        <div class="col-6">
-        </div>
-        <div class="col-3">
-            <div class="deco-verti-haut">
-                <div class="cercle-d"></div>
-            </div>
-        </div>
-    </div>
-    <!--Bootstrap form to create a new status-->
-
-    <div class="row">
-        <div class="col-1">
-            <div class="deco-hori-g"></div>
-        </div>
-        <div class="col-1">
-        </div>
         <div class="col-8">
             <!--Form to create a new status-->
             <form action="<?php echo ROOT_URL . '/api/members/createA.php' ?>" method="post">
@@ -74,36 +49,10 @@ include '../../../header.php';
                         </select>
                     </div>
                 </div>
+                <div class="form-group mt-2">
+                    <button type="submit" class="btn btn-success">Créer</button>
+                </div>
             </form>
-            <div class="form-group mt-2">
-            <button type="submit" class="btn btn-success">Créer</button>
-        </div>
-        </div>
-
-        </form>
-        <div class="col-1"></div>
-    <div class="col-1 ">
-        <div class="deco-hori-d"></div>
-    </div>
-
-
-
-
-
-
-
-
-    <div class="row">
-        <div class="col-3">
-            <div class="deco-verti-bas">
-                <div class="cercle-g"></div>
-            </div>
-        </div>
-        <div class="col-6"></div>
-        <div class="col-3">
-            <div class="deco-verti-bas">
-                <div class="cercle-d"></div>
-            </div>
         </div>
     </div>
 
@@ -118,4 +67,3 @@ include '../../../header.php';
 
 
 
-    <!--Bootstrap form to create a new status-->

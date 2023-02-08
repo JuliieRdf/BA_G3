@@ -1,61 +1,86 @@
 <?php
 include '../../../header.php';
 
-
-
-
-//Security check
-//Level 1 mean administator in DB
-/* if (!check_access(1)) {
-    header('Location: /'); //Redirect to home
-    exit();
-} */
-
-
-
-
 ?>
 
+<body>
 
-<div class="login" class="container">
     <div class="row">
-        <div class="col-md-5"> </div>
-        <div class="col-md-3">
-            <h1>Se Connecter</h1>
+        <div class="col-3"></div>
+        <div class="col-6">
+            <h1 class="titre">Se connecter</h1>
         </div>
-        <div class="col-md-5"></div>
-        <div class="col-md-3">
+        <div class="col-3"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            <div class="deco-verti-haut">
+                <div class="cercle-g"></div>
+            </div>
+        </div>
+        <div class="col-6">
+        </div>
+        <div class="col-3">
+            <div class="deco-verti-haut">
+                <div class="cercle-d"></div>
+            </div>
+        </div>
+    </div>
+    <!--Bootstrap form to create a new status-->
+
+    <div class="row">
+        <div class="col-1">
+            <div class="deco-hori-g-login"></div>
+        </div>
+        <div class="col-1">
+        </div>
+        <div class="col-8">
+
             <form action="/api/security/login.php" method="post">
-                <div class="form-group">
-
-                    <label for="pseudoMemb">Pseudonyme</label>
-                    <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb">
-
-                    <label for="passMemb">Mot de passe</label>
-                    <input id="passMemb" class="form-control" type="text" name="passMemb">
-
+                <div class="form-group" style="padding-top: 4%;">
+                    <label for="pseudoMemb">
+                        <h3 class="nom-form">Pseudonyme</h3>
+                    </label>
+                    <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" minlength="6" maxlength="30">
+                    <label for="passMemb">
+                        <h3 class="nom-form">Mot de passe</h3>
+                    </label>
+                    <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="6" maxlength="30">
+                    <div class="mb-5">
+                    </div>
                 </div>
-                <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-success">Se connecter</button>
-                </div>
+
                 <div class="checkbox mb-3">
                     <label>
                         <input type="checkbox" value="remember-me"> Se souvenir de moi
                     </label>
                 </div>
-
-            </form>
-            <div class="col-md-5"></div>
-            <div class="col-md-3">
-                <form action="/views/backend/security/signup" method="post">
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary">S'inscrire</button>
+                <div class="form-group mt-2">
+                    <button type="submit" class="btn btn-success">Se connecter </button>
+                    <div class="form-group mt-2">
+                        <button type="submit" class="btn btn-success">Créer un compte</button>
                     </div>
-                </form>
-            </div>
-  
-            
-
+                </div>
+            </form>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-1 ">
+            <div class="deco-hori-d-login"></div>
         </div>
     </div>
-</div>
+
+    <div class="row">
+        <div class="col-3">
+            <div class="deco-verti-bas">
+                <div class="cercle-g"></div>
+            </div>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-3">
+            <div class="deco-verti-bas">
+                <div class="cercle-d"></div>
+            </div>
+        </div>
+    </div>
+    <?php include '../../../footer.php'; ?>

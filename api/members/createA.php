@@ -13,13 +13,14 @@ $pseudoMemb = sql_escape($_POST['pseudoMemb']);
 $passMemb = sql_escape($_POST['passMemb']);
 $passCMemb = password_hash($passMemb, PASSWORD_DEFAULT);
 $eMailMemb = sql_escape($_POST['eMailMemb']);
+$numStat = sql_escape($_POST['numStat']);
 
 
 
 
 
 
-sql_insert('MEMBRE','prenomMemb,nomMemb,pseudoMemb,passMemb,eMailMemb,numStat',
-                "'$prenomMemb','$nomMemb','$pseudoMemb','$passCMemb','$eMailMemb','3'");
+sql_insert('MEMBRE','prenomMemb,nomMemb,pseudoMemb,passMemb,eMailMemb,numStat'),
+                "'$prenomMemb','$nomMemb','$pseudoMemb','$passMemb','$eMailMemb','$numStat'");
 
 header('Location: ../../views/backend/members/list');
