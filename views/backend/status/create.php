@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="../../../source/css/statucreate.css">
+    <link rel="stylesheet" href="../../../source/css/formgeneral.css">
 </head>
 <?php
 include '../../../header.php';
@@ -11,7 +11,7 @@ include '../../../header.php';
     <div class="row">
         <div class="col-3"></div>
         <div class="col-6">
-            <h1 class="titre">Créer un nouveau statut</h2>
+            <h1 class="titre">Créer un nouveau statut</h1>
         </div>
         <div class="col-3"></div>
     </div>
