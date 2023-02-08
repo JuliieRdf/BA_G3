@@ -11,7 +11,7 @@ include '../../../header.php';
     <div class="row">
         <div class="col-3"></div>
         <div class="col-6">
-            <h1 class="titre">Créer un nouveau statut</h2>
+            <h1 class="titre">Créer un nouveau statut</h1>
         </div>
         <div class="col-3"></div>
     </div>
