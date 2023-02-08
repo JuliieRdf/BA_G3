@@ -40,7 +40,7 @@ include '../../../header.php';
             <form action="<?php echo ROOT_URL . '/api/status/create.php' ?>" method="post">
                 <div class="form-group " style="padding-top: 10%;">
                     <label for="libThem"><h3 class="nom-form">Nom de la thématique</h3></label>
-                    <input id="libThem" class="form-control" type="text" name="libThem">
+                    <input id="libThem" class="form-control" type="text" name="libThem" required>
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-success">Créer</button>

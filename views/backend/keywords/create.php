@@ -42,7 +42,7 @@ include '../../../header.php';
                     <label for="libNotCle">
                         <h3 class="nom-form">Nom du mot clé</h3>
                     </label>
-                    <input id="libMotCle" class="form-control" type="text" name="libMotCle">
+                    <input id="libMotCle" class="form-control" type="text" name="libMotCle" required>
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-success">Créer</button>
