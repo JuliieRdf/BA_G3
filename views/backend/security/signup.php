@@ -1,57 +1,37 @@
+
+
+
+
 <?php
 include '../../../header.php';
 
-
-
-
-//Security check
-//Level 1 mean administator in DB
-/* if (!check_access(1)) {
-    header('Location: /'); //Redirect to home
-    exit();
-} */
-
-
-
-
 ?>
 
-<body class="text-center">
-
-    <main class="form-signin w-100 m-auto">
-        <form>
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-
-            <div class="form-floating">
-                <input type="Pseudonyme" class="form-control" id="floatingInput" placeholder="name">
-                <label for="floatingInput">Pseudonyme</label>
-            </div>
-
-            <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
-            </div>
-
-            <div class="form-floating">
-                <button class="button" type="submit">Photo de profil</button>
-            </div>
-
-
-
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-            </div>
+<!--Bootstrap form to create a new status-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>S'inscrire</h1>
+        </div>
+        <div class="col-md-12">
+            <!--Form to create a new status-->
+            <form action="/api/members/createM.php" method="post">
+                <div class="form-group">
+                    <label for="prenomMemb">Prénom</label>
+                    <input id="prenomMemb" class="form-control" type="text" name="prenomMemb">
+                    <label for="nomMemb">Nom</label>
+                    <input id="nomMemb" class="form-control" type="text" name="nomMemb">
+                    <label for="pseudoMemb">Pseudonyme</label>
+                    <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb">
+                    <label for="passMemb">Mot de passe</label>
+                    <input id="passMemb" class="form-control" type="text" name="passMemb">
+                    <label for="eMailMemb">E-mail</label>
+                    <input id="eMailMemb" class="form-control" type="text" name="eMailMemb">
+                </div>
+                <div class="form-group mt-2">
+                    <button type="submit" class="btn btn-success">Créer</button>
+                </div>
             </form>
-
-            <form action="/views/backend/security/login.php" method="post">
-            <button class="button" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
-        </form>
-    </main>
-
-
-
-
-
-</body>
+        </div>
+    </div>
+</div>

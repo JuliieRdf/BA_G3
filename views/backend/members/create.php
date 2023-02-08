@@ -11,7 +11,7 @@ include '../../../header.php';
         </div>
         <div class="col-md-12">
             <!--Form to create a new status-->
-            <form action="<?php echo ROOT_URL . '/api/members/create.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/members/createA.php' ?>" method="post">
                 <div class="form-group">
                     <label for="prenomMemb">Prénom</label>
                     <input id="prenomMemb" class="form-control" type="text" name="prenomMemb">
