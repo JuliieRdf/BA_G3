@@ -33,20 +33,20 @@ include '../../../header.php';
         <div class="col-1">
             <div class="deco-hori-g-login"></div>
         </div>
-        <div class="col-1">
+        <div class="col-3">
         </div>
-        <div class="col-8">
+        <div class="col-4">
 
             <form action="/api/security/login.php" method="post">
                 <div class="form-group" style="padding-top: 4%;">
                     <label for="pseudoMemb">
                         <h3 class="nom-form">Pseudonyme</h3>
                     </label>
-                    <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" minlength="6" maxlength="30">
+                    <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" minlength="6" maxlength="30" required>
                     <label for="passMemb">
                         <h3 class="nom-form">Mot de passe</h3>
                     </label>
-                    <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="6" maxlength="30">
+                    <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="6" maxlength="30" required>
                     <div class="mb-5">
                     </div>
                 </div>
@@ -64,7 +64,7 @@ include '../../../header.php';
                 </div>
             </form>
         </div>
-        <div class="col-1"></div>
+        <div class="col-3"></div>
         <div class="col-1 ">
             <div class="deco-hori-d-login"></div>
         </div>

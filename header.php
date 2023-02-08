@@ -64,7 +64,16 @@ require_once 'config.php';
           </form>
           <a class="btn btn-primary m-1" href="/views/backend/dashboard.php" role="button" style=" border-width : 0; background-color: #6D071A; line-height: 29px; text-align: center; color: #FFFFFF;">Admin</a>
 
-          <a class="btn btn-primary m-1" href="/views/backend/security/login.php" role="button" style=" border-width : 0; background-color: #6D071A; color: #FFFFFF;">
+          <a class="btn btn-primary m-1" href="          
+          <?php 
+          if(isset($_SESSION["pseudo"])){
+            echo ('/views/frontend/compte.php');
+          } else {
+            echo ('/views/backend/security/login.php');
+          }
+          ?>
+          " role="button" style=" border-width : 0; background-color: #6D071A; color: #FFFFFF;">
+
           <?php 
           if(isset($_SESSION["pseudo"])){
             echo ($_SESSION["pseudo"]);

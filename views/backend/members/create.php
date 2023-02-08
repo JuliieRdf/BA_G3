@@ -38,28 +38,28 @@ include '../../../header.php';
                         <label for="prenomMemb">
                             <h3 class="nom-form">Prénom</h3>
                         </label>
-                        <input id="prenomMemb" class="form-control" type="text" name="prenomMemb" minlength="1" maxlength="100">
+                        <input id="prenomMemb" class="form-control" type="text" name="prenomMemb" minlength="1" maxlength="100" required>
                         <label for="nomMemb">
                             <h3 class="nom-form">Nom</h3>
                         </label>
-                        <input id="nomMemb" class="form-control" type="text" name="nomMemb" minlength="1" maxlength="100">
+                        <input id="nomMemb" class="form-control" type="text" name="nomMemb" minlength="1" maxlength="100" required>
                         <label for="pseudoMemb">
                             <h3 class="nom-form">Pseudonyme (non modifiable)</h3>
                         </label>
-                        <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" minlength="6" maxlength="30">
+                        <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" minlength="6" maxlength="30" required>
                         <label for="eMailMemb">
                             <h3 class="nom-form">E-mail</h3>
                         </label>
-                        <input id="eMailMemb" class="form-control" type="email" pattern=".+@globex\.com" name="eMailMemb">
+                        <input id="eMailMemb" class="form-control" type="email" pattern=".+@globex\.com" name="eMailMemb" required>
                         <label for="passMemb">
                             <h3 class="nom-form">Mot de passe</h3>
                         </label>
-                        <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="6" maxlength="30">
+                        <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="6" maxlength="30" required>
                         <div class="mb-5">
                             <label for="statue">
                                 <h3 class="nom-form">Choix du statue</h3>
                             </label>
-                            <select class="form-control form-control-lg" name="pets" id="statue">
+                            <select class="form-control form-control-lg" name="pets" id="statue" required>
                                 <option value="">Choisissez un statue</option>
                                 <option value="dog">membre</option>
                                 <option value="cat">admin</option>

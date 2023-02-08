@@ -28,12 +28,12 @@ include '../../../header.php';
     </div>
 
 <?php
-sql_select('ARTICLE INNER JOIN MOTCLEARTICLE ON article.numArt = motclearticle.numArt');
-sql_select('MOTCLE INNER JOIN MOTCLEARTICLE ON article.numMotCle = motclearticle.libMotCle');
+// sql_select('ARTICLE INNER JOIN MOTCLEARTICLE ON article.numArt = motclearticle.numArt');
+// sql_select('MOTCLE INNER JOIN MOTCLEARTICLE ON article.numMotCle = motclearticle.libMotCle');
 
 
 
-sql_select('ARTICLE INNER JOIN THEMATIQUE ON article.numArt = thematique.numArt');
+// sql_select('ARTICLE INNER JOIN THEMATIQUE ON article.numArt = thematique.numArt');
 
 
 ?>
@@ -56,74 +56,74 @@ sql_select('ARTICLE INNER JOIN THEMATIQUE ON article.numArt = thematique.numArt'
                         <label for="dtCreArt">
                             <h3 class="nom-form">Date</h3>
                         </label>
-                        <input id="dtCreArt" class="form-control form-control-lg" type="date" name="dtCreArt"> <!--DATE-->
+                        <input id="dtCreArt" class="form-control form-control-lg" type="date" name="dtCreArt" required> <!--DATE-->
                     </div>
                     <div class="mb-5">
                         <label for="libTitrArt">
                             <h3 class="nom-form">Titre</h3>
                         </label>
-                        <input id="libTitrArt" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libTitrArt" minlength="1" maxlength="100">
+                        <input id="libTitrArt" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libTitrArt" minlength="1" maxlength="100" required>
                     </div>
                    
                     <div class="mb-5">
                         <label for="libChapoArt">
                             <h3 class="nom-form">Chapeau</31>
                         </label>
-                        <textarea cols="30" rows="4" id="libChapoArt" class="form-control" placeholder="Maximum 500 caractères..." type="text" name="libChapoArt" minlength="1" maxlength="500"></textarea> <!--Chapo 500-->
+                        <textarea cols="30" rows="4" id="libChapoArt" class="form-control" placeholder="Maximum 500 caractères..." type="text" name="libChapoArt" minlength="1" maxlength="500" required></textarea> <!--Chapo 500-->
                     </div>
                     <div class="mb-5">
                         <label for="libAccrochArt">
                             <h3 class="nom-form">Accroche</h3>
                         </label>
-                        <input id="libAccrochArt" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libAccrochArt" minlength="1" maxlength="100"> <!--Acroche 100-->
+                        <input id="libAccrochArt" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libAccrochArt" minlength="1" maxlength="100" required> <!--Acroche 100-->
                     </div>
                     <div class="mb-5">
                         <label for="parag1Art">
                             <h3 class="nom-form">Paragraphe 1</h3>
                         </label>
-                        <textarea cols="30" rows="9" id="parag1Art" class="form-control" placeholder="Maximum 1200 caractères..." type="text" name="parag1Art" minlength="1" maxlength="1200"></textarea> <!--paragraphe 1200-->
+                        <textarea cols="30" rows="9" id="parag1Art" class="form-control" placeholder="Maximum 1200 caractères..." type="text" name="parag1Art" minlength="1" maxlength="1200" required></textarea> <!--paragraphe 1200-->
                     </div>
                     <div class="mb-5">
                         <label for="libSsTitr1Art">
                             <h3 class="nom-form">Sous Titre 1</h3>
                         </label>
-                        <input id="libSsTitr1Art" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libSsTitr1Art" minlength="1" maxlength="100"> <!--sous-titre 100-->
+                        <input id="libSsTitr1Art" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libSsTitr1Art" minlength="1" maxlength="100" required> <!--sous-titre 100-->
                     </div>
                     <div class="mb-5">
                         <label for="parag2Art">
                             <h3 class="nom-form">Paragraphe 2</h3>
                         </label>
-                        <textarea cols="30" rows="9" placeholder="Maximum 1200 caractères..." id="parag2Art" class="form-control" type="text" name="parag2Art" minlength="1" maxlength="1200"></textarea> <!--paragraphe 2 1200-->
+                        <textarea cols="30" rows="9" placeholder="Maximum 1200 caractères..." id="parag2Art" class="form-control" type="text" name="parag2Art" minlength="1" maxlength="1200" required></textarea> <!--paragraphe 2 1200-->
                     </div>
                     <div class="mb-5">
                         <label for="libSsTitr2Art">
                             <h3 class="nom-form">Sous Titre 2</h3>
                         </label>
-                        <input id="libSsTitr2Art" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libSsTitr2Art" minlength="1" maxlength="100"> <!--sous-titre 2 100-->
+                        <input id="libSsTitr2Art" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libSsTitr2Art" minlength="1" maxlength="100" required> <!--sous-titre 2 100-->
                     </div>
                     <div class="mb-5">
                         <label for="parag3Art">
                             <h3 class="nom-form">Paragraphe 3</h3>
                         </label>
-                        <textarea cols="30" rows="9" id="parag3Art" class="form-control" placeholder="Maximum 1200 caractères..." type="text" name="parag3Art" minlength="1" maxlength="1200"></textarea> <!--paragraphe 3 1200-->
+                        <textarea cols="30" rows="9" id="parag3Art" class="form-control" placeholder="Maximum 1200 caractères..." type="text" name="parag3Art" minlength="1" maxlength="1200" required></textarea> <!--paragraphe 3 1200-->
                     </div>
                     <div class="mb-5">
                         <label for="libConclArt">
                             <h3 class="nom-form">Conclusion</h3>
                         </label>
-                        <textarea cols="30" rows="4" id="libConclArt" class="form-control" placeholder="Maximum 500 caractères..." type="text" name="libConclArt" minlength="1" maxlength="500"></textarea> <!--conclusion 500-->
+                        <textarea cols="30" rows="4" id="libConclArt" class="form-control" placeholder="Maximum 500 caractères..." type="text" name="libConclArt" minlength="1" maxlength="500" required></textarea> <!--conclusion 500-->
                     </div>
                     <div class="mb-5">
                         <label for="urlPhotArt">
                             <h3 class="nom-form">Photo</h3>
                         </label>
-                        <input id="urlPhotArt" class="form-control form-control-lg" type="file" accept="image/*" name="urlPhotArt"> <!--Image-->
+                        <input id="urlPhotArt" class="form-control form-control-lg" type="file" accept="image/*" name="urlPhotArt" required> <!--Image-->
                     </div>
                     <div class="mb-5">
                         <label for="numThem">
                             <h3 class="nom-form">Choix de la thématique</h3>
                         </label>
-                        <select class="form-control form-control-lg" name="pets" id="numThem">
+                        <select class="form-control form-control-lg" name="pets" id="numThem" required>
                             <option value="">Choisissez une thématique</option>
                             <option value="dog">1</option>
                             <option value="cat">L'acteur-clé</option>
@@ -135,7 +135,7 @@ sql_select('ARTICLE INNER JOIN THEMATIQUE ON article.numArt = thematique.numArt'
                         <label for="numMotCle">
                             <h3 class="nom-form">Mots clées</h3>
                         </label>
-                        <input id="numMotCle" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="texte" name="numMotCle"> <!--numero du theme 4-->
+                        <input id="numMotCle" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="texte" name="numMotCle" required> <!--numero du theme 4-->
                     </div>
                 </div>
 

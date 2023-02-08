@@ -41,7 +41,7 @@ include '../../../header.php';
                     <label for="libStat">
                         <h3 class="nom-form">Nom du nouveau statut</h3>
                     </label>
-                    <input id="libStat" class="form-control" type="text" name="libStat">
+                    <input id="libStat" class="form-control" type="text" name="libStat" required>
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-success">Créer</button>

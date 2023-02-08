@@ -197,17 +197,24 @@ h3 .endbox {    margin-top: 0px;
     font-family: 'Verdana';
     font-size: 25px;
     color: white;
+    margin-bottom: 30px;
 }
 .contacter_b{
     padding-top: 20px;
     background-color: #6D071A;
-    height: 514px;
+    height: 594px;
     
 }
-.contact label{
+.contact label:not(.contact-top){
     margin-left: 5vw;
+    margin-top: 20px;
 }
-.contact input{
+.contact-top{
+    margin-left: 5vw;
+
+}
+.contact input[type=text]
+{
     margin-left :3vw;
     background-color: rgb(255, 255, 255);
     width: 70vw;
@@ -233,18 +240,19 @@ h3 .endbox {    margin-top: 0px;
 .poster{
     margin: 0px;
     margin-top: 20px;
-    background: none;
     background-color: #6D071A;
     font-family: 'Verdana';
     font-size: 25px;
-    color: white;
-    border-radius: 0.375rem;
+    border-radius: 27px;
     width: 11vw;
     height: 67px;
     position: relative;
-    left: auto;
     min-width: 135px ;
+    color: white;
+    left:calc(100% - 11vw);
+    border: none;
 }
+
 
 
 

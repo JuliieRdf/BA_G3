@@ -110,7 +110,7 @@ transform: translate(0px,-50px);">
                     </div>
 
                     <div class="share">
-                        <button><img src="images/share.webp" alt="">
+                        <button><img src="source/images/share.webp" alt="">
                             <p>Partagez</p>
                         </button>
                     </div>
@@ -129,7 +129,7 @@ transform: translate(0px,-50px);">
                     <h3 class="contact">CONTACTEZ NOUS</h3>
                     <form class="contacter">
                         <div class="contacter_b">
-                            <label for="nom">Nom:</label><br>
+                            <label for="nom" class="contact-top">Nom:</label><br>
                             <input type="text" id="text" name="text"><br>
                             <label for="prenom">Prénom:</label><br>
                             <input type="text" id="prenom" name="prenom"><br>

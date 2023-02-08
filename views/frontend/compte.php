@@ -14,9 +14,15 @@ include '../../header.php';
 </head>
 
 <body>
-    <h1> Compte de <?php
+    <h1> Compte de
+        <?php
         echo ($_SESSION["pseudo"]);
-        ?></h1>
+        ?>
+        </h1>
+    
+        <a class="btn btn-primary m-1" href="/api/security/deco.php" role="button">
+        Se déconnecter</a>
+
 </body>
 
 </html>
