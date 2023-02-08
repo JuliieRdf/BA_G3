@@ -55,7 +55,13 @@ transform: translate(0px,-50px);">
 
     </div>
 
+<section class="slide-mobile">
+<img src="https://thumbs.dreamstime.com/z/gar%C3%A7on-de-livraison-l-adolescence-pizza-faisant-un-geste-correct-107961743.jpg" alt="" class="bande-mobile">
+<h2>TITRE</h2>
+<p>DATE</p>
+<p>Temps</p>
 
+</section>
 
     <div class="container-fluid" style="height:100px; padding-left:  4.16vw; padding-right: 4.16vw;">
         <div class="row gx-12 ">
