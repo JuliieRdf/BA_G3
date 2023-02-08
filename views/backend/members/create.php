@@ -23,6 +23,8 @@ include '../../../header.php';
                     <input id="passMemb" class="form-control" type="text" name="passMemb">
                     <label for="eMailMemb">E-mail</label>
                     <input id="eMailMemb" class="form-control" type="text" name="eMailMemb">
+                    <label for="numStat">numStat</label>
+                    <input id="numStat" class="form-control" type="text" name="numStat">
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-success">Créer</button>

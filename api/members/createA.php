@@ -12,6 +12,7 @@ $nomMemb = sql_escape($_POST['nomMemb']);
 $pseudoMemb = sql_escape($_POST['pseudoMemb']);
 $passMemb = sql_escape($_POST['passMemb']);
 $eMailMemb = sql_escape($_POST['eMailMemb']);
+$numStat = sql_escape($_POST['numStat']);
 
 
 
@@ -19,6 +20,6 @@ $eMailMemb = sql_escape($_POST['eMailMemb']);
 
 
 sql_insert('MEMBRE','prenomMemb,nomMemb,pseudoMemb,passMemb,eMailMemb,numStat',
-                "'$prenomMemb','$nomMemb','$pseudoMemb','$passMemb','$eMailMemb','3'");
+                "'$prenomMemb','$nomMemb','$pseudoMemb','$passMemb','$eMailMemb','$numStat'");
 
 header('Location: ../../views/backend/members/list');
