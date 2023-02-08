@@ -19,7 +19,6 @@
  <p> <?php echo ($pageart[0]["libConclArt"]); ?></p>
   
 
-
  </body>
  <?php include '../../../footer.php'; ?>
  </html>
