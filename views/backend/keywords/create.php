@@ -42,7 +42,9 @@ include '../../../header.php';
             <!--Form to create a new status-->
             <form action="<?php echo ROOT_URL . '/api/status/create.php' ?>" method="post">
                 <div class="form-group " style="padding-top: 10%;">
-                    <label for="libNotCle"><h3 class="nom-form">Nom du mot clé</h3></label>
+                    <label for="libNotCle">
+                        <h3 class="nom-form">Nom du mot clé</h3>
+                    </label>
                     <input id="libMotCle" class="form-control" type="text" name="libMotCle">
                 </div>
                 <div class="form-group mt-2">
@@ -78,4 +80,4 @@ include '../../../header.php';
 
 
 
-<?php include '../../../footer.php'; ?>
+    <?php include '../../../footer.php'; ?>

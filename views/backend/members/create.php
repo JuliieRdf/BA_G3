@@ -67,4 +67,3 @@ include '../../../header.php';
 
 
 
-    <!--Bootstrap form to create a new status-->
