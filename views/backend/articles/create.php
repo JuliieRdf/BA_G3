@@ -45,73 +45,73 @@ include '../../../header.php';
                 <div class="form-group">
                     <div class="mb-5">
                         <label for="libTitrArt">
-                            <h1 class="nom-form">Titre</h1>
+                            <h3 class="nom-form">Titre</h3>
                         </label>
                         <input id="libTitrArt" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libTitrArt" minlength="1" maxlength="100">
                     </div>
                     <div class="mb-5">
                         <label for="dtCreArt">
-                            <h1 class="nom-form">Date</h1>
+                            <h3 class="nom-form">Date</h3>
                         </label>
                         <input id="dtCreArt" class="form-control form-control-lg" type="date" name="dtCreArt"> <!--DATE-->
                     </div>
                     <div class="mb-5">
                         <label for="libChapoArt">
-                            <h1 class="nom-form">Chapeau</h1>
+                            <h3 class="nom-form">Chapeau</31>
                         </label>
                         <textarea cols="30" rows="4" id="libChapoArt" class="form-control" placeholder="Maximum 500 caractères..." type="text" name="libChapoArt" minlength="1" maxlength="500"></textarea> <!--Chapo 500-->
                     </div>
                     <div class="mb-5">
                         <label for="parag1Art">
-                            <h1 class="nom-form">Accroche</h1>
+                            <h3 class="nom-form">Accroche</h3>
                         </label>
                         <input id="libAccrochArt" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libAccrochArt" minlength="1" maxlength="100"> <!--Acroche 100-->
                     </div>
                     <div class="mb-5">
                         <label for="libSsTitr1Art">
-                            <h1 class="nom-form">Paragraphe 1</h1>
+                            <h3 class="nom-form">Paragraphe 1</h3>
                         </label>
                         <textarea cols="30" rows="9" id="parag1Art" class="form-control" placeholder="Maximum 1200 caractères..." type="text" name="parag1Art" minlength="1" maxlength="1200"></textarea> <!--paragraphe 1200-->
                     </div>
                     <div class="mb-5">
                         <label for="parag2Art">
-                            <h1 class="nom-form">Sous Titre 1</h1>
+                            <h3 class="nom-form">Sous Titre 1</h3>
                         </label>
                         <input id="libSsTitr1Art" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libSsTitr1Art" minlength="1" maxlength="100"> <!--sous-titre 100-->
                     </div>
                     <div class="mb-5">
                         <label for="libSsTitr2Art">
-                            <h1 class="nom-form">Paragraphe 2</h1>
+                            <h3 class="nom-form">Paragraphe 2</h3>
                         </label>
                         <textarea cols="30" rows="9" placeholder="Maximum 1200 caractères..." id="parag2Art" class="form-control" type="text" name="parag2Art" minlength="1" maxlength="1200"></textarea> <!--paragraphe 2 1200-->
                     </div>
                     <div class="mb-5">
                         <label for="parag3Art">
-                            <h1 class="nom-form">Sous Titre 2</h1>
+                            <h3 class="nom-form">Sous Titre 2</h3>
                         </label>
                         <input id="libSsTitr2Art" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libSsTitr2Art" minlength="1" maxlength="100"> <!--sous-titre 2 100-->
                     </div>
                     <div class="mb-5">
                         <label for="libConclArt">
-                            <h1 class="nom-form">Paragraphe 3</h1>
+                            <h3 class="nom-form">Paragraphe 3</h3>
                         </label>
                         <textarea cols="30" rows="9" id="parag3Art" class="form-control" placeholder="Maximum 1200 caractères..." type="text" name="parag3Art" minlength="1" maxlength="1200"></textarea> <!--paragraphe 3 1200-->
                     </div>
                     <div class="mb-5">
                         <label for="exampleDataList">
-                            <h1 class="nom-form">Conclusion</h1>
+                            <h3 class="nom-form">Conclusion</h3>
                         </label>
                         <textarea cols="30" rows="4" id="libConclArt" class="form-control" placeholder="Maximum 500 caractères..." type="text" name="libConclArt" minlength="1" maxlength="500"></textarea> <!--conclusion 500-->
                     </div>
                     <div class="mb-5">
                         <label for="urlPhotArt">
-                            <h1 class="nom-form">Photo</h1>
+                            <h3 class="nom-form">Photo</h3>
                         </label>
                         <input id="urlPhotArt" class="form-control form-control-lg" type="file" accept="image/*" name="urlPhotArt"> <!--Image-->
                     </div>
                     <div class="mb-5">
                         <label for="thematique">
-                            <h1 class="nom-form">Choix de la thématique</h1>
+                            <h3 class="nom-form">Choix de la thématique</h3>
                         </label>
                         <select class="form-control form-control-lg" name="pets" id="thematique">
                             <option value="">Choisissez une thématique</option>
@@ -123,7 +123,7 @@ include '../../../header.php';
                     </div>
                     <div class="mb-5">
                         <label for="numThem">
-                            <h1 class="nom-form">Mots clées</h1>
+                            <h3 class="nom-form">Mots clées</h3>
                         </label>
                         <input id="numThem" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="texte" name="numThem"> <!--numero du theme 4-->
                     </div>
