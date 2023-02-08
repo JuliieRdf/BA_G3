@@ -153,7 +153,7 @@ font-size: 42px;
 }
 .home-article{
     
-    height: 238px;
+    height: auto;
 }
 .article-txt :not(.endbox){
     margin: 0;
@@ -247,3 +247,85 @@ h3 .endbox {    margin-top: 0px;
 }
 
 
+
+
+
+@media (max-width:960px) { 
+
+    .colonne-d *{
+        width: calc(100%);;
+    }
+    .colonne-d {
+        width: calc(100% - 60px);;
+        margin-left: 30px;
+    }
+    .inscription-i{
+        height: 80px;
+        font-size: 18px;
+    }
+    .inscription-form{
+        margin-left: 0;
+    }
+.share{
+    display: none;
+
+}
+.admin-article{
+    width: 100%;
+}
+.admin-article button{
+    width: 70%;
+}
+.colonne-d h3{
+    font-size: 26px;
+}
+.colonne-d h4{
+    font-size: 25px;
+}
+.colonne-d p{
+    font-size: 18px;
+}
+    .article-pres{
+    flex-direction: row-reverse;
+    margin: 0;
+    width: calc(100% - 60px);;
+
+    justify-content: space-between;
+    margin-left: 30px;
+    }
+    .home-article{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .home-article p{
+        font-size: 18px;
+        
+        }
+        .home-article h3{
+            display: none;
+        
+        }
+        .home-article h2{
+            font-size: 24px; 
+        }
+        .article-pres img{
+            width: 145px;
+            height: 92px;
+        }
+        .article-img{
+            width: 145px;
+            height: 92px;
+            margin: 0px;
+        }
+        .article-txt{
+            height: 92px;
+            margin-bottom: 50px;
+        }
+        
+.endbox{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+  }

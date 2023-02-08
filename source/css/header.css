@@ -42,7 +42,7 @@ header h3 {
 }
 
 
-@media(max-width:666px) {
+@media(max-width:960px) {
 
     .logo {
 
@@ -50,3 +50,7 @@ header h3 {
     }
 
 }
+
+
+
+
