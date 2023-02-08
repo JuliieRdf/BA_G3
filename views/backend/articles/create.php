@@ -1,6 +1,3 @@
-<head>
-    <link rel="stylesheet" href="../../../source/css/crearticle.css">
-</head>
 <?php
 include '../../../header.php';
 ?>
@@ -35,7 +32,7 @@ include '../../../header.php';
 
     <div class="row">
         <div class="col-1">
-            <div class="deco-hori-g"></div>
+            <div class="deco-hori-g-create"></div>
         </div>
         <div class="col-1">
         </div>
@@ -137,7 +134,7 @@ include '../../../header.php';
         </div>
         <div class="col-1"></div>
         <div class="col-1 ">
-            <div class="deco-hori-d"></div>
+            <div class="deco-hori-d-create"></div>
         </div>
     </div>
 
