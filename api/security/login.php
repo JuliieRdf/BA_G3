@@ -18,8 +18,9 @@ $passCheck = sql_select('MEMBRE','*',"passMemb='$passMemb'");
 $pseudoCheck = sql_select('MEMBRE','*',"pseudoMemb='$pseudoMemb'");
 
 
-if ($passCheck == $pseudoCheck){
-    header('Location: ../../index.php');
+if ($passCheck == $pseudoCheck){  
+    $_SESSION["pseudo"] = $pseudoMemb;
+    header('Location: ../../views/frontend/compte.php');
 } else {
     header('Location: ../../views/backend/security/login.php');
 }

@@ -52,6 +52,7 @@ $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
 
 
 
+
 ?>
 
 <!--Bootstrap form to deletew status-->

@@ -21,3 +21,6 @@ require_once ROOT . '/functions/global.inc.php';
 
 //load security
 require_once ROOT . '/config/security.php';
+
+//lancer la session
+session_start();
