@@ -8,7 +8,7 @@ include '../../header.php';
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Tableau de contrôle de BlogArt</h1>
+                <h2 class="tableau">Tableau de contrôle de BlogArt</h2>
                 <p>Bienvenue sur le tableau de bord!</p>
             </div>
             <div class="col-md-12">
@@ -23,9 +23,9 @@ include '../../header.php';
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Statuts</td>
+                            <td><p>Statuts</p></td>
                             <td>
-                                <a href="/views/backend/status/list.php" class="btn btn-primary">Modifer</a>
+                                <a href="/views/backend/status/list.php" class="btn btn-primary">Modifier</a>
 
                             </td>
                             <td>
@@ -33,49 +33,49 @@ include '../../header.php';
                             </td>
                         </tr>
                         <tr>
-                            <td>Membres</td>
+                            <td><p>Membres</p></td>
                             <td>
-                                <a href="/views/backend/members/list.php" class="btn btn-primary">Modifer</a>
+                                <a href="/views/backend/members/list.php" class="btn btn-primary">Modifier</a>
 
                             </td>
-                            <td>Gérer les membres inscrits</td>
+                            <td><p>Gérer les membres inscrits</p></td>
                         </tr>
                         <tr>
-                            <td>Articles</td>
+                            <td><p>Articles</p></td>
                             <td>
-                                <a href="/views/backend/articles/list.php" class="btn btn-primary">Modifer</a>
+                                <a href="/views/backend/articles/list.php" class="btn btn-primary">Modifier</a>
                             </td>
-                            <td>Vue globale des articles</td>
+                            <td><p>Vue globale des articles</p></td>
                         </tr>
                         <tr>
-                            <td>Thématiques</td>
+                            <td><p>Thématiques</p></td>
                             <td>
-                                <a href="/views/backend/thematiques/list.php" class="btn btn-primary">Modifer</a>
+                                <a href="/views/backend/thematiques/list.php" class="btn btn-primary">Modifier</a>
 
                             </td>
-                            <td> Gestion des thématiques du blog</td>
+                            <td><p>Gestion des thématiques du blog</p></td>
                         </tr>
                         <tr>
-                            <td>Commentaires</td>
+                            <td><p>Commentaires</p></td>
                             <td>
-                                <a href="/views/backend/comments/list.php" class="btn btn-primary">Modifer</a>
+                                <a href="/views/backend/comments/list.php" class="btn btn-primary">Modifier</a>
 
                             </td>
-                            <td>Gestion des commentaires</td>
+                            <td><p>Gestion des commentaires</p></td>
                         </tr>
                         <tr>
-                            <td>Likes</td>
+                            <td><p>Likes</p></td>
                             <td>
-                                <a href="/views/backend/likes/list.php" class="btn btn-primary">Modifer</a>
+                                <a href="/views/backend/likes/list.php" class="btn btn-primary">Modifier</a>
                             </td>
-                            <td>Gestion des likes</td>
+                            <td><p>Gestion des likes</p></td>
                         </tr>
                         <tr>
-                            <td>Mots clés</td>
+                            <td><p>Mots clés</p></td>
                             <td>
-                                <a href="/views/backend/keywords/list.php" class="btn btn-primary">Modifer</a>
+                                <a href="/views/backend/keywords/list.php" class="btn btn-primary">Modifier</a>
                             </td>
-                            <td>Gestion des mots clés</td>
+                            <td><p>Gestion des mots clés</p></td>
                         </tr>
                     </tbody>
             </div>

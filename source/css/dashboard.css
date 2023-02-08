@@ -1,25 +1,34 @@
-.btn-primary{
-    background-color:#074d6d;
-    border-color:#074d6d;
+.btn-primary {
+    background-color: #074d6d;
+    border-color: #074d6d;
     color: white;
+    font-family: 'Verdana';
 }
-.btn-primary:hover{
-    background-color:#074d6d;
-    border-color:#074d6d;
+
+.btn-primary:hover {
+    background-color: #074d6d;
+    border-color: #074d6d;
     opacity: 90%;
 }
-.btn-danger { background-color:#6D071A;
-border-color:#6D071A;}
+
+.btn-danger {
+    background-color: #6D071A;
+    border-color: #6D071A;
+    font-family: 'Verdana';
+}
 
 .btn-danger:hover {
-     background-color:#6D071A;
-    border-color:#6D071A;
-opacity:90%;}
+    background-color: #6D071A;
+    border-color: #6D071A;
+    opacity: 90%;
+}
 
 .btn-success {
     background-color: #076d27;
     border-color: #076d27;
+    font-family: 'Verdana';
 }
+
 .btn-success:hover {
     background-color: #076d27;
     border-color: #076d27;

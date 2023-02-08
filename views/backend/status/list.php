@@ -15,7 +15,7 @@ $statuses = sql_select("STATUT", "*");
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Statuts</h1>
+            <h2>Statuts</h2>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -27,8 +27,8 @@ $statuses = sql_select("STATUT", "*");
                 <tbody>
                     <?php foreach ($statuses as $status) { ?>
                         <tr>
-                            <td><?php echo $status['numStat']; ?></td>
-                            <td><?php echo $status['libStat']; ?></td>
+                            <td><p><?php echo $status['numStat']; ?></p></td>
+                            <td><p><?php echo $status['libStat']; ?></p></td>
                             <td>
                                 <a href="edit.php?numStat=<?php echo $status['numStat']; ?>" class="btn btn-primary">Modifier</a>
                                 <a href="delete.php?numStat=<?php echo $status['numStat']; ?>" class="btn btn-danger">Supprimer</a>
