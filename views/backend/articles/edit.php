@@ -101,7 +101,7 @@ $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
 
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-success">Confirmer</button>
+                    <button type="submit" class="btn btn-success">Valider</button>
                 </div>
             </form>
         </div>

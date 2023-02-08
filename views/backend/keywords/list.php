@@ -15,12 +15,12 @@ $MotCles = sql_select("MOTCLE", "*");
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>MotCle</h1>
+            <h1>Liste des mots clés</h1>
             <table class="table table-striped">
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Name</th>
+                        <th>Noms</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -30,16 +30,14 @@ $MotCles = sql_select("MOTCLE", "*");
                             <td><?php echo $MotCle['numMotCle']; ?></td>
                             <td><?php echo $MotCle['libMotCle']; ?></td>
                             <td>
-                                <a href="edit.php?numMotCle=<?php echo $MotCle['numMotCle']; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numMotCle=<?php echo $MotCle['numMotCle']; ?>" class="btn btn-danger">Delete</a>
+                                <a href="edit.php?numMotCle=<?php echo $MotCle['numMotCle']; ?>" class="btn btn-primary">Modifier</a>
+                                <a href="delete.php?numMotCle=<?php echo $MotCle['numMotCle']; ?>" class="btn btn-danger">Supprimer</a>
                             </td>
                         </tr>
                     <?php } ?>
                 </tbody>
             </table>
-            <a href="create.php" class="btn btn-success">Create</a>
+            <a href="create.php" class="btn btn-success">Créer</a>
         </div>
     </div>
 
-<?php
-include '../../../footer.php'; // contains the footer

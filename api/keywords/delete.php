@@ -2,7 +2,7 @@
 
 require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
 
-$numMotCle = $_POST['numMotCle'];
+$numMotCle = sql_escape($_POST['numMotCle']);
 
 sql_delete('MOTCLE',"numMotCle = $numMotCle");
 

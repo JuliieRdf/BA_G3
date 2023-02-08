@@ -85,13 +85,34 @@
     }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px
+.slide-mobile{
+    display: none;
+  }
+
+
+  @media (max-width:960px) { 
+    .slideshow{
+      display: none;
     }
-}
-
-
-
-
+    .bande-mobile{
+      display: block;
+      height: 158px;
+      width: 100vw;
+    }
+    .slide-mobile {
+      display: block;
+      margin-bottom: 50px;
+    }
+    .slide-mobile h2{
+  font-size: 24px;
+  font-family: 'Inter';
+  text-align: center;
+    }
+    .slide-mobile p{
+      margin-left: 60px;
+      font-size: 18px;
+      font-family: 'Inter';
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
