@@ -31,3 +31,28 @@ config > fichier de config, pas toucher à part config
 class > sans doute pas le temps d'y toucher
 
 api > recois les infos et renvoie si c'est besoin, lien entre fonction et html
+
+
+
+POUR L'AUTHENTIFICATION/
+
+HACHER POUR EMPECHER 
+SISIE MDP
+HASHERCOMPARER AVEC CELUI DE LA BASE DE DONNE
+
+password_hash()
+password verify -> 
+
+sql select récupère hach
+verify mdr avec sql verify return un true je crois
+
+
+créer une session, stocker coter serveur
+$_SESSION, permet de savoir si utilisateur bien connecter
+commencer una session start
+$_session = id user -> truc du genre
+
+sql_escape, remplace ta variable dans le insert, s'assure que si caractère spécial, met un antislash et s'assure 
+que tout soit bien une valeur et pas des
+Des que c'est une saisie utilisateur faire un escape
+

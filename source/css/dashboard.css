@@ -3,6 +3,9 @@
     border-color:#074d6d;
     color: white;
 }
+.bs-btn-hover-bg{
+    background-color: blueviolet;
+}
 .btn-danger { background-color:#6D071A;
 border-color:#6D071A;}
 

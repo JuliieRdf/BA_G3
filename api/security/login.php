@@ -19,7 +19,7 @@ $pseudoCheck = sql_select('MEMBRE','*',"pseudoMemb='$pseudoMemb'");
 
 
 if ($passCheck == $pseudoCheck){
-    echo ('Bonjour ' . $pseudoMemb);
+    header('Location: ../../index.php');
 } else {
-    echo ('error');
+    header('Location: ../../views/backend/security/login.php');
 }
