@@ -54,8 +54,8 @@ transform: translate(0px,-50px);">
     </div>
 
     <section class="slide-mobile">
-<img src="https://thumbs.dreamstime.com/z/gar%C3%A7on-de-livraison-l-adolescence-pizza-faisant-un-geste-correct-107961743.jpg" alt="" class="bande-mobile">
-<h2>TITRE</h2>
+<img src="<?php echo ($lastP1); ?>" alt="" class="bande-mobile">
+<h2><?php echo ($lastT1); ?></h2>
 <p>DATE</p>
 
 </section>
