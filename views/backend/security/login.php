@@ -51,13 +51,15 @@ include '../../../header.php';
                     </div>
                 </div>
 
-                <div class="checkbox mb-3">
-                    <label>
-                        <input type="checkbox" value="remember-me"> Se souvenir de moi
-                    </label>
-                </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-success">Se connecter </button>
+
+                </div>
+            </form>
+
+            <form action="/views/backend/security/signup.php" method="post">
+
+                    
                     <div class="form-group mt-2">
                         <button type="submit" class="btn btn-success">Créer un compte</button>
                     </div>
