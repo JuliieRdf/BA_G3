@@ -11,7 +11,7 @@
 }
 .collone-d{
     
-    font-family: 'Inter';
+    font-family: 'Verdana';
 }
 .inscription{
     height: 268px;
@@ -26,7 +26,7 @@
     margin-top: 20px;
     background: none;
     background-color: #6D071A;
-    font-family: 'Inter';
+    font-family: 'Verdana';
     font-size: 25px;
     color: white;
     border-radius: 0.375rem;
@@ -35,7 +35,7 @@
     position: relative;
     left: auto;
     min-width: 135px ;
-    font-family: 'Inter';
+    font-family: 'Verdana';
     border: none;
 }
 .inscription-txt{
@@ -45,7 +45,7 @@
         border-width: 3px;
         width: 21.6vw;
         
-        font-family: 'Inter';
+        font-family: 'Verdana';
         font-size: 25px;
         height: 30px;
         
@@ -179,7 +179,7 @@ h3 .endbox {    margin-top: 0px;
 
 
 .contact{
-    font-family: 'Inter';
+    font-family: 'Verdana';
     width: 100%;
 }
 .contact h3{
@@ -194,7 +194,7 @@ h3 .endbox {    margin-top: 0px;
 }
 
 .contacter{
-    font-family: 'Inter';
+    font-family: 'Verdana';
     font-size: 25px;
     color: white;
     margin-bottom: 30px;
@@ -219,7 +219,7 @@ h3 .endbox {    margin-top: 0px;
     background-color: rgb(255, 255, 255);
     width: 70vw;
     
-    font-family: 'Inter';
+    font-family: 'Verdana';
     font-size: 25px;
     height: 30px;
     border: none;
@@ -230,7 +230,7 @@ h3 .endbox {    margin-top: 0px;
     margin-left: 3vw;
     background-color: rgb(255, 255, 255);
     width: 70vw;
-    font-family: 'Inter';
+    font-family: 'Verdana';
     font-size: 25px;
     height:185px ;
     border: none;
@@ -241,7 +241,7 @@ h3 .endbox {    margin-top: 0px;
     margin: 0px;
     margin-top: 20px;
     background-color: #6D071A;
-    font-family: 'Inter';
+    font-family: 'Verdana';
     font-size: 25px;
     border-radius: 27px;
     width: 11vw;
