@@ -5,13 +5,13 @@ sql_connect();
 //print_r(curl("https://reqres.in/api/users", "POST", '{"name": "morpheus", "job": "leader"}'));
 
 
-$lastT1 = sql_select("Article","*",null, "dtCreArt DESC", 3)[0]['libTitrArt'];
-$lastT2 = sql_select("Article","*",null, "dtCreArt DESC", 3)[1]['libTitrArt'];
-$lastT3 = sql_select("Article","*",null, "dtCreArt DESC", 3)[2]['libTitrArt'];
+$lastT1 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[0]['libTitrArt'];
+$lastT2 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[1]['libTitrArt'];
+$lastT3 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[2]['libTitrArt'];
 
-$lastP1 = sql_select("Article","*",null, "dtCreArt DESC", 3)[0]['urlPhotArt'];
-$lastP2 = sql_select("Article","*",null, "dtCreArt DESC", 3)[1]['urlPhotArt'];
-$lastP3 = sql_select("Article","*",null, "dtCreArt DESC", 3)[2]['urlPhotArt'];
+$lastP1 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[0]['urlPhotArt'];
+$lastP2 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[1]['urlPhotArt'];
+$lastP3 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[2]['urlPhotArt'];
 
 
 
@@ -27,20 +27,20 @@ $lastP3 = sql_select("Article","*",null, "dtCreArt DESC", 3)[2]['urlPhotArt'];
 
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img class="slide" src="<?php echo($lastP1); ?>" style="width:100% ; height: 714px;">
-                <div class="text"><?php echo($lastT1); ?></div>
+                <img class="slide" src="<?php echo ($lastP1); ?>" style="width:100% ; height: 714px;">
+                <div class="text"><?php echo ($lastT1); ?></div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img class="slide" src="<?php echo($lastP2); ?>" style="width:100%; height: 714px;">
-                <div class="text"><?php echo($lastT2); ?></div>
+                <img class="slide" src="<?php echo ($lastP2); ?>" style="width:100%; height: 714px;">
+                <div class="text"><?php echo ($lastT2); ?></div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img class="slide" src="<?php echo($lastP3); ?>" style="width:100%; height: 714px;">
-                <div class="text"><?php echo($lastT3); ?></div>
+                <img class="slide" src="<?php echo ($lastP3); ?>" style="width:100%; height: 714px;">
+                <div class="text"><?php echo ($lastT3); ?></div>
             </div>
 
         </div>
@@ -62,7 +62,7 @@ transform: translate(0px,-50px);">
             <div class="col-lg-1 ">
                 <section class="home-article">
                     <div class="article-pres">
-                        <div class="article-img"><img src="https://static.tvtropes.org/pmwiki/pub/images/splattim.jpg" alt="" ></div>
+                        <div class="article-img"><img src="https://static.tvtropes.org/pmwiki/pub/images/splattim.jpg" alt=""></div>
                         <div class="article-txt">
                             <a href="">
                                 <h2 class="endbox">SPLAT! SPLAT!</h2>
@@ -74,8 +74,7 @@ transform: translate(0px,-50px);">
                         </div>
                     </div>
                     <div class="article-pres">
-                        <div class="article-img"><img src="https://media.sketchfab.com/models/ae6b150e50044939aa6a6a6960b1c21d/thumbnails/76febbac5382473393cb5e61c43281cf/77b717aa515d452ea374dd108a230a0c.jpeg"
-                            alt="" ></div>
+                        <div class="article-img"><img src="https://media.sketchfab.com/models/ae6b150e50044939aa6a6a6960b1c21d/thumbnails/76febbac5382473393cb5e61c43281cf/77b717aa515d452ea374dd108a230a0c.jpeg" alt=""></div>
                         <div class="article-txt">
                             <a href="">
 
@@ -89,7 +88,7 @@ transform: translate(0px,-50px);">
                         </div>
                     </div>
                     <div class="article-pres">
-                        <div class="article-img"><img src="https://i1.sndcdn.com/artworks-000207092706-ze3fa8-t500x500.jpg" alt="" ></div>
+                        <div class="article-img"><img src="https://i1.sndcdn.com/artworks-000207092706-ze3fa8-t500x500.jpg" alt=""></div>
                         <div class="article-txt">
                             <a href="">
 
@@ -176,69 +175,60 @@ transform: translate(0px,-50px);">
         </div>
         <div class="row gx-12 ">
             <div class="col-lg-12" style="display:flex; justify-content: center; margin-top: 50px;">
-            <section class="contact">
-                <h3 class="contact">CONTACTEZ NOUS</h3>
-                <form class="contacter">
-                    <div class="contacter_b">
-                    <label for="nom" >Nom:</label><br>
-                    <input type="text" id="text" name="text"><br>
-                    <label for="prenom">Prénom:</label><br>
-                    <input type="text" id="prenom" name="prenom"><br>
-                    <label for="email">E-Mail:</label><br>
-                    <input type="text" id="email" name="email"><br>
-                    <label for="message">Message:</label><br>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-                <input type="submit" value="Poster" class="poster">
-                  </form>
-                
-            
+                <section class="contact">
+                    <h3 class="contact">CONTACTEZ NOUS</h3>
+                    <form class="contacter">
+                        <div class="contacter_b">
+                            <label for="nom">Nom:</label><br>
+                            <input type="text" id="text" name="text"><br>
+                            <label for="prenom">Prénom:</label><br>
+                            <input type="text" id="prenom" name="prenom"><br>
+                            <label for="email">E-Mail:</label><br>
+                            <input type="text" id="email" name="email"><br>
+                            <label for="message">Message:</label><br>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                        <input type="submit" value="Poster" class="poster">
+                    </form>
+
+
                 </section>
-        
+
             </div>
-            </div>
+        </div>
 
 
-    <?php require_once 'footer.php'; ?>
-    
+        <?php require_once 'footer.php'; ?>
+
     </div>
 
 
 
 
     <script>
-        
         function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 1500); // Change image every 2 seconds
-}
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 1500); // Change image every 2 seconds
+        }
         let slideIndex = 0;
         showSlides();
-
     </script>
 
 </body>
 
 
 </html>
-
-
-
-
-
-
-

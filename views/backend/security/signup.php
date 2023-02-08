@@ -1,3 +1,7 @@
+
+
+
+
 <?php
 include '../../../header.php';
 
@@ -7,11 +11,11 @@ include '../../../header.php';
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Créer un membre</h1>
+            <h1>S'inscrire</h1>
         </div>
         <div class="col-md-12">
             <!--Form to create a new status-->
-            <form action="<?php echo ROOT_URL . '/api/members/createA.php' ?>" method="post">
+            <form action="/api/members/createM.php" method="post">
                 <div class="form-group">
                     <label for="prenomMemb">Prénom</label>
                     <input id="prenomMemb" class="form-control" type="text" name="prenomMemb">
