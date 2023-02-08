@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="../../../source/css/statucreate.css">
+    <link rel="stylesheet" href="../../../source/css/crearticle.css">
 </head>
 <?php
 include '../../../header.php';
