@@ -50,7 +50,7 @@ include '../../../header.php';
                         <label for="eMailMemb">
                             <h3 class="nom-form">E-mail</h3>
                         </label>
-                        <input id="eMailMemb" class="form-control" type="email" pattern=".+@globex\.com" name="eMailMemb" required>
+                        <input id="eMailMemb" class="form-control" type="email" name="eMailMemb" required>
                         <label for="passMemb">
                             <h3 class="nom-form">Mot de passe</h3>
                         </label>
