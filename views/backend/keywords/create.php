@@ -1,6 +1,3 @@
-<head>
-    <link rel="stylesheet" href="../../../source/css/formgeneral.css">
-</head>
 <?php
 include '../../../header.php';
 

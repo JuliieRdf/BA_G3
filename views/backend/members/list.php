@@ -8,7 +8,14 @@ include '../../../header.php'; // contains the header and call to config.php
 } */
 
 //Load all statuses
-$members = sql_select("MEMBRE", "*");
+$noms = sql_select('membre INNER JOIN statut ON membre.numStat = statut.numStat');
+
+
+
+
+
+$members = sql_select(" membre","*");
+//sql_select('STATUT INNER JOIN MEMBRE ON statut.numStat = membre.numStat');
 ?>
 
 <!-- Bootstrap default layout to display all status in foreach -->
@@ -32,7 +39,13 @@ $members = sql_select("MEMBRE", "*");
                             <td><?php echo $member['numMemb']; ?></td>
                             <td><?php echo $member['prenomMemb']; ?></td>
                             <td><?php echo $member['eMailMemb']; ?></td>
-                            <td><?php echo $member['numStat']; ?></td>
+                          
+
+                            <td><?php  
+                            foreach ($noms as $nom){
+                                echo($nom['libStat']);
+                            }
+                            ?></td>
                             <td>
                                 <a href="edit.php?numMemb=<?php echo $member['numMemb']; ?>" class="btn btn-primary">Modifier</a>
                                 <a href="delete.php?numMemb=<?php echo $member['numMemb']; ?>" class="btn btn-danger">Supprimer</a>

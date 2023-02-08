@@ -1,26 +1,13 @@
 <?php
 
-/*
-numArt		
-libTitrArt	
-libChapoArt
-libAccrochArt	
-parag1Art
-libSsTitr1Art
-parag2Art	
-libSsTitr2Art	
-parag3Art	
-libConclArt	
-urlPhotArt	
-numThem
-*/
+
 
 // print_r($_POST); voir si on a bien reçu l'infos
 
 require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
 
 
-
+$dtCreArt = sql_escape($_POST['dtCreArt']);
 $libTitrArt = sql_escape($_POST['libTitrArt']);
 $libChapoArt = sql_escape($_POST['libChapoArt']);
 $libAccrochArt = sql_escape($_POST['libAccrochArt']);
@@ -32,13 +19,14 @@ $parag3Art = sql_escape($_POST['parag3Art']);
 $libConclArt = sql_escape($_POST['libConclArt']);
 $urlPhotArt = sql_escape($_POST['urlPhotArt']);
 $numThem = sql_escape($_POST['numThem']);
+$numMotCle = sql_escape($_POST['numMotCle']);
 
 
 
 
 
 
-sql_insert('ARTICLE','libTitrArt,libChapoArt,libAccrochArt,parag1Art,libSsTitr1Art,parag2Art,libSsTitr2Art,parag3Art,libConclArt,urlPhotArt,numThem',
-                "'$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
+sql_insert('ARTICLE','dtCreArt,libTitrArt,libChapoArt,libAccrochArt,parag1Art,libSsTitr1Art,parag2Art,libSsTitr2Art,parag3Art,libConclArt,urlPhotArt,numThem,numMotCle',
+                "'$dtCreArt','$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem','$numMotCle'");
 
 header('Location: ../../views/backend/articles/list.php');
