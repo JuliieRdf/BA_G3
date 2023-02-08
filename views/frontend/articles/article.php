@@ -17,7 +17,7 @@
  <h2><?php echo ($pageart["libSsTitr2Art"]); ?></h2>
  <p> <?php echo ($pageart["parag3Art"]); ?></p>
  <p> <?php echo ($pageart["libConclArt"]); ?></p>
-
+  
 
 
  </body>
