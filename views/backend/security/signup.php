@@ -10,10 +10,12 @@ include '../../../header.php';
 <!--Bootstrap form to create a new status-->
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-5"></div>
+        <div class="col-md-3">
             <h1>S'inscrire</h1>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-5"> </div>
+        <div class="col-md-3">
             <!--Form to create a new status-->
             <form action="/api/members/createM.php" method="post">
                 <div class="form-group">

@@ -17,7 +17,7 @@
         </div>
         <div class="col-3">
             <li class="nav-item">
-                <a class="nav-link" href="crearticle.php" style="padding-top: 3vh; color: #ffffff; text-decoration:underline;"><h3 class="typo-footer">Mentions Légals</h3></a>
+                <a class="nav-link" href="views/frontend/articles/article1.php" style="padding-top: 3vh; color: #ffffff; text-decoration:underline;"><h3 class="typo-footer">Mention Légal</h3></a>
             </li>
         </div>
     </ul>
