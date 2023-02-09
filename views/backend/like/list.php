@@ -33,7 +33,7 @@ $likes = sql_select('likeArt', "*");
                         <tr>
                             <td><?php echo $like['numMemb']; ?></td>
                             <td><?php echo $like['numArt']; ?></td>
-                            <td><?php echo $likes['likeA']; ?></td>
+                            <td><?php echo $like['likeA']; ?></td>
                           
 
                             <!-- <td><p><?php  

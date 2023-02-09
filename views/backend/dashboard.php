@@ -92,7 +92,7 @@ include '../../header.php';
                                 <p>Likes</p>
                             </td>
                             <td>
-                                <a href="/views/backend/likes/list.php" class="btn btn-primary">Modifier</a>
+                                <a href="/views/backend/like/list.php" class="btn btn-primary">Modifier</a>
                             </td>
                             <td>
                                 <p class="tableau">Gestion des likes</p>
