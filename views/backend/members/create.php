@@ -72,7 +72,6 @@ $statut = sql_select("statut", "*");
                                 <option value="<?php echo $stat['numStat']; ?>">
                                 <?php echo $stat['libStat'];
                             } ?></option>
-
                         </select>
             </form>
         </div>
@@ -86,8 +85,6 @@ $statut = sql_select("statut", "*");
     <div class="col-1 ">
         <div class="deco-hori-d-member"></div>
     </div>
-
-
     </div>
 
     <div class="row">
@@ -104,3 +101,4 @@ $statut = sql_select("statut", "*");
         </div>
     </div>
     <?php include '../../../footer.php'; ?>
+</body>

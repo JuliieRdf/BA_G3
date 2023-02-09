@@ -54,7 +54,7 @@ include '../../../header.php';
             <div class="deco-hori-d"></div>
         </div>
     </div>
-    </div>
+
 
 
 
@@ -78,3 +78,4 @@ include '../../../header.php';
 
 
     <?php include '../../../footer.php'; ?>
+</body>
