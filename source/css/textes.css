@@ -3,9 +3,21 @@ p {
     font-size: 25px;
 }
 
+@media(max-width:1024px) {
+    p {
+        font-size: 20px;
+    }
+}
+
 p.tableau {
     font-family: 'Karla';
     font-size: 20px;
+}
+
+@media(max-width:1024px) {
+    p.tablau {
+        font-size: 18px;
+    }
 }
 
 .date {
@@ -18,10 +30,22 @@ h1 {
     font-size: 76px;
 }
 
+@media(max-width:1024px) {
+    h1 {
+        font-size: 24px;
+    }
+}
+
 h2.tableau {
     text-align: center;
     font-family: 'Verdana';
     font-size: 46px;
+}
+
+@media(max-width:1024px) {
+    h2.tableau {
+        font-size: 22px;
+    }
 }
 
 h3 {
@@ -30,9 +54,21 @@ h3 {
     font-size: 25px;
 }
 
-h3.nom-form {
+@media(max-width:1024px) {
+    h3 {
+        font-size: 20px;
+    }
+}
+
+.nom-form {
     font-family: 'karla';
     font-size: 25px;
+}
+
+@media(max-width:1024px) {
+    .nom-form {
+        font-size: 20px;
+    }
 }
 
 h4 {
@@ -40,11 +76,67 @@ h4 {
     font-size: 20px;
 }
 
+@media(max-width:1024px) {
+    h4 {
+        font-size: 18px;
+    }
+}
+
 label {
     font-family: 'karla';
     font-size: 25px;
 }
 
+@media(max-width:1024px) {
+    label {
+        font-size: 20px;
+    }
+}
+
 .row {
     margin-right: 0;
-} /* résoulu le problèe de la barre horizontale*/
+}
+
+/* résoulu le problèe de la barre horizontale*/
+
+@media(max-width:1024px) {
+    .col-4 {
+        display: none;
+    }
+}
+
+@media(max-width:1024px) {
+    .col-3 {
+        display: none;
+    }
+}
+@media(max-width:1024px) {
+    .chapo {
+        width: 100%;
+    }
+}
+
+@media(max-width:720px) {
+    .col-md-0 {
+        flex: 0 0 auto;
+        width: 0%;
+    }
+    .col-md-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%;
+    }
+    .col-md-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%;
+    }
+    .col-md-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .container-fluid.gutter {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100vw - 40px);
+    }
+}

@@ -1,19 +1,19 @@
-
-
-.contact{
+.contact {
     font-family: 'Verdana';
-    
+
     width: 76vw;
     margin-left: auto;
     margin-right: auto;
 }
-.contact h3{
-    
+
+.contact h3 {
+
     font-size: 26px;
-    
+
     text-align: center;
 }
-.poster{
+
+.poster {
     margin: 0px;
     margin-top: 20px;
     background-color: #6D071A;
@@ -23,68 +23,80 @@
     width: 11vw;
     height: 67px;
     position: relative;
-    min-width: 135px ;
+    min-width: 135px;
     color: white;
-    left:calc(100% - 11vw);
+    left: calc(100% - 11vw);
     border: none;
 }
 
+@media (max-width:1024px) {
+
+    .poster {
+        position: sticky;}
 
 
-.contacter{
-    font-family: 'Verdana';
-    font-size: 25px;
-    color: white;
-    margin-bottom: 30px;
-}
-.contacter_b{
-    padding-top: 20px;
-    background-color: #6D071A;
-    height: 594px;
-    
-}
-.contact label:not(.contact-top){
-    margin-left: 5vw;
-    margin-top: 20px;
-}
-.contact-top{
-    margin-left: 5vw;
+    }
 
-}
-.contact input[type=text]
-{
-    margin-left :3vw;
-    background-color: rgb(255, 255, 255);
-    width: 70vw;
-    
-    font-family: 'Verdana';
-    font-size: 25px;
-    height: 30px;
-    border: none;
-    margin-bottom: 10px;
-    
-}
-.contact input[type=email]
-{
-    margin-left :3vw;
-    background-color: rgb(255, 255, 255);
-    width: 70vw;
-    
-    font-family: 'Verdana';
-    font-size: 25px;
-    height: 30px;
-    border: none;
-    margin-bottom: 10px;
-    
-}
-.contact textarea{
-    margin-left: 3vw;
-    background-color: rgb(255, 255, 255);
-    width: 70vw;
-    font-family: 'Verdana';
-    font-size: 25px;
-    height:185px ;
-    border: none;
-    
-    
-}
+
+
+    .contacter {
+        font-family: 'Verdana';
+        font-size: 25px;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    .contacter_b {
+        padding-top: 20px;
+        background-color: #6D071A;
+        height: 594px;
+
+    }
+
+    .contact label:not(.contact-top) {
+        margin-left: 5vw;
+        margin-top: 20px;
+    }
+
+    .contact-top {
+        margin-left: 5vw;
+
+    }
+
+    .contact input[type=text] {
+        margin-left: 3vw;
+        background-color: rgb(255, 255, 255);
+        width: 70vw;
+
+        font-family: 'Verdana';
+        font-size: 25px;
+        height: 30px;
+        border: none;
+        margin-bottom: 10px;
+
+    }
+
+    .contact input[type=email] {
+        margin-left: 3vw;
+        background-color: rgb(255, 255, 255);
+        width: 70vw;
+
+        font-family: 'Verdana';
+        font-size: 25px;
+        height: 30px;
+        border: none;
+        margin-bottom: 10px;
+
+    }
+
+    .contact textarea {
+        margin-left: 3vw;
+        background-color: rgb(255, 255, 255);
+        width: 70vw;
+        font-family: 'Verdana';
+        font-size: 25px;
+        height: 185px;
+        border: none;
+
+
+    }
