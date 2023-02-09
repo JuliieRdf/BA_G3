@@ -58,10 +58,9 @@ $statut = sql_select("statut", "*");
                     </label>
                     <input id="eMailMemb" class="form-control" type="email" name="eMailMemb" required>
                     <label for="passMemb">
-                        <h3 class="nom-form">Mot de passe <i style="font-size: 20px;">(il faut minimum une majuscule, une minuscule, un chiffre, un charactère special et plus de 6 charactères) </i</h3>
+                        <h3 class="nom-form">Mot de passe <i style="font-size: 20px;">(il faut minimum une majuscule, une minuscule, un chiffre, un charactère special et plus de 6 charactères) </i> </h3>
                     </label>
                     <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="6" maxlength="30" required pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}">
-
                     <div class="mb-5">
                         <label for="numStat">
                             <h3 class="nom-form">Choix du statut</h3>
@@ -73,21 +72,20 @@ $statut = sql_select("statut", "*");
                                 <?php echo $stat['libStat'];
                             } ?></option>
                         </select>
-
-                        <div class="form-group mt-2">
-        <button type="submit" class="btn btn-success">Créer</button>
-    </div>
+                    </div>
+                    <div class="form-group mt-2">
+                        <button type="submit" class="btn btn-success">Créer</button>
+                    </div>
+                    </div>
             </form>
         </div>
-    </div>
-    
+        <div class="col-1"></div>
+        <div class="col-1">
+            <div class="deco-hori-d-member"></div>
+        </div>
     </div>
 
-    <div class="col-1"></div>
-    <div class="col-1 ">
-        <div class="deco-hori-d-member"></div>
-    </div>
-    </div>
+
 
     <div class="row">
         <div class="col-3">
