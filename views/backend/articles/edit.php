@@ -151,4 +151,7 @@ $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
             </div>
         </div>
     </div>
+
+
+
 </body>
