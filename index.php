@@ -121,7 +121,7 @@ transform: translate(0px,-50px);">
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 1500); // Change image every 2 seconds
+            setTimeout(showSlides, 10000); // Change image every 2 seconds
         }
         let slideIndex = 0;
         showSlides();

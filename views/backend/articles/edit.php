@@ -85,7 +85,7 @@ foreach ($libMotCles as $libMotCle) {
          echo $libMotCle['libMotCle']; 
          } 
 
-exit();
+
 
 ?>
 
