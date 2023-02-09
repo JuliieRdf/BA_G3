@@ -53,6 +53,14 @@
 .colonne-d{
     display: flex;
     flex-direction: column;
+    width: 21.8vw;
+}
+.share button{
+    margin-left: 2vw;
+}
+.actus h3,.actus p,.actus h4{
+width: 80%;
+margin: auto;
 }
 .actus{
     height: 714px;
@@ -116,11 +124,18 @@
     color: white;
     height: 111px;
 }
+.inscription, .actus, .share ,.admin-article{
+    width: 110%;
+    border: solid #6D071A; 
+    border-width: 3px;
+}
 
 
-
-
-
+.article-pres{
+    padding-bottom: 40px;
+    border-bottom:solid #6D071A;
+    border-width: 3px;
+}
 
 
 
@@ -337,3 +352,7 @@ h3 .endbox {    margin-top: 0px;
 }
 
   }
+
+.article-txt{
+    width: 50vw;
+}
