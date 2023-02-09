@@ -76,7 +76,7 @@
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: 1
     }
 
     to {
