@@ -2,6 +2,8 @@
 <?php
 include '../../../header.php';
 
+$comments = sql_select("COMMENT", "*");
+
 ?>
 <body>
 

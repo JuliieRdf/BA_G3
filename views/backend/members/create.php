@@ -1,5 +1,7 @@
 <?php
 include '../../../header.php';
+
+$Membres = sql_select("MEMBRE","*");
 ?>
 
 <body>
@@ -61,9 +63,12 @@ include '../../../header.php';
                                 <h3 class="nom-form">Choix du statut</h3>
                             </label>
                             <select class="form-control form-control-lg" name="numStat" id="numStat" required>
-                                <option value="1">Administrateur</option>
+                                <?php foreach ($Membres as $Membre){ ?>
+                                <option value="<?php echo $Membre['numStat']; ?>"> <?php
+                                echo $Membre['numStat'];} ?></option>
+                                <!-- <option value="">Administrateur</option>
                                 <option value="2">Modérateur</option>
-                                <option value="3">Membre</option>
+                                <option value="3">Membre</option> -->
                             </select>
                         </div>
                         </div>
