@@ -1,0 +1,55 @@
+.container-fluid.gutter{
+    margin-left: 60px;
+    margin-right: 60px;
+    width: calc(100vw - 120px);
+}
+
+.paragraphe{
+    font-size: 25px;
+    margin-bottom: 112px;
+}
+
+.titre-a{
+    font-size: 76px;
+    text-align: center;
+    color: black;
+    width: 67.7vw;
+    margin-bottom: 77px;
+}
+
+.article-img{
+    margin-bottom: 112px;
+}
+
+.sous-titre{
+    font-size: 42px;
+    margin-bottom: 85px;
+}
+
+.conc{
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.share2{
+    height: 146px;
+    width:  21.6vw;
+    display: flex;
+    margin-bottom: 58px;
+
+}
+.share2 p{
+    margin: auto;
+}
+.share2 button{
+    display: flex;
+    background: none;
+    border: none;
+    font-size: 42px;
+    
+}
+.share2 img{
+    
+    margin: auto;
+    margin-right: 20px;
+}
