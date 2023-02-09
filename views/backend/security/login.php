@@ -61,7 +61,7 @@ include '../../../header.php';
 
                     
                     <div class="form-group mt-2">
-                        <button type="submit" class="btn btn-success">Créer un compte</button>
+                        <a href="../security/signup.php" type="submit" class="btn btn-primary">Créer un compte</a>
                     </div>
                 </div>
             </form>
@@ -86,4 +86,3 @@ include '../../../header.php';
             </div>
         </div>
     </div>
-    <?php include '../../../footer.php'; ?>

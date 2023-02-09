@@ -19,9 +19,22 @@ include '../../header.php';
         echo ($_SESSION["pseudo"]);
         ?>
         </h1>
-    
+
+        <p> <?php
+        echo ($_SESSION["password"]);
+        echo ($_SESSION["prenom"]);
+        echo ($_SESSION["email"]);
+        echo ($_SESSION["nom"]);
+        echo ($_SESSION["id"]);
+        ?></p>
+
+        <a class="btn btn-primary m-1" href="/views/backend/members/edit.php" role="button">
+        Changer les infos
+        </a>
+
         <a class="btn btn-primary m-1" href="/api/security/deco.php" role="button">
-        Se déconnecter</a>
+        Se déconnecter
+        </a>
 
 </body>
 

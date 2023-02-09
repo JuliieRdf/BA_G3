@@ -7,12 +7,12 @@
         </div>
         <div class="col-3">
             <li class="nav-item">
-                <a class="nav-link" href="#" style="padding-top: 3vh; color: #ffffff; text-decoration:underline;"><h3 class="typo-footer">S'inscrire</h3></a>
+                <a class="nav-link" href="views/backend/security/signup.php" style="padding-top: 3vh; color: #ffffff; text-decoration:underline;"><h3 class="typo-footer">S'inscrire</h3></a>
             </li>
         </div>
         <div class="col-3">
             <li class="nav-item">
-                <a class="nav-link" href="#" style="padding-top: 3vh; color: #ffffff; text-decoration:underline;"><h3 class="typo-footer">Se connecter</h3></a>
+                <a class="nav-link" href="views/backend/security/login.php" style="padding-top: 3vh; color: #ffffff; text-decoration:underline;"><h3 class="typo-footer">Se connecter</h3></a>
             </li>
         </div>
         <div class="col-3">

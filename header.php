@@ -73,6 +73,7 @@ require_once 'config.php';
           <a class="btn btn-primary m-1" href="          
           <?php 
           if(isset($_SESSION["pseudo"])){
+
             echo ('/views/frontend/compte.php');
           } else {
             echo ('/views/backend/security/login.php');

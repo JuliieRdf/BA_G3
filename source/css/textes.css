@@ -2,7 +2,8 @@ p {
     font-family: 'Karla';
     font-size: 25px;
 }
-p.tableau{ 
+
+p.tableau {
     font-family: 'Karla';
     font-size: 20px;
 }
@@ -43,3 +44,7 @@ label {
     font-family: 'karla';
     font-size: 25px;
 }
+
+.row {
+    margin-right: 0;
+} /* résoulu le problèe de la barre horizontale*/
