@@ -133,6 +133,10 @@ $Mots = sql_select('MOTCLE','*');
                             <h3 class="nom-form">Photo</h3>
                         </label>
                         <input id="urlPhotArt" class="form-control form-control-lg" type="file" accept="image/*" name="urlPhotArt" required> <!--Image-->
+                        <form action="" method="post" enctype='multipart/form-data'>
+                            <input type="file" name="file" id="file">
+                            <input type="submit" value="Upload">
+                        </form>
                     </div>
                     <div class="mb-5">
                         <label for="numThem">
