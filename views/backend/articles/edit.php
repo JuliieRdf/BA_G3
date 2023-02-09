@@ -74,7 +74,20 @@ $libMotCles = sql_select('MotClearticle INNER JOIN MotCle ON motClearticle.nummo
 ?>
 
 
+<?php 
 
+foreach ($MotCleArt as $MotCle) {
+    
+        print_r($MotCle['numMotCle']); };
+
+foreach ($libMotCles as $libMotCle) {
+            
+         echo $libMotCle['libMotCle']; 
+         } 
+
+
+
+?>
 
 <body>
 
@@ -114,62 +127,61 @@ $libMotCles = sql_select('MotClearticle INNER JOIN MotCle ON motClearticle.nummo
                 <div class="form-group">
                     <input id="numArt" class="form-control" style="display: none;" type="text" name="numArt" value="<?php echo ($numArt); ?>" readonly="readonly">
 
-                    <label for="libTitrArt">Changer <?php echo $libTitrArt ?> ?</label>
-                    <input id="libTitrArt" class="form-control" type="text" value=<?php echo $libTitrArt ?> name="libTitrArt">
-
-                    <label for="libChapoArt">Changer <?php echo $libChapoArt ?> ?</label>
-                    <input id="libChapoArt" class="form-control" type="text" value=<?php echo $libChapoArt ?> name="libChapoArt">
-
-                    <label for="libAccrochArt">Changer <?php echo $libAccrochArt ?> ?</label>
-                    <input id="libAccrochArt" class="form-control" type="text" value=<?php echo $libAccrochArt ?> name="libAccrochArt">
-
-                    <label for="parag1Art">Changer <?php echo $parag1Art ?> ?</label>
-                    <input id="parag1Art" class="form-control" type="text" value=<?php echo $parag1Art ?> name="parag1Art">
-
-                    <label for="libSsTitr1Art">Changer <?php echo $libSsTitr1Art ?> ?</label>
-                    <input id="libSsTitr1Art" class="form-control" type="text" value=<?php echo $libSsTitr1Art ?> name="libSsTitr1Art">
-
-                    <label for="parag2Art">Changer <?php echo $parag2Art ?> ?</label>
-                    <input id="parag2Art" class="form-control" type="text" value=<?php echo $parag2Art ?> name="parag2Art">
-
-                    <label for="libSsTitr2Art">Changer <?php echo $libSsTitr2Art ?> ?</label>
-                    <input id="libSsTitr2Art" class="form-control" type="text" value=<?php echo $libSsTitr2Art ?> name="libSsTitr2Art">
-
-                    <label for="parag3Art">Changer <?php echo $parag3Art ?> ?</label>
-                    <input id="parag3Art" class="form-control" type="text" value=<?php echo $parag3Art ?> name="parag3Art">
-
-                    <label for="libConclArt">Changer <?php echo $libConclArt ?> ?</label>
-                    <input id="libConclArt" class="form-control" type="text" value=<?php echo $libConclArt ?> name="libConclArt">
-
-                    <label for="urlPhotArt">Changer <?php echo $urlPhotArt ?> ?</label>
-                    <input id="urlPhotArt" class="form-control" type="text" value=<?php echo $urlPhotArt ?> name="urlPhotArt">
-
-                    <label for="numThem">Changer <?php echo $numThem ?> ?</label>
-                    <input id="numThem" class="form-control" type="text" value=<?php echo $numThem ?> name="numThem">
+                    <div class="mb-5">
+                        <label for="libTitrArt">
+                            <h3 class="nom-form">Titre</h3>
+                        </label>
+                        <input id="libTitrArt" class="form-control form-control-lg" type="text" name="libTitrArt" minlength="1" maxlength="100" required <?php echo $libTitrArt ?>>
+                    </div>
 
                     <div class="mb-5">
-                        <fieldset>
-                            <legend>
-                                <h3 class="nom-form">Choix des mots clés</h3>
-                            </legend>
+                        <label for="libChapoArt">
+                            <h3 class="nom-form">Chapeau</h3>
+                        </label>
+                        <textarea cols="30" rows="4" id="libChapoArt" class="form-control" type="text" name="libChapoArt" minlength="1" maxlength="500" required><?php echo $libChapoArt ?></textarea> <!--Chapo 500-->
+                    </div>
 
+                    <div class="mb-5">
+                        <label for="libAccrochArt">
+                            <h3 class="nom-form">Accroche</h3>
+                        </label>
+                        <input id="libAccrochArt" class="form-control form-control-lg" type="text" name="libAccrochArt" minlength="1" maxlength="100" required <?php echo $libAccrochArt ?>> <!--Acroche 100-->
+                    </div>
+
+
+                    <div class="mb-5">
+                        <label for="parag1Art">
+                            <h3 class="nom-form">Paragraphe 1</h3>
+                        </label>
+                        <textarea cols="30" rows="9" id="parag1Art" class="form-control" type="text" name="parag1Art" minlength="1100" maxlength="3000" required><?php echo $parag1Art ?></textarea> <!--paragraphe 1200-->
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="libSsTitr1Art">
+                            <h3 class="nom-form">Sous Titre 1</h3>
+                        </label>
+                        <input id="libSsTitr1Art" class="form-control form-control-lg" type="text" name="libSsTitr1Art" minlength="1" maxlength="100" required <?php echo $libSsTitr1Art ?>> <!--sous-titre 100-->
+                    </div>
+
+                    <div class="mb-5">
+                    <fieldset>
+                            <legend><h3 class="nom-form">Choix des mots clés</h3></legend>
+                            
                             <div>
+                                
+                            <?php foreach ($MotCleArt as $MotCle) {
+                            ?>
 
-                                <?php foreach ($MotCleArt as $MotCle) {
-                                ?>
-
-
-                                    <label for="<?php
-                                                $MotCle['numMotCle'];
-                                            };
-                                                ?>"><input type="checkbox" name="" id="" required checked>
-                                        <h3 class="nom-form">
-                                            <?php foreach ($libMotCles as $libMotCle) {
-                                                echo $libMotCle['libMotCle'];
-                                            } ?></h3><br>
-                                    </label>
-                            </div>
-
+                            
+                                <label for="<?php
+                                 $MotCle['numMotCle']; };
+                                 ?>"><input type="checkbox" name="" id="" required checked><h3 class="nom-form">
+                                    <?php foreach ($libMotCles as $libMotCle) {
+                                    
+                                 echo $libMotCle['libMotCle']; 
+                                 } ?></h3><br></label>    
+                                  </div>
+                           
                         </fieldset>
                     </div>
 
