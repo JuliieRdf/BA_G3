@@ -24,7 +24,7 @@ $libMotCle = sql_select("MOTCLE", "libMotCle", "numMotCle = $numMotCle")[0]['lib
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Supprimer un mot clé</h1>
+            <h2 class="tableau">Supprimer un mot clé</h2>
         </div>
         <div class="col-md-12">
             <!--Form to delete status-->

@@ -15,20 +15,20 @@ $thematiques = sql_select("THEMATIQUE", "*");
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>Thématiques</h2>
+            <h2 class="tableau">Thématiques</h2>
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Noms</th>
-                        <th>Actions</th>
+                        <th><h3>Id</h3></th>
+                        <th><h3>Noms</h3></th>
+                        <th><h3>Actions</h3></th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php foreach ($thematiques as $thematique) { ?>
                         <tr>
-                            <td><p><?php echo $thematique['numThem']; ?></p></td>
-                            <td><p><?php echo $thematique['libThem']; ?></p></td>
+                            <td><p class="tableau"><?php echo $thematique['numThem']; ?></p></td>
+                            <td><p class="tableau"><?php echo $thematique['libThem']; ?></p></td>
                             <td>
                                 <a href="edit.php?numThem=<?php echo $thematique['numThem']; ?>" class="btn btn-primary">Modifier</a>
                                 <a href="delete.php?numThem=<?php echo $thematique['numThem']; ?>" class="btn btn-danger">Supprimer</a>

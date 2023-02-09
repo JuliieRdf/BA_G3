@@ -15,20 +15,30 @@ $statuses = sql_select("STATUT", "*");
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>Statuts</h2>
+            <h2 class="tableau">Statuts</h2>
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Noms</th>
-                        <th>Actions</th>
+                        <th>
+                            <h3>Id</h3>
+                        </th>
+                        <th>
+                            <h3>Noms</h3>
+                        </th>
+                        <th>
+                            <h3>Actions</h3>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php foreach ($statuses as $status) { ?>
                         <tr>
-                            <td><p><?php echo $status['numStat']; ?></p></td>
-                            <td><p><?php echo $status['libStat']; ?></p></td>
+                            <td>
+                                <p class="tableau"><?php echo $status['numStat']; ?></p>
+                            </td>
+                            <td>
+                                <p class="tableau"><?php echo $status['libStat']; ?></p>
+                            </td>
                             <td>
                                 <a href="edit.php?numStat=<?php echo $status['numStat']; ?>" class="btn btn-primary">Modifier</a>
                                 <a href="delete.php?numStat=<?php echo $status['numStat']; ?>" class="btn btn-danger">Supprimer</a>
@@ -40,4 +50,3 @@ $statuses = sql_select("STATUT", "*");
             <a href="create.php" class="btn btn-success">Créer</a>
         </div>
     </div>
-

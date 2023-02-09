@@ -24,7 +24,7 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Modifier un statut</h1>
+            <h2 class="tableau">Modifier un statut</h2>
         </div>
         <div class="col-md-12">
             <!--Form to delete status-->

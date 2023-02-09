@@ -19,37 +19,67 @@ $members = sql_select('membre INNER JOIN statut ON membre.numStat = statut.numSt
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>Liste des membres</h2>
+            <h2 class="tableau">Liste des membres</h2>
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Prenom</th>
-                        <th>Nom</th>
-                        <th>pseudo</th>
-                        <th>Mot de Passe</th>
-                        <th>Date</th>
-                        <th>E-mail</th>
-                        <th>Statut</th>
-                        <th>Actions</th>
+                        <th>
+                            <h3>Id </h3>
+                        </th>
+                        <th>
+                            <h3>Prenom</h3>
+                        </th>
+                        <th>
+                            <h3>Nom</h3>
+                        </th>
+                        <th>
+                            <h3>Pseudo</h3>
+                        </th>
+                        <th>
+                            <h3>E-Mail</h3>
+                        </th>
+                        <th>
+                            <h3>Date</h3>
+                        </th>
+                        <th>
+                            <h3>Statut</h3>
+                        </th>
+                        <th>
+                            <h3>Actions</h3>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php foreach ($members as $member) { ?>
                         <tr>
-                            <td><?php echo $member['numMemb']; ?></td>
-                            <td><?php echo $member['prenomMemb']; ?></td>
-                            <td><?php echo $member['nomMemb']; ?></td>
-                            <td><?php echo $member['pseudoMemb']; ?></td>
-                            <td><?php echo $member['passMemb']; ?></td>
-                            <td><?php echo $member['eMailMemb']; ?></td>
-                            <td><?php echo $member['dtCreaMemb']; ?></td>
-                            <td><?php echo $member['eMailMemb']; ?></td>
-                          
+                            <td>
+                                <p class="tableau"><?php echo $member['numMemb']; ?></p>
+                            </td>
+                            <td>
+                                <p class="tableau"><?php echo $member['prenomMemb']; ?></p>
+                            </td>
+                            <td>
+                                <p class="tableau"><?php echo $member['nomMemb']; ?></p>
+                            </td>
+                            <td>
+                                <p class="tableau"><?php echo $member['pseudoMemb']; ?></p>
+                            </td>
+                            <td>
+                                <p class="tableau"><?php echo $member['eMailMemb']; ?></p>
+                            </td>
+                            <td>
+                                <p class="tableau"><?php echo $member['dtCreaMemb']; ?></p>
+                            </td>
+                            <td>
+                                <p class="tableau"><?php echo $member['eMailMemb']; ?></p>
+                            </td>
 
-                            <td><p><?php  
-                                echo($member['libStat']);
-                            ?></p></td>
+
+                            <td>
+                                <p class="tableau"><?php
+                                    echo ($member['libStat']);
+                                    ?></p>
+                            </td>
                             <td>
                                 <a href="edit.php?numMemb=<?php echo $member['numMemb']; ?>" class="btn btn-primary">Modifier</a>
                                 <a href="delete.php?numMemb=<?php echo $member['numMemb']; ?>" class="btn btn-danger">Supprimer</a>
@@ -61,4 +91,3 @@ $members = sql_select('membre INNER JOIN statut ON membre.numStat = statut.numSt
             <a href="create.php" class="btn btn-success">Créer</a>
         </div>
     </div>
-
