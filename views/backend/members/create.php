@@ -1,7 +1,10 @@
 <?php
 include '../../../header.php';
 
-$Membres = sql_select("MEMBRE","*");
+$membre = sql_select("MEMBRE INNER JOIN statut ON membre.numStat = statut.numStat","*");
+
+
+
 ?>
 
 <body>
@@ -63,12 +66,10 @@ $Membres = sql_select("MEMBRE","*");
                                 <h3 class="nom-form">Choix du statut</h3>
                             </label>
                             <select class="form-control form-control-lg" name="numStat" id="numStat" required>
-                                <?php foreach ($Membres as $Membre){ ?>
-                                <option value="<?php echo $Membre['numStat']; ?>"> <?php
-                                echo $Membre['numStat'];} ?></option>
-                                <!-- <option value="">Administrateur</option>
-                                <option value="2">Modérateur</option>
-                                <option value="3">Membre</option> -->
+                                <?php ?>
+                                <option value="<?php echo $membre['numStat']; ?>"> 
+                                <?php echo $membre['libStat']; ?></option>
+
                             </select>
                         </div>
                         </div>
