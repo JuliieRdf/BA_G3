@@ -153,11 +153,11 @@ $files = sql_select('Article', '*');
                                 <h3 class="nom-form">Choix des mots clés</h3>
                             </legend><?php foreach ($Mots as $Mot) { ?>
                                 <div>
-                                    <label for="<?php echo $Mot['numMotCle']; ?>"><input type="checkbox" name="" id="" required checked>
-                                        <h3 class="nom-form"><?php echo $Mot['libMotCle'];
-                                                            } ?></h3>
+                                    <label for="<?php echo $Mot['numMotCle']; ?>"> <input style="margin-right: 10px;" type="checkbox" name="" id="" ><?php echo $Mot['libMotCle'];  ?> 
+
                                     </label>
                                 </div>
+                            <?php } ?>
                         </fieldset>
 
 
