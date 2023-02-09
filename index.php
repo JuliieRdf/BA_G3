@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require_once 'header.php';
 
@@ -79,7 +79,7 @@ transform: translate(0px,-50px);">
                                 <a href="views/frontend/articles/article.php?numArt=<?php echo $article['numArt']; ?>">
                                     <h2 class="endbox"><?php echo $article['libTitrArt']; ?></h2>
                                 </a>
-                                <h3>
+                                <h3 class="theme">
                                     <?php echo $article['libThem'];
 
 
