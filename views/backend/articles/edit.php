@@ -59,7 +59,7 @@ $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Modifer un article</h1>
+            <h2 class="tableau">Modifer un article</h2>
         </div>
         <div class="col-md-12">
             <!--Form to delete status-->

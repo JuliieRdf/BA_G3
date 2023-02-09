@@ -1,7 +1,10 @@
 <?php
 include '../../../header.php';
 ?>
-<head>  <link rel="stylesheet" href="/source/css/textes.css"> </head>
+
+<head>
+    <link rel="stylesheet" href="/source/css/textes.css">
+</head>
 
 <body>
 
@@ -28,16 +31,16 @@ include '../../../header.php';
         </div>
     </div>
 
-<?php
-// sql_select('ARTICLE INNER JOIN MOTCLEARTICLE ON article.numArt = motclearticle.numArt');
-// sql_select('MOTCLE INNER JOIN MOTCLEARTICLE ON article.numMotCle = motclearticle.libMotCle');
+    <?php
+    // sql_select('ARTICLE INNER JOIN MOTCLEARTICLE ON article.numArt = motclearticle.numArt');
+    // sql_select('MOTCLE INNER JOIN MOTCLEARTICLE ON article.numMotCle = motclearticle.libMotCle');
 
 
 
-// sql_select('ARTICLE INNER JOIN THEMATIQUE ON article.numArt = thematique.numArt');
+    // sql_select('ARTICLE INNER JOIN THEMATIQUE ON article.numArt = thematique.numArt');
 
 
-?>
+    ?>
 
 
     <!--Bootstrap form to create a new status-->
@@ -65,7 +68,6 @@ include '../../../header.php';
                         </label>
                         <input id="libTitrArt" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libTitrArt" minlength="1" maxlength="100" required>
                     </div>
-                   
                     <div class="mb-5">
                         <label for="libChapoArt">
                             <h3 class="nom-form">Chapeau</31>

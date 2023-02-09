@@ -2,25 +2,44 @@ p {
     font-family: 'Karla';
     font-size: 25px;
 }
+p.tableau{ 
+    font-family: 'Karla';
+    font-size: 20px;
+}
+
 .date {
     text-align: right;
 }
+
 h1 {
     text-align: center;
     font-family: 'Verdana';
     font-size: 76px;
 }
 
-h3.nom-form{
-    font-family: 'karla';
-    font-size: 25px;
-}
-label{
-    font-family: 'karla';
-    font-size: 25px;
-}
-h2.tableau{
+h2.tableau {
     text-align: center;
     font-family: 'Verdana';
     font-size: 46px;
+}
+
+h3 {
+    font-family: 'karla';
+    font-weight: bold;
+    font-size: 25px;
+}
+
+h3.nom-form {
+    font-family: 'karla';
+    font-size: 25px;
+}
+
+h4 {
+    font-family: 'Karla';
+    font-size: 20px;
+}
+
+label {
+    font-family: 'karla';
+    font-size: 25px;
 }

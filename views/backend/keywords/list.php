@@ -15,13 +15,13 @@ $MotCles = sql_select("MOTCLE", "*");
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h2>Liste des mots clés</h2>
+            <h2 class="tableau">Liste des mots clés</h2>
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Noms</th>
-                        <th>Actions</th>
+                        <th><h3>Id</h3></th>
+                        <th><h3>Noms</h3></th>
+                        <th><h3>Actions</h3></th>
                     </tr>
                 </thead>
                 <tbody>

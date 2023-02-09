@@ -170,6 +170,10 @@ h2 .endbox{
     margin-bottom: 25px;
     color:#6D071A;
 }
+.bs-link:hover{
+
+    color: #6D071A;
+}
 
 h3 .endbox {    margin-top: 0px;
     margin-bottom: 25px;
