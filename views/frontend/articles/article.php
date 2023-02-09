@@ -9,13 +9,9 @@
 <p class="date"><?php echo ($pageart[0]["dtCreArt"]); ?></p>
 <div class="gutter container-fluid">
   <div class="row">
-  <div class="col-12">
+  <div class="col-9">
  <h1 class="titre-a"> <?php echo ($pageart[0]["libTitrArt"]); ?></h1>
-</div>
- </div>
-<div class="row">
-  
-<div class="col-1">
+ <div class="col-1">
 </div>
 <div class="col-7">
  <p class="chapo"> <?php echo ($pageart[0]["libChapoArt"]); ?></p>
@@ -24,17 +20,28 @@
  <p class="paragraphe" ><?php echo ($pageart[0]["parag1Art"]); ?></p>
  
  </div>
- <div class="col-4"></div>
- 
- </div>
- <div class="row">
  <div class="col-9">
  <h2 class="sous-titre"><?php echo ($pageart[0]["libSsTitr1Art"]); ?></h2>
  <p class="paragraphe"> <?php echo ($pageart[0]["parag2Art"]); ?></p>
  </div>
+ <div class="col-4"></div>
+</div>
+<div class="col-3">
+  
+ <?php include '../colonne-d.php'; ?>
+</div>
+ </div>
+<div class="row">
+  
+
+ 
+ </div>
+ <div class="row">
+ 
  <div class="col-3"></div>
 
  </div>
+ <div class="deco2"><div class="cercle-d-left"></div><div class="cercle-d-right"></div></div>
  <div class="row">
  <div class="col-2"></div>
  <div class="col-8">
@@ -51,7 +58,7 @@
   </div>
   <div class="col-4"></div>
  </div>
-<div class="row">
+<div class="row ">
   <div class="col-9"></div>
   <div class="col-3">
   <div class="share2">
@@ -60,10 +67,12 @@
                         </button>
                     </div>
   </div>
+  <div class="deco"></div>
 </div>
 
  </div>
  <?php include '../contact.php'; ?>
+
  </body>
  <?php include '../../../footer.php'; ?>
  </html>
