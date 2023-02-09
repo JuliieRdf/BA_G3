@@ -21,8 +21,8 @@ include '../../../header.php';
         </div>
         <div class="col-3">
             <div class="deco-verti-haut">
-                <div class="cercle-d"></div>
             </div>
+            <div class="cercle-d"></div>
         </div>
     </div>
 
@@ -76,6 +76,7 @@ include '../../../header.php';
             <div class="deco-hori-d-signup"></div>
         </div>
     </div>
+
     <div class="row">
         <div class="col-3">
             <div class="deco-verti-bas">
@@ -89,3 +90,4 @@ include '../../../header.php';
             </div>
         </div>
     </div>
+</body>

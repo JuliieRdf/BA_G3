@@ -28,14 +28,14 @@
   
   
   .deco-verti-haut{
-  
       margin-top: 30% ;
       background-color: #6D071A;
       height: 3px;
+      
   }
-  
+
+
   .cercle-g{
-  
     margin-top: -6px;
     float: right;
       background-color: #6D071A;
@@ -84,7 +84,6 @@ padding-top: 3100px;
       padding-top: 750px;
   }
   .deco-hori-g-signup {
-
     border-right: 3px solid #6D071A;
     padding-top: 900px;
   }
@@ -107,11 +106,11 @@ padding-top: 3100px;
   .deco-hori-g-dash{
   
     border-right: 3px solid #6D071A;
-    padding-top: 500px;
+    padding-top: 550px;
 }
 .deco-hori-d-dash{
   border-left: 3px solid #6D071A;
-  padding-top: 500px;
+  padding-top: 550px;
 }
   .row{
     margin-right:0;
