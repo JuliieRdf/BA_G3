@@ -25,7 +25,6 @@ $libConclArt = sql_escape($_POST['libConclArt']);
 $urlPhotArt = sql_escape($_POST['urlPhotArt']);
 $numThem = sql_escape($_POST['numThem']);
 
-$numMotCle = sql_escape($_POST['numMotCle']);
 
 
 

@@ -126,10 +126,10 @@ include '../../../header.php';
                         </label>
                         <select class="form-control form-control-lg" name="numThem" id="numThem" required>
                             <option>Choisissez une thématique</option>
-                            <option value="1">L'événement</option>
-                            <option value="2">L'acteur-clé</option>
-                            <option value="3">Le mouvement émergeant</option>
-                            <option value="4">L'insolite / le clin d'oeil</option>
+                            <option value=<?php "numThem"?>><?php echo("numThem"[$libThem])?> </option> 
+                            <option value="numThem">L'acteur-clé</option>
+                            <option value="numThem">Le mouvement émergeant</option>
+                            <option value="numThem">L'insolite / le clin d'oeil</option>
                         </select>
                     </div>
                     <div class="mb-5">
