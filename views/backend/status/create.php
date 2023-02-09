@@ -26,7 +26,6 @@ include '../../../header.php';
             </div>
         </div>
     </div>
-    <!--Bootstrap form to create a new status-->
 
     <div class="row">
         <div class="col-1">
@@ -53,12 +52,6 @@ include '../../../header.php';
             <div class="deco-hori-d"></div>
         </div>
     </div>
-    </div>
-
-
-
-
-
 
     <div class="row">
         <div class="col-3">
@@ -73,4 +66,5 @@ include '../../../header.php';
             </div>
         </div>
     </div>
-    <?php include '../../../footer.php'; ?>
+
+</body>

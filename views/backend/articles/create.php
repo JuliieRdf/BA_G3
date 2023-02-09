@@ -81,7 +81,7 @@ $files =sql_select('Article','*');
                     </div>
                     <div class="mb-5">
                         <label for="parag1Art"><h3 class="nom-form">Paragraphe 1</h3></label>
-                        <textarea cols="30" rows="9" id="parag1Art" class="form-control" placeholder="Maximum 1200 caractères..." type="text" name="parag1Art" minlength="1" maxlength="1200" required></textarea> <!--paragraphe 1200-->
+                        <textarea cols="30" rows="9" id="parag1Art" class="form-control" placeholder="Minimum 1200 caractères..." type="text" name="parag1Art" minlength="1200" maxlength="3000" required></textarea> <!--paragraphe 1200-->
                     </div>
                     <div class="mb-5">
                         <label for="libSsTitr1Art"><h3 class="nom-form">Sous Titre 1</h3></label>
@@ -89,7 +89,7 @@ $files =sql_select('Article','*');
                     </div>
                     <div class="mb-5">
                         <label for="parag2Art"><h3 class="nom-form">Paragraphe 2</h3></label>
-                        <textarea cols="30" rows="9" placeholder="Maximum 1200 caractères..." id="parag2Art" class="form-control" type="text" name="parag2Art" minlength="1" maxlength="1200" required></textarea> <!--paragraphe 2 1200-->
+                        <textarea cols="30" rows="9" placeholder="Minimum 1200 caractères..." id="parag2Art" class="form-control" type="text" name="parag2Art" minlength="1200" maxlength="3000" required></textarea> <!--paragraphe 2 1200-->
                     </div>
                     <div class="mb-5">
                         <label for="libSsTitr2Art"><h3 class="nom-form">Sous Titre 2</h3></label>
@@ -97,11 +97,11 @@ $files =sql_select('Article','*');
                     </div>
                     <div class="mb-5">
                         <label for="parag3Art"><h3 class="nom-form">Paragraphe 3</h3></label>
-                        <textarea cols="30" rows="9" id="parag3Art" class="form-control" placeholder="Maximum 1200 caractères..." type="text" name="parag3Art" minlength="1" maxlength="1200" required></textarea> <!--paragraphe 3 1200-->
+                        <textarea cols="30" rows="9" id="parag3Art" class="form-control" placeholder="Minimum 1200 caractères..." type="text" name="parag3Art" minlength="1200" maxlength="3000" required></textarea> <!--paragraphe 3 1200-->
                     </div>
                     <div class="mb-5">
                         <label for="libConclArt"><h3 class="nom-form">Conclusion</h3></label>
-                        <textarea cols="30" rows="4" id="libConclArt" class="form-control" placeholder="Maximum 500 caractères..." type="text" name="libConclArt" minlength="1" maxlength="500" required></textarea> <!--conclusion 500-->
+                        <textarea cols="30" rows="4" id="libConclArt" class="form-control" placeholder="Minimum 500 caractères..." type="text" name="libConclArt" minlength="1" maxlength="500" required></textarea> <!--conclusion 500-->
                     </div>
                     <div class="mb-5">
                         <label for="urlPhotArt"><h3 class="nom-form">Photo</h3></label>
