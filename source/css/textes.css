@@ -59,7 +59,11 @@ h3 {
         font-size: 20px;
     }
 }
-
+a{
+    color: #6D071A;
+    text-decoration: #6D071A;
+    text-decoration: underline;
+}
 .nom-form {
     font-family: 'karla';
     font-size: 25px;
