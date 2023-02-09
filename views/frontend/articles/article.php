@@ -51,7 +51,7 @@
      <div class="col-7 col-md-12">
        <p class="conc"> <?php echo ($pageart[0]["libConclArt"]); ?></p>
      </div>
-     <div class="col-4 col-md-0"></div>
+     <div cFlass="col-4 col-md-0"></div>
    </div>
 
    <div class="row">
