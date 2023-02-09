@@ -30,5 +30,8 @@ if (password_verify($passMembPost, $password)) {
     
     header('Location: ../../views/frontend/compte.php');
 } else {
-    header('Location: ../../views/backend/security/login.php');
+    echo '<script> 
+    alert("Mauvais mot de passe ou Pseudonyme");
+    window.location.href="../../views/backend/security/login.php";
+     </script>';
 }
