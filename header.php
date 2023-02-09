@@ -70,18 +70,23 @@ require_once 'config.php';
             <input class="form-control me-2" type="search" placeholder="Recherche..." aria-label="Search">
             <button class="btn btn-outline-success me-2" type="submit" style="border-width : 0; "><img src="/source/images/search.png" alt="" alt="Bootstrap" width="36px" height="auto"></button>
           </form>
-          <a class="btn btn-primary m-1" href="/views/backend/dashboard.php" role="button" style=" border-width : 0; background-color: #6D071A; line-height: 29px; text-align: center; color: #FFFFFF;">Admin</a>
 
+          <?php if(isset($_SESSION["stat"]) == 1) {?>
+          <a class="btn btn-primary m-1" href="/views/backend/dashboard.php" role="button" style=" border-width : 0; background-color: #6D071A; line-height: 29px; text-align: center; color: #FFFFFF;">
+          Admin</a>
+
+          <?php } ?>
           <a class="btn btn-primary m-1" href="          
           <?php 
           if(isset($_SESSION["pseudo"])){
-
             echo ('/views/frontend/compte.php');
           } else {
             echo ('/views/backend/security/login.php');
           }
           ?>
           " role="button" style=" border-width : 0; background-color: #6D071A; color: #FFFFFF;">
+
+
 
           <?php 
           if(isset($_SESSION["pseudo"])){
@@ -90,16 +95,8 @@ require_once 'config.php';
             echo ('Se connecter');
           }
           ?>
-
-          <?php
-          if(isset( $_SESSION["stat"])){
-            echo( $_SESSION["stat"]);
-          ?>
-            <a class="btn btn-primary m-1" href="/views/backend/dashboard.php" role="button" style=" border-width : 0; background-color: #6D071A; line-height: 29px; text-align: center; color: #FFFFFF;">Admin</a>
-<?php
-          }else {
-            echo('Se connecter');
-          }?>
+            <a class="btn btn-primary m-1" href="/views/backend/dashboard.php" role="button" style=" border-width : 0; background-color: #6D071A; line-height: 29px; text-align: center; color: #FFFFFF;">
+            :(</a>
           
           </a>
           
