@@ -13,14 +13,14 @@ $pseudoMemb = sql_escape($_POST['pseudoMemb']);
 $passMemb = sql_escape($_POST['passMemb']);
 $passCMemb = password_hash($passMemb, PASSWORD_DEFAULT);
 $eMailMemb = sql_escape($_POST['eMailMemb']);
-$libStat = sql_escape($_POST['libStat']);
+$numStat = sql_escape($_POST['numStat']);
 
 
 
 
 
 
-sql_insert('MEMBRE','prenomMemb,nomMemb,pseudoMemb,passMemb,eMailMemb,numStat,libStat',
-                "'$prenomMemb','$nomMemb','$pseudoMemb','$passCMemb','$eMailMemb','$libStat");
+sql_insert('MEMBRE','prenomMemb,nomMemb,pseudoMemb,passMemb,eMailMemb,numStat',
+                "'$prenomMemb','$nomMemb','$pseudoMemb','$passCMemb','$eMailMemb','3'");
 
 header('Location: ../../views/backend/security/login.php');
