@@ -124,12 +124,12 @@ include '../../../header.php';
                         <label for="numThem">
                             <h3 class="nom-form">Choix de la thématique</h3>
                         </label>
-                        <select class="form-control form-control-lg" name="pets" id="numThem" required>
+                        <select class="form-control form-control-lg" name="numThem" id="numThem" required>
                             <option value="">Choisissez une thématique</option>
-                            <option value="dog">1</option>
-                            <option value="cat">L'acteur-clé</option>
-                            <option value="hamster">Le mouvement émergeant</option>
-                            <option value="parrot">L'insolite / le clin d'oeil</option>
+                            <option value="numThem">1</option>
+                            <option value="numThem">L'acteur-clé</option>
+                            <option value="numThem">Le mouvement émergeant</option>
+                            <option value="numThem">L'insolite / le clin d'oeil</option>
                         </select>
                     </div>
                     <div class="mb-5">

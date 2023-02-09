@@ -8,7 +8,8 @@ include '../../../header.php'; // contains the header and call to config.php
 } */
 
 //Load all statuses
-$members = sql_select("ARTICLE", "*");
+
+$members = sql_select('ARTICLE INNER JOIN THEMATIQUE ON article.numThem = thematique.numThem', "*");
 ?>
 
 <!-- Bootstrap default layout to display all status in foreach -->
