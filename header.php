@@ -66,7 +66,7 @@ require_once 'config.php';
 
         <div class="d-flex">
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Recherche..." aria-label="Search">
+            <input class="form-control me-2" type="search" placeholder="Rechercher sur le site…" aria-label="Search">
             <button class="btn btn-outline-success me-2" type="submit" style="border-width : 0; "><img src="/source/images/search.png" alt="" alt="Bootstrap" width="36px" height="auto"></button>
           </form>
           <a class="btn btn-primary m-1" href="/views/backend/dashboard.php" role="button" style=" border-width : 0; background-color: #6D071A; line-height: 29px; text-align: center; color: #FFFFFF;">Admin</a>
