@@ -1,5 +1,17 @@
 <?php
 include '../../../header.php';
+
+$thems =sql_select('thematique','*');
+$Mots = sql_select('MOTCLE','*');
+
+// foreach ($thems as $them)
+                             
+//                              {
+//                                  echo $them['numThem']; 
+//                                 echo $them['libThem'];
+//                                 }
+// exit(print_r($them));
+
 ?>
 
 <head>
@@ -128,17 +140,41 @@ include '../../../header.php';
                         </label>
                         <select class="form-control form-control-lg" name="numThem" id="numThem" required>
                             <option>Choisissez une thématique</option>
-                            <option value=<?php "numThem"?>><?php echo("numThem"[$libThem])?> </option> 
-                            <option value="numThem">L'acteur-clé</option>
-                            <option value="numThem">Le mouvement émergeant</option>
-                            <option value="numThem">L'insolite / le clin d'oeil</option>
+                            <?php foreach ($thems as $them)
+                             
+                             { ?>
+                    
+                            <option value="<?php echo $them['numThem'];  ?>"> <?php 
+                                 
+                                echo $them['libThem'];
+                                }?></option> 
+                            
                         </select>
                     </div>
                     <div class="mb-5">
-                        <label for="numMotCle">
-                            <h3 class="nom-form">Mots clées</h3>
-                        </label>
-                        <input id="numMotCle" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="texte" name="numMotCle" > <!--numero du theme 4-->
+                    <fieldset>
+                            <legend><h3 class="nom-form">Choix des mots clés</h3></legend>
+                            <?php foreach ($Mots as $Mot)
+                             
+                             { ?>
+                            <div>
+                                
+                            
+                                <label for="<?php echo $Mot['numMotCle'];?>"><input type="checkbox" name="" id="" required checked><h3 class="nom-form"><?php echo $Mot['libMotCle']; } ?></h3><br></label>
+                             </div>
+                            <!-- <div>
+                                <input type="checkbox" id="key" name="key">
+                                <label for="key"><h3 class="nom-form">L'acteur-clé</h3></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="mouve" name="mouve">
+                                <label for="mouve"><h3 class="nom-form">Le mouvement émergeant</h3></label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="eye" name="eye">
+                                <label for="eye"><h3 class="nom-form">L'insolite / le clin d'oeil</h3></label>
+                            </div> -->
+                        </fieldset>
                     </div>
                 </div>
 
