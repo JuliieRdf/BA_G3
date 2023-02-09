@@ -1,8 +1,8 @@
 <section class="colonne-d">
                     <div class="inscription">
-                        <form class="inscription-form" action="">
+                        <form class="inscription-form"  action="">
 
-                            <button type="submit" value="Poster" class="inscription-i"><p>S'inscrire</p></button>
+                            <a href="../../views/backend/security/signup.php"><button type="button" value="Poster" class="inscription-i" ><p>S'inscrire</p></button></a>
                         </form>
                     </div>
                     <div class="actus">
