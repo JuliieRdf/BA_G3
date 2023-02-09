@@ -73,12 +73,14 @@ $statut = sql_select("statut", "*");
                                 <?php echo $stat['libStat'];
                             } ?></option>
                         </select>
+
+                        <div class="form-group mt-2">
+        <button type="submit" class="btn btn-success">Créer</button>
+    </div>
             </form>
         </div>
     </div>
-    <div class="form-group mt-2">
-        <button type="submit" class="btn btn-success">Créer</button>
-    </div>
+    
     </div>
 
     <div class="col-1"></div>
