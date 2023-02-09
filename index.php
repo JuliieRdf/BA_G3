@@ -75,10 +75,11 @@ transform: translate(0px,-50px);">
                                     <h2 class="endbox"><?php echo $article['libTitrArt']; ?></h2>
                                 </a>
                                 <h3><?php echo $article['numThem']; ?></h3>
-                                <h3 class="endbox"><?php echo $article['libChapoArt']; ?></h3>
+                                <div class="truncate"><h3 class="endbox"><?php echo $article['libChapoArt']; ?></h3></div>
                                 <p><?php echo $article['dtCreArt']; ?></p>
                             </div>
-
+                            <div class="cercle-d-a-left"></div>
+                            <div class="cercle-d-a-right"></div>
                         </div>
                     <?php } ?>
                 </section>
@@ -107,6 +108,7 @@ transform: translate(0px,-50px);">
                         </a>
                         <p class="actus-p">Exit les bouchons, le scooter en libre service est en passe de devenir le
                             moyen de transport préféré des Bordelais...</p>
+                            <div class="cercle-d-a-left-m"></div>
                     </div>
 
                     <div class="share">
