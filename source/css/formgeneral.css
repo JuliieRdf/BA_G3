@@ -94,6 +94,16 @@ padding-top: 3100px;
     padding-top: 500px;
   }
   
+
+  .deco-hori-g-dash{
+  
+    border-right: 3px solid #6D071A;
+    padding-top: 500px;
+}
+.deco-hori-d-dash{
+  border-left: 3px solid #6D071A;
+  padding-top: 500px;
+}
   .row{
     margin-right:0;
   }

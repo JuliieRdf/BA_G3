@@ -159,4 +159,7 @@ $libMotCle = sql_select("MOTCLE", "libMotCle", "numArt = $numArt")[0]['libMotCle
             </div>
         </div>
     </div>
+
+
+
 </body>
