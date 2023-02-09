@@ -20,13 +20,14 @@ include '../../header.php';
         ?>
         </h1>
 
-        <p> <?php
+       <p> <?php
         echo ($_SESSION["password"]);
         echo ($_SESSION["prenom"]);
         echo ($_SESSION["email"]);
         echo ($_SESSION["nom"]);
         echo ($_SESSION["id"]);
-        ?></p>
+        echo ($_SESSION["stat"]);
+        ?></p> 
 
         <a class="btn btn-primary m-1" href="/views/backend/members/editM.php?numMemb=<?php echo ($_SESSION["id"]);  ?>" role="button">
         Changer les infos

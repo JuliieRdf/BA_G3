@@ -13,7 +13,7 @@ $password = sql_select("MEMBRE","passMemb","pseudoMemb = '$pseudoMembPost'")[0][
 $email = sql_select('MEMBRE', 'eMailMemb',"pseudoMemb = '$pseudoMembPost'")[0]['eMailMemb'];
 $prenom = sql_select("MEMBRE","prenomMemb","pseudoMemb = '$pseudoMembPost'")[0]['prenomMemb'];
 $nom = sql_select('MEMBRE', 'nomMemb',"pseudoMemb = '$pseudoMembPost'")[0]['nomMemb'];
-$id = sql_select('MEMBRE', 'numMemb',"pseudoMemb = '$pseudoMembPost'")[0]['numMemb'];
+$stat = sql_select('MEMBRE', 'numStat',"pseudoMemb = '$pseudoMembPost'")[0]['numStat'];
 
 
 if (password_verify($passMembPost, $password)) {
@@ -23,6 +23,7 @@ if (password_verify($passMembPost, $password)) {
     $_SESSION["prenom"] = $prenom;
     $_SESSION["nom"] = $nom ;
     $_SESSION["id"] = $id ;
+    $_SESSION["stat"] = $stat ;
 
     
     header('Location: ../../views/frontend/compte.php');
