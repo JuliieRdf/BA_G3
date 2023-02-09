@@ -86,12 +86,12 @@ transform: translate(0px,-50px);">
             </div>
 
             <div class="col-lg-3 ">
-            <?php include 'colonne-d.php'; ?>
+            <?php include 'views/frontend/colonne-d.php'; ?>
             </div>
         </div>
         <div class="row gx-12 responsive-col">
             <div class="col-lg-12" style="display:flex; justify-content: center; margin-top: 50px;">
-            <?php include 'contact.php'; ?>
+            <?php include 'views/frontend/contact.php'; ?>
 
             </div>
         </div>

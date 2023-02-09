@@ -63,7 +63,7 @@
 </div>
 
  </div>
- <?php include '../../../contact.php'; ?>
+ <?php include '../contact.php'; ?>
  </body>
  <?php include '../../../footer.php'; ?>
  </html>
