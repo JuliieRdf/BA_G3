@@ -8,7 +8,8 @@ include '../../../header.php'; // contains the header and call to config.php
 } */
 
 //Load all statuses
-$members = sql_select("ARTICLE", "*");
+$articles = sql_select('article INNER JOIN thematique ON article.numThem = thematique.numThem', "*");
+
 ?>
 
 <!-- Bootstrap default layout to display all status in foreach -->
@@ -30,19 +31,19 @@ $members = sql_select("ARTICLE", "*");
                     
                 </thead>
                 <tbody>
-                    <?php foreach ($members as $member) { ?>
+                    <?php foreach ($articles as $article) { ?>
                         <tr>
-                        <td><?php echo $member['numArt']; ?></td>
-                            <td><?php echo $member['dtCreArt']; ?></td>
-                            <td><?php echo $member['libTitrArt']; ?></td>
-                            <td><?php echo $member['libChapoArt']; ?></td>
-                            <td><?php echo $member['libAccrochArt']; ?></td>
-                            <td><?php echo $member['numThem']; ?></td>
+                        <td><?php echo $article['numArt']; ?></td>
+                            <td><?php echo $article['dtCreArt']; ?></td>
+                            <td><?php echo $article['libTitrArt']; ?></td>
+                            <td><?php echo $article['libChapoArt']; ?></td>
+                            <td><?php echo $article['libAccrochArt']; ?></td>
+                            <td><?php echo $article['libThem']; ?></td>
                             
                             
                             <td>
-                                <a href="edit.php?numArt=<?php echo $member['numArt']; ?>" class="btn btn-primary">Modifier</a>
-                                <a href="delete.php?numArt=<?php echo $member['numArt']; ?>" class="btn btn-danger">Supprimer</a>
+                                <a href="edit.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-primary">Modifier</a>
+                                <a href="delete.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-danger">Supprimer</a>
                             </td>
                         </tr>
                     <?php } ?>
