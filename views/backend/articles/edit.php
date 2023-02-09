@@ -50,6 +50,10 @@ $urlPhotArt = sql_select("ARTICLE", "urlPhotArt", "numArt = $numArt")[0]['urlPho
 
 $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
 
+$libMotCle = sql_select("MOTCLE", "libMotCle", "numArt = $numArt")[0]['libMotCle'];
+
+
+
 
 
 
@@ -125,6 +129,10 @@ $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
 
                     <label for="numThem">Changer <?php echo $numThem ?> ?</label>
                     <input id="numThem" class="form-control" type="text" value=<?php echo $numThem ?> name="numThem">
+
+                    <label for="numMotCle">Changer <?php echo $numMotCle ?> ?</label>
+                    <input id="numMotCle" class="form-control" type="text" value=<?php echo $numMotCle ?> name="numMotCle">
+
 
                 </div>
                 <div class="form-group mt-2">

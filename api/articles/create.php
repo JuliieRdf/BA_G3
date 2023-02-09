@@ -7,6 +7,8 @@
 require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
 
 
+
+
 $dtCreArt = sql_escape($_POST['dtCreArt']);
 
 $libTitrArt = sql_escape($_POST['libTitrArt']);
@@ -22,11 +24,15 @@ $parag2Art = sql_escape($_POST['parag2Art']);
 $libSsTitr2Art = sql_escape($_POST['libSsTitr2Art']);
 $parag3Art = sql_escape($_POST['parag3Art']);
 $libConclArt = sql_escape($_POST['libConclArt']);
-$urlPhotArt = sql_escape($_POST['urlPhotArt']);
+$urlPhotArt = sql_escape($_POST['file']);
+
+
 $numThem = sql_escape($_POST['numThem']);
 
 sql_insert('ARTICLE','dtCreArt,libTitrArt,libChapoArt,libAccrochArt,parag1Art,libSsTitr1Art,parag2Art,libSsTitr2Art,parag3Art,libConclArt,urlPhotArt,numThem',
                 "'$dtCreArt','$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
+
+
 
 sql_insert('MOTCLE','numMotCle',"'$numMotCle'");
 

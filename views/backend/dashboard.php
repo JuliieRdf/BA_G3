@@ -35,10 +35,10 @@ include '../../header.php';
         <div class="col-1">
             <div class="deco-hori-g-dash"></div>
         </div>
-        <div class="col-1">
+        <div class="col-2">
         </div>
 
-        <div class="col-3">
+        <div class="col-2">
         <label for="members" style="padding-top: 10%;">
                 <h3 class="nom-form">Gérer les membres inscrits</h3>
             </label>
@@ -55,9 +55,9 @@ include '../../header.php';
 
 <div class="col-2"></div>
 
-        <div class="col-3">
+        <div class="col-2">
             <label for="keyword" style="padding-top: 10%;">
-                <h3 class="nom-form">Gérer les mots clés    ㅤ   ㅤ</h3>
+                <h3 class="nom-form">Gestions des mots clés </h3>
             </label>
             <a style="margin-left: 10%; padding:3%;" id="keyword" name="libThem" href="/views/backend/keywords/list.php" class="btn btn-primary">Modifier</a>
             
@@ -72,10 +72,8 @@ include '../../header.php';
             <a style="margin-left: 10%; padding:3%;" id="comments" name="comments" href="/views/backend/comments/list.php" class="btn btn-primary">Modifier</a>
             
         </div>
+        <div class="col-2"></div>
 
-
-
-        <div class="col-1"></div>
         <div class="col-1 ">
             <div class="deco-hori-d-dash"></div>
         </div>

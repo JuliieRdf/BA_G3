@@ -3,6 +3,7 @@ include '../../../header.php';
 
 $thems =sql_select('thematique','*');
 $Mots = sql_select('MOTCLE','*');
+$files =sql_select('Articles','*');
 
 // foreach ($thems as $them)
                              
@@ -110,7 +111,7 @@ $Mots = sql_select('MOTCLE','*');
                     </div>
                     <div class="mb-5">
                         <label for="urlPhotArt"><h3 class="nom-form">Photo</h3></label>
-                        <input id="urlPhotArt" class="form-control form-control-lg" type="file" accept="image/*" name="urlPhotArt" required> <!--Image-->
+                        <input id="urlPhotArt" class="form-control form-control-lg" type="file" accept="image/*" name="file" required> <!--Image-->
                         
                     </div>
                     <div class="mb-5">
