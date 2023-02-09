@@ -34,7 +34,7 @@ $numStat = sql_select("MEMBRE", "numStat", "numMemb = $numMemb")[0]['numStat'];
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Modifier le profil</h1>
+            <h2 class="tableau">Modifier le profil</h2>
         </div>
         <div class="col-md-12">
             <!--Form to delete status-->

@@ -30,7 +30,7 @@ $prenomMemb = sql_select("MEMBRE", "prenomMemb","numMemb = $numMemb")[0]['prenom
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Supprimer un profil</h1>
+            <h2 class="tableau">Supprimer un profil</h2>
         </div>
         <div class="col-md-12">
             <!--Form to delete status-->

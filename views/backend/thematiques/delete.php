@@ -24,7 +24,7 @@ $libThem = sql_select("THEMATIQUE", "libThem", "numThem = $numThem")[0]['libThem
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Supprimer une thématique</h1>
+            <h2 class="tableau">Supprimer une thématique</h2>
         </div>
         <div class="col-md-12">
             <!--Form to delete status-->

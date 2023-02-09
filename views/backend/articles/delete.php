@@ -27,7 +27,7 @@ $libTitrArt = sql_select("article", "libTitrArt","numArt = $numArt")[0]['libTitr
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Supprimer un article</h1>
+            <h2 class="tableau">Supprimer un article</h2>
         </div>
         <div class="col-md-12">
             <!--Form to delete status-->
@@ -38,7 +38,7 @@ $libTitrArt = sql_select("article", "libTitrArt","numArt = $numArt")[0]['libTitr
                     <input id="libTitrArt" class="form-control" type="text" name="libTitrArt" value="<?php echo($libTitrArt); ?>" readonly="readonly">
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-danger">Confirmer</button>
+                    <button type="submit" class="btn btn-danger">Supprimer</button>
                 </div>
             </form>
         </div>

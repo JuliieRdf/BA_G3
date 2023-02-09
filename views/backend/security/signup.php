@@ -12,7 +12,7 @@ include '../../../header.php';
     <div class="row">
         <div class="col-md-5"></div>
         <div class="col-md-3">
-            <h1>S'inscrire</h1>
+            <h2 class="tableau">S'inscrire</h2>
         </div>
         <div class="col-md-5"> </div>
         <div class="col-md-3">
