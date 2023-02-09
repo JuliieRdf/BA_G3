@@ -73,7 +73,9 @@ require_once 'config.php';
             <input class="form-control me-2" type="search" placeholder="Rechercher sur le site…" aria-label="Search" >
           </form>
 
-          <?php if(isset($_SESSION["stat"]) == 1) {?>
+          <?php 
+          
+          if(isset($_SESSION["stat"]) && $_SESSION ==  1) {?>
           <a class="btn btn-primary m-1" href="/views/backend/dashboard.php" role="button" style=" border-width : 0; background-color: #6D071A; line-height: 29px; text-align: center; color: #FFFFFF;">
           Admin</a>
 
