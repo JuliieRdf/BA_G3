@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -19,16 +20,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
   <!-- Modification après bootstrap -->
-  <link rel="stylesheet" href="/source/css/textes.css">
+  <link rel="stylesheet" href="/source/css/textes.css"> 
   <link rel="stylesheet" href="/source/css/dashboard.css">
 
   <!-- Typos -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <?php
@@ -50,31 +51,16 @@ require_once 'config.php';
           <h1>Bordeaux Déraille</h1>
         </a>
 
-        <a class="btn btn-primary m-1" href="/views/backend/dashboard.php" role="button" style=" border-width : 0; background-color: #6D071A; line-height: 29px; text-align: center; color: #FFFFFF;">Admin</a>
-        <a class="btn btn-primary m-1" href="          
-          <?php 
-          if(isset($_SESSION["pseudo"])){
 
-            echo ('/views/frontend/compte.php');
-          } else {
-            echo ('/views/backend/security/login.php');
-          }
-          ?>
-          " role="button" style=" border-width : 0; background-color: #6D071A; color: #FFFFFF;">
-              <?php
-              if (isset($_SESSION["pseudo"])) {
-                echo ($_SESSION["pseudo"]);
-              } else {
-                echo ('Se connecter');
-              }
-              ?>
-            </a>
         <!--right align-->
 
-
         <div class="collapse navbar-collapse" id="navbarNav">
-
-
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/views/backend/dashboard.php">Admin</a>
+            </li>
+          </ul>
+        </div>
 
 
 
@@ -95,17 +81,31 @@ require_once 'config.php';
           }
           ?>
           " role="button" style=" border-width : 0; background-color: #6D071A; color: #FFFFFF;">
-              <?php
-              if (isset($_SESSION["pseudo"])) {
-                echo ($_SESSION["pseudo"]);
-              } else {
-                echo ('Se connecter');
-              }
-              ?>
-            </a>
 
-          </div>
+          <?php 
+          if(isset($_SESSION["pseudo"])){
+            echo ($_SESSION["pseudo"]);
+          } else {
+            echo ('Se connecter');
+          }
+          ?>
+
+          <?php
+          if(isset( $_SESSION["stat"])){
+            echo( $_SESSION["stat"]);
+          ?>
+            <a class="btn btn-primary m-1" href="/views/backend/dashboard.php" role="button" style=" border-width : 0; background-color: #6D071A; line-height: 29px; text-align: center; color: #FFFFFF;">Admin</a>
+<?php
+          }else {
+            echo('Se connecter');
+          }?>
+          
+          </a>
+          
+
+
         </div>
-        <div class="trait"></div>
+    </div>
+    <div class="trait"></div>
   </nav>
 </header>
