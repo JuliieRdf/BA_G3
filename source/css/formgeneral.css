@@ -83,7 +83,16 @@ padding-top: 3100px;
       border-left: 3px solid #6D071A;
       padding-top: 750px;
   }
-    
+  .deco-hori-g-signup {
+
+    border-right: 3px solid #6D071A;
+    padding-top: 900px;
+  }
+  
+  .deco-hori-d-signup {
+    border-right: 3px solid #6D071A;
+    padding-top: 900px;
+  }
   .deco-hori-g{
   
       border-right: 3px solid #6D071A;

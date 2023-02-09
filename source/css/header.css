@@ -1,7 +1,8 @@
-header .trait {
+.trait {
     background-color: #6D071A;
     width: 120%;
     height: 3px;
+    margin-bottom: -13px;
 }
 
 
