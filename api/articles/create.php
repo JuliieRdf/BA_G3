@@ -25,15 +25,24 @@ $libSsTitr2Art = sql_escape($_POST['libSsTitr2Art']);
 $parag3Art = sql_escape($_POST['parag3Art']);
 $libConclArt = sql_escape($_POST['libConclArt']);
 $urlPhotArt = sql_escape($_POST['file']);
-
-
 $numThem = sql_escape($_POST['numThem']);
+$numMotCle = sql_escape($_POST['numMotCle']);
+
+
+
+
+
+
+
 
 sql_insert('ARTICLE','dtCreArt,libTitrArt,libChapoArt,libAccrochArt,parag1Art,libSsTitr1Art,parag2Art,libSsTitr2Art,parag3Art,libConclArt,urlPhotArt,numThem',
                 "'$dtCreArt','$libTitrArt','$libChapoArt','$libAccrochArt','$parag1Art','$libSsTitr1Art','$parag2Art','$libSsTitr2Art','$parag3Art','$libConclArt','$urlPhotArt','$numThem'");
 
+$numArt = sql_select('article' , 'numArt', null, 'numArt DESC', 1)[0]['numArt'];
 
 
-sql_insert('MOTCLE','numMotCle',"'$numMotCle'");
+foreach($numMotCle as $num){
+sql_insert('MotCleArticle','numMotCle,numArt',"'$num','$numArt'");
+}
 
 header('Location: ../../views/backend/articles/list.php');

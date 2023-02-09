@@ -56,7 +56,7 @@ include '../../../header.php';
                     </label>
                     <input id="eMailMemb" class="form-control" type="email" name="eMailMemb" required>
                     <label for="passMemb">
-                        <h3 class="nom-form">Mot de passe (il faut MAJ, min, chiffre, charactere special et minimum - chractere)</h3>
+                        <h3 class="nom-form">Mot de passe  <i style="font-size: 20px;">(il faut minimum une majuscule, une minuscule, un chiffre, un charactère special et plus de 6 charactères) </i></h3>
                     </label>
                     <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="6" maxlength="30" required pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}">
                     <h3 class="nom-form">Confirmer le mot de passe</h3>

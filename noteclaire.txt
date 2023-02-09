@@ -1,38 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <title>Envoi d'un message par formulaire</title>
-</head>
+DB_HOST=localhost
+DB_USER=etummiuser_db_03
+DB_PASSWORD=mmi-etu
+DB_DATABASE=db_mmi_03
 
-<body>
-    <?php
-   
-      
-    $retour = mail('claire.vital@mmibordeaux.com', 'Envoi depuis la page Contact', $_POST['message'],  $_SESSION["email"]);
-    if ($retour)
-        echo '<p>Votre message a bien été envoyé.</p>';
-    ?>
-</body>
-</html>
-
-
-
-
-
- <h3 class="contact">CONTACTEZ NOUS</h3>
-                    <?php if (isset($_SESSION["email"])) {
-                    ?>
-                        <form class="contacter">
-                            <div class="contacter_b">
-                                <form method="post" action="mail.php">
-                                    <label for="message">Message:</label><br>
-                                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                            </div>
-                            <input type="submit" value="Poster" class="poster">
-                        </form>
-                        </form>
-
-                    <?php } else { ?>
-<h2 class="tableau">Veuillez vous conneter pour nous contacter</h2>
-                    <?php } ?>
+#APP SETTINGS
+APP_DEBUG=true

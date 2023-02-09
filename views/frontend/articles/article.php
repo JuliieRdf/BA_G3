@@ -35,36 +35,36 @@
        </div>
        <div class="col-4 col-md-0"></div>
      </div>
-   
 
-   <div class="row">
-     <div class="col-1 col-md-0"></div>
-     <div class="col-7 col-md-12">
-       <h2 class="sous-titre"><?php echo ($pageart[0]["libSsTitr2Art"]); ?></h2>
-       <p class="paragraphe"> <?php echo ($pageart[0]["parag3Art"]); ?></p>
-     </div>
-     <div class="col-4 col-md-0"></div>
-   </div>
-  
-   <div class="row">
-     <div class="col-1 col-md-0"></div>
-     <div class="col-7 col-md-12">
-       <p class="conc"> <?php echo ($pageart[0]["libConclArt"]); ?></p>
-     </div>
-     <div cFlass="col-4 col-md-0"></div>
-   </div>
 
-   <div class="row">
-     <div class="col-9"></div>
-     <div class="col-3">
-       <div class="share2">
-         <button><img src="/../source/images/share.webp" alt="Bouton partager">
-           <p>Partagez</p>
-         </button>
+     <div class="row">
+       <div class="col-1 col-md-0"></div>
+       <div class="col-7 col-md-12">
+         <h2 class="sous-titre"><?php echo ($pageart[0]["libSsTitr2Art"]); ?></h2>
+         <p class="paragraphe"> <?php echo ($pageart[0]["parag3Art"]); ?></p>
+       </div>
+       <div class="col-4 col-md-0"></div>
+     </div>
+
+     <div class="row">
+       <div class="col-1 col-md-0"></div>
+       <div class="col-7 col-md-12">
+         <p class="conc"> <?php echo ($pageart[0]["libConclArt"]); ?></p>
+       </div>
+       <div cFlass="col-4 col-md-0"></div>
+     </div>
+
+     <div class="row">
+       <div class="col-9"></div>
+       <div class="col-3">
+         
        </div>
      </div>
+<<<<<<< HEAD
      <?php include 'commentaire.php'; ?>
    </div>
+=======
+>>>>>>> 214cee45a26caf2f78f2677edb286a26a085afc0
 
    </div>
    <?php include '../contact.php'; ?>

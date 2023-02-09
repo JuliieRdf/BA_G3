@@ -13,6 +13,7 @@ $pseudoMemb = sql_escape($_POST['pseudoMemb']);
 $passMemb = sql_escape($_POST['passMemb']);
 $passCMemb = password_hash($passMemb, PASSWORD_DEFAULT);
 $eMailMemb = sql_escape($_POST['eMailMemb']);
+$numStat = sql_escape($_POST['numStat']);
 
 
 
