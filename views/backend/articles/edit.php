@@ -148,24 +148,28 @@ $libMotCles = sql_select('MotClearticle INNER JOIN MotCle ON motClearticle.nummo
                     <input id="numThem" class="form-control" type="text" value=<?php echo $numThem ?> name="numThem">
 
                     <div class="mb-5">
-                    <fieldset>
-                            <legend><h3 class="nom-form">Choix des mots clés</h3></legend>
-                            
-                            <div>
-                                
-                            <?php foreach ($MotCleArt as $MotCle) {
-                            ?>
+                        <fieldset>
+                            <legend>
+                                <h3 class="nom-form">Choix des mots clés</h3>
+                            </legend>
 
-                            
-                                <label for="<?php
-                                 $MotCle['numMotCle']; };
-                                 ?>"><input type="checkbox" name="" id="" required checked><h3 class="nom-form">
-                                    <?php foreach ($libMotCles as $libMotCle) {
-                                    
-                                 echo $libMotCle['libMotCle']; 
-                                 } ?></h3><br></label>    
-                                  </div>
-                           
+                            <div>
+
+                                <?php foreach ($MotCleArt as $MotCle) {
+                                ?>
+
+
+                                    <label for="<?php
+                                                $MotCle['numMotCle'];
+                                            };
+                                                ?>"><input type="checkbox" name="" id="" required checked>
+                                        <h3 class="nom-form">
+                                            <?php foreach ($libMotCles as $libMotCle) {
+                                                echo $libMotCle['libMotCle'];
+                                            } ?></h3><br>
+                                    </label>
+                            </div>
+
                         </fieldset>
                     </div>
 
