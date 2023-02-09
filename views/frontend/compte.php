@@ -28,7 +28,7 @@ include '../../header.php';
         echo ($_SESSION["id"]);
         ?></p>
 
-        <a class="btn btn-primary m-1" href="/views/backend/members/edit.php" role="button">
+        <a class="btn btn-primary m-1" href="/views/backend/members/editM.php?numMemb=<?php echo ($_SESSION["id"]);  ?>" role="button">
         Changer les infos
         </a>
 

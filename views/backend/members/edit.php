@@ -74,7 +74,7 @@ $numStat = sql_select("MEMBRE", "numStat", "numMemb = $numMemb")[0]['numStat'];
                     <input id="eMailMemb" class="form-control" type="email" name="eMailMemb" value=<?php echo $eMailMemb ?> >
                     
                     <div class="mb-5">
-                    <label for="numStat"><h3 class="nom-form">Choix du statue</h3></label>
+                    <label for="numStat"><h3 class="nom-form">Choix du statut</h3></label>
                             <select class="form-control form-control-lg" name="numStat" id="numStat" required>
                                 <option value="<?php echo $numStat ?>"><?php echo $numStat ?></option>
                                 <option value="1">1</option>
