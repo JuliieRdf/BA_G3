@@ -8,7 +8,7 @@ include '../../header.php';
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="tableau">Tableau de contrôle de BlogArt</h2>
+                <h1 class="titre">Tableau de contrôle de BlogArt</h1>
                 <p style="text-align: center;">Bienvenue sur le tableau de bord!</p>
             </div>
             <div class="col-md-12">
