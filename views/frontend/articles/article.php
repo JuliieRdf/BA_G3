@@ -63,6 +63,7 @@
          </button>
        </div>
      </div>
+     <?php include 'commentaire.php'; ?>
    </div>
 
    </div>
