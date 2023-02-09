@@ -38,15 +38,11 @@ $members = sql_select('membre INNER JOIN statut ON membre.numStat = statut.numSt
                         <th>
                             <h3>E-Mail</h3>
                         </th>
-                        <th>
-                            <h3>Date</h3>
-                        </th>
+                       
                         <th>
                             <h3>Statut</h3>
                         </th>
-                        <th>
-                            <h3>Actions</h3>
-                        </th>
+                       
                     </tr>
                 </thead>
                 <tbody>
@@ -67,12 +63,7 @@ $members = sql_select('membre INNER JOIN statut ON membre.numStat = statut.numSt
                             <td>
                                 <p class="tableau"><?php echo $member['eMailMemb']; ?></p>
                             </td>
-                            <td>
-                                <p class="tableau"><?php echo $member['dtCreaMemb']; ?></p>
-                            </td>
-                            <td>
-                                <p class="tableau"><?php echo $member['eMailMemb']; ?></p>
-                            </td>
+                            
 
 
                             <td>
