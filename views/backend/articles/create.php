@@ -69,76 +69,52 @@ $Mots = sql_select('MOTCLE','*');
             <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post">
                 <div class="form-group">
                     <div class="mb-5">
-                        <label for="dtCreArt">
-                            <h3 class="nom-form">Date</h3>
-                        </label>
+                        <label for="dtCreArt"><h3 class="nom-form">Date</h3></label>
                         <input id="dtCreArt" class="form-control form-control-lg" type="date" name="dtCreArt" required> <!--DATE-->
                     </div>
                     <div class="mb-5">
-                        <label for="libTitrArt">
-                            <h3 class="nom-form">Titre</h3>
-                        </label>
+                        <label for="libTitrArt"><h3 class="nom-form">Titre</h3></label>
                         <input id="libTitrArt" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libTitrArt" minlength="1" maxlength="100" required>
                     </div>
                     <div class="mb-5">
-                        <label for="libChapoArt">
-                            <h3 class="nom-form">Chapeau</31>
-                        </label>
+                        <label for="libChapoArt"><h3 class="nom-form">Chapeau</31></label>
                         <textarea cols="30" rows="4" id="libChapoArt" class="form-control" placeholder="Maximum 500 caractères..." type="text" name="libChapoArt" minlength="1" maxlength="500" required></textarea> <!--Chapo 500-->
                     </div>
                     <div class="mb-5">
-                        <label for="libAccrochArt">
-                            <h3 class="nom-form">Accroche</h3>
-                        </label>
+                        <label for="libAccrochArt"><h3 class="nom-form">Accroche</h3></label>
                         <input id="libAccrochArt" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libAccrochArt" minlength="1" maxlength="100" required> <!--Acroche 100-->
                     </div>
                     <div class="mb-5">
-                        <label for="parag1Art">
-                            <h3 class="nom-form">Paragraphe 1</h3>
-                        </label>
+                        <label for="parag1Art"><h3 class="nom-form">Paragraphe 1</h3></label>
                         <textarea cols="30" rows="9" id="parag1Art" class="form-control" placeholder="Maximum 1200 caractères..." type="text" name="parag1Art" minlength="1" maxlength="1200" required></textarea> <!--paragraphe 1200-->
                     </div>
                     <div class="mb-5">
-                        <label for="libSsTitr1Art">
-                            <h3 class="nom-form">Sous Titre 1</h3>
-                        </label>
+                        <label for="libSsTitr1Art"><h3 class="nom-form">Sous Titre 1</h3></label>
                         <input id="libSsTitr1Art" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libSsTitr1Art" minlength="1" maxlength="100" required> <!--sous-titre 100-->
                     </div>
                     <div class="mb-5">
-                        <label for="parag2Art">
-                            <h3 class="nom-form">Paragraphe 2</h3>
-                        </label>
+                        <label for="parag2Art"><h3 class="nom-form">Paragraphe 2</h3></label>
                         <textarea cols="30" rows="9" placeholder="Maximum 1200 caractères..." id="parag2Art" class="form-control" type="text" name="parag2Art" minlength="1" maxlength="1200" required></textarea> <!--paragraphe 2 1200-->
                     </div>
                     <div class="mb-5">
-                        <label for="libSsTitr2Art">
-                            <h3 class="nom-form">Sous Titre 2</h3>
-                        </label>
+                        <label for="libSsTitr2Art"><h3 class="nom-form">Sous Titre 2</h3></label>
                         <input id="libSsTitr2Art" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libSsTitr2Art" minlength="1" maxlength="100" required> <!--sous-titre 2 100-->
                     </div>
                     <div class="mb-5">
-                        <label for="parag3Art">
-                            <h3 class="nom-form">Paragraphe 3</h3>
-                        </label>
+                        <label for="parag3Art"><h3 class="nom-form">Paragraphe 3</h3></label>
                         <textarea cols="30" rows="9" id="parag3Art" class="form-control" placeholder="Maximum 1200 caractères..." type="text" name="parag3Art" minlength="1" maxlength="1200" required></textarea> <!--paragraphe 3 1200-->
                     </div>
                     <div class="mb-5">
-                        <label for="libConclArt">
-                            <h3 class="nom-form">Conclusion</h3>
-                        </label>
+                        <label for="libConclArt"><h3 class="nom-form">Conclusion</h3></label>
                         <textarea cols="30" rows="4" id="libConclArt" class="form-control" placeholder="Maximum 500 caractères..." type="text" name="libConclArt" minlength="1" maxlength="500" required></textarea> <!--conclusion 500-->
                     </div>
                     <div class="mb-5">
-                        <label for="urlPhotArt">
-                            <h3 class="nom-form">Photo</h3>
-                        </label>
+                        <label for="urlPhotArt"><h3 class="nom-form">Photo</h3></label>
                         <input id="urlPhotArt" class="form-control form-control-lg" type="file" accept="image/*" name="urlPhotArt" required> <!--Image-->
                         
                     </div>
                     <div class="mb-5">
-                        <label for="numThem">
-                            <h3 class="nom-form">Choix de la thématique</h3>
-                        </label>
+                        <label for="numThem"><h3 class="nom-form">Choix de la thématique</h3></label>
                         <select class="form-control form-control-lg" name="numThem" id="numThem" required>
                             <option>Choisissez une thématique</option>
                             <?php foreach ($thems as $them)
@@ -154,15 +130,13 @@ $Mots = sql_select('MOTCLE','*');
                     </div>
                     <div class="mb-5">
                     <fieldset>
-                            <legend><h3 class="nom-form">Choix des mots clés</h3></legend>
-                            <?php foreach ($Mots as $Mot)
+                            <legend><h3 class="nom-form">Choix des mots clés</h3></legend><?php foreach ($Mots as $Mot)
                              
                              { ?>
                             <div>
                                 
                             
-                                <label for="<?php echo $Mot['numMotCle'];?>"><input type="checkbox" name="" id="" required checked><h3 class="nom-form"><?php echo $Mot['libMotCle']; } ?></h3><br></label>
-                             </div>
+                                <label for="<?php echo $Mot['numMotCle'];?>"><input type="checkbox" name="" id="" required checked><h3 class="nom-form"><?php echo $Mot['libMotCle']; } ?></h3><br></label>     </div>
                             <!-- <div>
                                 <input type="checkbox" id="key" name="key">
                                 <label for="key"><h3 class="nom-form">L'acteur-clé</h3></label>
@@ -191,7 +165,6 @@ $Mots = sql_select('MOTCLE','*');
         </div>
     </div>
 
-    <body>
         <div class="row">
             <div class="col-3">
                 <div class="deco-verti-bas">
@@ -208,6 +181,3 @@ $Mots = sql_select('MOTCLE','*');
 
 
 
-    </body>
-
-    </html>

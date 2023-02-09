@@ -55,13 +55,39 @@ $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
 
 ?>
 
-<!--Bootstrap form to deletew status-->
-<div class="container">
+<body>
+
     <div class="row">
-        <div class="col-md-12">
-            <h1 class="titre">Modifer un article</h1>
+        <div class="col-3"></div>
+        <div class="col-6">
+            <h1 class="titre">Ajouter un nouvel article</h1>
         </div>
-        <div class="col-md-12">
+        <div class="col-3"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            <div class="deco-verti-haut">
+                <div class="cercle-g"></div>
+            </div>
+        </div>
+        <div class="col-6">
+        </div>
+        <div class="col-3">
+            <div class="deco-verti-haut">
+                <div class="cercle-d"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Bootstrap form to deletew status-->
+    <div class="row">
+        <div class="col-1">
+            <div class="deco-hori-g-create"></div>
+        </div>
+        <div class="col-1">
+        </div>
+        <div class="col-8">
             <!--Form to delete status-->
             <form action="<?php echo ROOT_URL . '/api/articles/edit.php' ?>" method="post">
                 <div class="form-group">
@@ -106,5 +132,23 @@ $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
                 </div>
             </form>
         </div>
+        <div class="col-1"></div>
+        <div class="col-1 ">
+            <div class="deco-hori-d-create"></div>
+        </div>
     </div>
-</div>
+
+    <div class="row">
+        <div class="col-3">
+            <div class="deco-verti-bas">
+                <div class="cercle-g"></div>
+            </div>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-3">
+            <div class="deco-verti-bas">
+                <div class="cercle-d"></div>
+            </div>
+        </div>
+    </div>
+</body>
