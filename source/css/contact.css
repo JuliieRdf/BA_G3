@@ -64,6 +64,19 @@
     margin-bottom: 10px;
     
 }
+.contact input[type=email]
+{
+    margin-left :3vw;
+    background-color: rgb(255, 255, 255);
+    width: 70vw;
+    
+    font-family: 'Verdana';
+    font-size: 25px;
+    height: 30px;
+    border: none;
+    margin-bottom: 10px;
+    
+}
 .contact textarea{
     margin-left: 3vw;
     background-color: rgb(255, 255, 255);
