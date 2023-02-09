@@ -16,6 +16,8 @@ $lastP2 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[1]['urlPhotArt'];
 $lastP3 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[2]['urlPhotArt']; // Sélectionne l'avant avant dernière photo
 
 
+
+
 ?>
 
 <html>
@@ -62,7 +64,10 @@ transform: translate(0px,-50px);">
 
     </section>
 
-    <?php $articles = sql_select("ARTICLE", "*", null, "dtCreArt DESC"); ?>
+    <?php $articles = sql_select("ARTICLE INNER JOIN thematique ON article.numThem = thematique.numThem", "*", null, "dtCreArt DESC");
+
+
+    ?>
 
     <div class="container-fluid" style="padding-left:  4.16vw; padding-right: 4.16vw;">
         <div class="row gx-12 ">
@@ -76,8 +81,14 @@ transform: translate(0px,-50px);">
                                 <a href="views/frontend/articles/article.php?numArt=<?php echo $article['numArt']; ?>">
                                     <h2 class="endbox"><?php echo $article['libTitrArt']; ?></h2>
                                 </a>
-                                <h3><?php echo $article['numThem']; ?></h3>
-                                <div class="truncate"><h3 class="endbox"><?php echo $article['libChapoArt']; ?></h3></div>
+                                <h3>
+                                    <?php echo $article['libThem'];
+
+
+                                    ?></h3>
+                                <div class="truncate">
+                                    <h3 class="endbox"><?php echo $article['libChapoArt']; ?></h3>
+                                </div>
                                 <p><?php echo $article['dtCreArt']; ?></p>
                             </div>
                             <div class="cercle-d-a-left"></div>
@@ -88,12 +99,12 @@ transform: translate(0px,-50px);">
             </div>
 
             <div class="col-lg-3 ">
-            <?php include 'views/frontend/colonne-d.php'; ?>
+                <?php include 'views/frontend/colonne-d.php'; ?>
             </div>
         </div>
         <div class="row gx-12 responsive-col">
             <div class="col-lg-12" style="display:flex; justify-content: center; margin-top: 50px;">
-            <?php include 'views/frontend/contact.php'; ?>
+                <?php include 'views/frontend/contact.php'; ?>
 
             </div>
         </div>

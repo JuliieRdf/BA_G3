@@ -254,10 +254,6 @@ h3 .endbox {
 
 @media (max-width:960px) {
 
-    .colonne-d * {
-        width: calc(100%);
-        ;
-    }
 
     .colonne-d {
         width: calc(100% - 60px);
