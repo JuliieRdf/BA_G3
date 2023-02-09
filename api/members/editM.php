@@ -14,4 +14,4 @@ $eMailMemb = sql_escape($_POST['eMailMemb']);
 sql_update('MEMBRE',"prenomMemb='$prenomMemb',nomMemb='$nomMemb',eMailMemb='$eMailMemb'","numMemb =$numMemb");
 
 
-header('Location: ../../index.php');
+header('Location: ../../views/frontend/deco.php');
