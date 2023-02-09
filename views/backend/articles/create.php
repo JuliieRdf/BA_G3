@@ -124,19 +124,19 @@ include '../../../header.php';
                         <label for="numThem">
                             <h3 class="nom-form">Choix de la thématique</h3>
                         </label>
-                        <select class="form-control form-control-lg" name="pets" id="numThem" required>
-                            <option value="">Choisissez une thématique</option>
-                            <option value="dog">1</option>
-                            <option value="cat">L'acteur-clé</option>
-                            <option value="hamster">Le mouvement émergeant</option>
-                            <option value="parrot">L'insolite / le clin d'oeil</option>
+                        <select class="form-control form-control-lg" name="numThem" id="numThem" required>
+                            <option>Choisissez une thématique</option>
+                            <option value="1">L'événement</option>
+                            <option value="2">L'acteur-clé</option>
+                            <option value="3">Le mouvement émergeant</option>
+                            <option value="4">L'insolite / le clin d'oeil</option>
                         </select>
                     </div>
                     <div class="mb-5">
                         <label for="numMotCle">
                             <h3 class="nom-form">Mots clées</h3>
                         </label>
-                        <input id="numMotCle" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="texte" name="numMotCle" required> <!--numero du theme 4-->
+                        <input id="numMotCle" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="texte" name="numMotCle" > <!--numero du theme 4-->
                     </div>
                 </div>
 
