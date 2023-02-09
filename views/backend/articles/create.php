@@ -72,7 +72,7 @@ $files =sql_select('Article','*');
                         <input id="libTitrArt" class="form-control form-control-lg" placeholder="Maximum 100 caractères..." type="text" name="libTitrArt" minlength="1" maxlength="100" required>
                     </div>
                     <div class="mb-5">
-                        <label for="libChapoArt"><h3 class="nom-form">Chapeau</31></label>
+                        <label for="libChapoArt"><h3 class="nom-form">Chapeau</h3></label>
                         <textarea cols="30" rows="4" id="libChapoArt" class="form-control" placeholder="Maximum 500 caractères..." type="text" name="libChapoArt" minlength="1" maxlength="500" required></textarea> <!--Chapo 500-->
                     </div>
                     <div class="mb-5">
