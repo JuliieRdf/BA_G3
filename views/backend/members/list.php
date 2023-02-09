@@ -45,7 +45,7 @@ $members = sql_select('membre INNER JOIN statut ON membre.numStat = statut.numSt
                        
                     </tr>
                 </thead>
-                <tbody>
+                <body>
                     <?php foreach ($members as $member) { ?>
                         <tr>
                             <td>
