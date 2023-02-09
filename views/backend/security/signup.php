@@ -7,7 +7,7 @@ include '../../../header.php';
     <div class="row">
         <div class="col-3"></div>
         <div class="col-6">
-            <h1 class="titre">S'inscire</h1>
+            <h1 class="titre">S'inscrire</h1>
         </div>
         <div class="row">
             <div class="col-3">
@@ -59,7 +59,7 @@ include '../../../header.php';
                         <button type="submit" class="btn btn-success">Créer</button>
                     </div>
                     <div class="form-group mt-2">
-                        <button type="submit" class="btn btn-success">Déjà un compte ?</button>
+                    <a href="/views/backend/security/login.php" class="btn btn-primary">Déjà un compte ?</a>
                     </div>
                 </form>
             </div>
@@ -82,5 +82,5 @@ include '../../../header.php';
             </div>
         </div>
     </div>
-    <?php include '../../../footer.php'; ?>
+ 
     </div>
