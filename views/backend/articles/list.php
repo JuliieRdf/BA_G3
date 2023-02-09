@@ -8,7 +8,8 @@ include '../../../header.php'; // contains the header and call to config.php
 } */
 
 //Load all statuses
-$members = sql_select("ARTICLE", "*");
+
+$members = sql_select('ARTICLE INNER JOIN THEMATIQUE ON article.numThem = thematique.numThem', "*");
 ?>
 
 <!-- Bootstrap default layout to display all status in foreach -->
@@ -24,13 +25,6 @@ $members = sql_select("ARTICLE", "*");
                         <th>Titre</th>
                         <th>Chapeau</th>
                         <th>Accroche</th>
-                        <th>Paragraphe 1 </th>
-                        <th>Sous titre 1</th>
-                        <th>Paragraphe 2</th>
-                        <th>Sous titre 2</th>
-                        <th>Paragraphe 3</th>
-                        <th>Conclusion</th>
-                        <th>Photo</th>
                         <th>Thématique</th>
                         <th>Actions</th>
                     </tr>
@@ -44,16 +38,9 @@ $members = sql_select("ARTICLE", "*");
                             <td><?php echo $member['libTitrArt']; ?></td>
                             <td><?php echo $member['libChapoArt']; ?></td>
                             <td><?php echo $member['libAccrochArt']; ?></td>
-                            <td><?php echo $member['parag1Art']; ?></td>
-                            <td><?php echo $member['libSsTitr1Art']; ?></td>
-                            <td><?php echo $member['parag2Art']; ?></td>
-                            <td><?php echo $member['libSsTitr2Art']; ?></td>
-                            <td><?php echo $member['parag3Art']; ?></td>
-                            <td><?php echo $member['libConclArt']; ?></td>
-                            <td><?php echo $member['urlPhotArt']; ?></td>
                             <td><?php echo $member['numThem']; ?></td>
-                            <td><?php echo $member['numArt']; ?></td>
-                            <td><?php echo $member['libTitrArt']; ?></td>
+                            
+                            
                             <td>
                                 <a href="edit.php?numArt=<?php echo $member['numArt']; ?>" class="btn btn-primary">Modifier</a>
                                 <a href="delete.php?numArt=<?php echo $member['numArt']; ?>" class="btn btn-danger">Supprimer</a>
