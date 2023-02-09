@@ -8,7 +8,10 @@ include '../../../header.php'; // contains the header and call to config.php
 } */
 
 //Load all statuses
+
+
 $articles = sql_select('article INNER JOIN thematique ON article.numThem = thematique.numThem', "*");
+
 
 ?>
 

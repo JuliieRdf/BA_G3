@@ -74,10 +74,10 @@ include '../../header.php';
         </div>
         <div class="col-2"></div>
 
-        <div class="col-1 ">
+        <div class="col-1">
             <div class="deco-hori-d-dash"></div>
         </div>
-    </div>
+    </div> 
 
 
 
