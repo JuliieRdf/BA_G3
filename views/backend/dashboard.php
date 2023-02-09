@@ -39,7 +39,7 @@ include '../../header.php';
         </div>
 
         <div class="col-2">
-        <label for="members" style="padding-top: 10%;">
+            <label for="members" style="padding-top: 10%;">
                 <h3 class="nom-form">Gérer les membres inscrits</h3>
             </label>
             <a style="margin-left: 10%; padding:3%;" id="members" name="members" href="/views/backend/members/list.php" class="btn btn-primary">Modifier</a>
@@ -53,16 +53,16 @@ include '../../header.php';
             <a style="margin-left: 10%; padding:3%;" id="thematiques" name="thematiques" href="/views/backend/thematiques/list.php" class="btn btn-primary">Modifier</a>
         </div>
 
-<div class="col-2"></div>
+        <div class="col-2"></div>
 
         <div class="col-2">
             <label for="keyword" style="padding-top: 10%;">
                 <h3 class="nom-form">Gestions des mots clés </h3>
             </label>
             <a style="margin-left: 10%; padding:3%;" id="keyword" name="libThem" href="/views/backend/keywords/list.php" class="btn btn-primary">Modifier</a>
-            
+
             <label for="articles" style="padding-top: 10%;">
-                <h3 class="nom-form" >Vue globale des articles</h3>
+                <h3 class="nom-form">Vue globale des articles</h3>
             </label>
             <a style="margin-left: 10%; padding:3%;" id="articles" name="articles" href="/views/backend/articles/list.php" class="btn btn-primary">Modifier</a>
 
@@ -70,11 +70,11 @@ include '../../header.php';
                 <h3 class="nom-form">Gérér des commentaires</h3>
             </label>
             <a style="margin-left: 10%; padding:3%;" id="comments" name="comments" href="/views/backend/comments/list.php" class="btn btn-primary">Modifier</a>
-            
+
         </div>
         <div class="col-2"></div>
 
-        <div class="col-1 ">
+        <div class="col-1">
             <div class="deco-hori-d-dash"></div>
         </div>
     </div>
