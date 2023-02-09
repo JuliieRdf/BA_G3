@@ -11,7 +11,7 @@ include '../../../header.php';
     <div class="row">
         <div class="col-3"></div>
         <div class="col-6">
-            <h1 class="titre">Ajouter un nouvel article</h2>
+            <h1 class="titre">Ajouter un nouvel article</h1>
         </div>
         <div class="col-3"></div>
     </div>
