@@ -77,7 +77,7 @@ include '../../header.php';
         <div class="col-1">
             <div class="deco-hori-d-dash"></div>
         </div>
-    </div>
+    </div> 
 
 
 

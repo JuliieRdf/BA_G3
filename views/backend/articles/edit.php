@@ -50,12 +50,42 @@ $urlPhotArt = sql_select("ARTICLE", "urlPhotArt", "numArt = $numArt")[0]['urlPho
 
 $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
 
-$libMotCle = sql_select("MOTCLE", "libMotCle", "numArt = $numArt")[0]['libMotCle'];
+
+
+
+
+$members = sql_select('membre INNER JOIN statut ON membre.numStat = statut.numStat', "*");
+
+
+$MotCleArt = sql_select('ARTICLE INNER JOIN Motclearticle ON article.numArt = motclearticle.numArt ');
+
+
+
+$libMotCles = sql_select('MotClearticle INNER JOIN MotCle ON motClearticle.nummotcle = MotCle.nummotcle', "*");
 
 
 
 
 
+
+
+
+
+?>
+
+
+<?php 
+
+foreach ($MotCleArt as $MotCle) {
+    
+        print_r($MotCle['numMotCle']); };
+
+foreach ($libMotCles as $libMotCle) {
+            
+         echo $libMotCle['libMotCle']; 
+         } 
+
+exit();
 
 ?>
 
@@ -130,8 +160,27 @@ $libMotCle = sql_select("MOTCLE", "libMotCle", "numArt = $numArt")[0]['libMotCle
                     <label for="numThem">Changer <?php echo $numThem ?> ?</label>
                     <input id="numThem" class="form-control" type="text" value=<?php echo $numThem ?> name="numThem">
 
-                    <label for="numMotCle">Changer <?php echo $numMotCle ?> ?</label>
-                    <input id="numMotCle" class="form-control" type="text" value=<?php echo $numMotCle ?> name="numMotCle">
+                    <div class="mb-5">
+                    <fieldset>
+                            <legend><h3 class="nom-form">Choix des mots clés</h3></legend>
+                            
+                            <div>
+                                
+                            <?php foreach ($MotCleArt as $MotCle) {
+                            ?>
+
+                            
+                                <label for="<?php
+                                 $MotCle['numMotCle']; };
+                                 ?>"><input type="checkbox" name="" id="" required checked><h3 class="nom-form">
+                                    <?php foreach ($libMotCles as $libMotCle) {
+                                    
+                                 echo $libMotCle['libMotCle']; 
+                                 } ?></h3><br></label>    
+                                  </div>
+                           
+                        </fieldset>
+                    </div>
 
 
                 </div>

@@ -1,27 +1,32 @@
-
-.row{
+.row {
     border: 8px;
 }
-.col{
-    border:5px;
+
+.col {
+    border: 5px;
 }
-.gutter{
+
+.gutter {
     margin-left: 60px;
     margin-right: 60px;
 }
-.collone-d{
-    
+
+.collone-d {
+
     font-family: 'Verdana';
 }
-.inscription{
+
+.inscription {
     height: 268px;
-    width:  21.6vw;
+    width: 21.6vw;
     display: flex;
 }
-.inscription-form{
+
+.inscription-form {
     margin: auto;
 }
-.inscription-i{
+
+.inscription-i {
     margin: 0px;
     margin-top: 20px;
     background: none;
@@ -34,54 +39,65 @@
     height: 44px;
     position: relative;
     left: auto;
-    min-width: 135px ;
+    min-width: 135px;
     font-family: 'Verdana';
     border: none;
 }
-.inscription-txt{
+
+.inscription-txt {
     margin-top: 13px;
-        background-color: rgb(255, 255, 255);
-        border-color: #6D071A;
-        border-width: 3px;
-        width: 21.6vw;
-        
-        font-family: 'Verdana';
-        font-size: 25px;
-        height: 30px;
-        
+    background-color: rgb(255, 255, 255);
+    border-color: #6D071A;
+    border-width: 3px;
+    width: 21.6vw;
+
+    font-family: 'Verdana';
+    font-size: 25px;
+    height: 30px;
+
 }
-.colonne-d{
+
+.colonne-d {
     display: flex;
     flex-direction: column;
     width: 21.8vw;
 }
-.share button{
+
+.share button {
     margin-left: 2vw;
 }
-.actus h3,.actus p,.actus h4{
-width: 80%;
-margin: auto;
+
+.actus h3,
+.actus p,
+.actus h4 {
+    width: 80%;
+    margin: auto;
 }
-.actus{
+
+.actus {
     height: 714px;
-    width:  21.6vw;
-    
+    width: 21.6vw;
+
     display: flex;
     flex-direction: column;
 }
-.actus-titl{
-    font-size:26px ;
+
+.actus-titl {
+    font-size: 26px;
 }
-.actus h4{
+
+.actus h4 {
     font-size: 25px;
     color: #6D071A;
     margin: auto;
 }
-.actus a{
-    
-    text-decoration-color:#6D071A;
+
+.actus a {
+
+    text-decoration-color: #6D071A;
 }
-.actus p{
+
+.actus p {
     font-size: 25px;
     height: 183px;
     overflow: hidden;
@@ -89,34 +105,39 @@ margin: auto;
     white-space: normal;
     margin: auto;
 }
-.share{
+
+.share {
     height: 146px;
-    width:  21.6vw;
+    width: 21.6vw;
     display: flex;
 
 
 }
-.share button{
+
+.share button {
     display: flex;
     background: none;
     border: none;
     font-size: 42px;
-    
+
 }
-.share img{
-    
+
+.share img {
+
     margin: auto;
     margin-right: 20px;
 }
-.admin-article{
+
+.admin-article {
     height: 152px;
     width: 19.8vw;
     display: flex;
 }
-.admin-article button{ 
+
+.admin-article button {
     /*mettre ici une sorte de if pour faire un display:none; si l'utilisateur n'est pas admin*/
     margin: auto;
-    border-radius:0.375rem ;
+    border-radius: 0.375rem;
     border: 0px;
     background-color: #6D071A;
     font-size: 25px;
@@ -124,192 +145,231 @@ margin: auto;
     color: white;
     height: 111px;
 }
-.inscription, .actus, .share ,.admin-article{
+
+.inscription,
+.actus,
+.share,
+.admin-article {
     width: 110%;
-    border: solid #6D071A; 
+    border: solid #6D071A;
     border-width: 3px;
 }
 
 
-.article-pres{
+.article-pres {
     padding-bottom: 40px;
-    border-bottom:solid #6D071A;
+    border-bottom: solid #6D071A;
     border-width: 3px;
 }
 
 
 
-.article-pres{
+.article-pres {
     display: flex;
     margin-bottom: 102px;
     width: 68.4vw;
 }
-.article-pres img{
+
+.article-pres img {
     width: 325px;
     margin-right: 5vw;
     object-fit: fill;
     height: 238px;
 }
-.home-article p{
-font-size: 20px;
+
+.home-article p {
+    font-size: 20px;
 
 }
-.home-article a{
+
+.home-article a {
     color: #6D071A;
-    text-decoration-color:#6D071A;
+    text-decoration-color: #6D071A;
 }
-.home-article h3{
-font-size: 26px; 
+
+.home-article h3 {
+    font-size: 26px;
 }
+
 .truncate h3 {
-    
-overflow: hidden;
-display: -webkit-box;
--webkit-box-orient: vertical;
--webkit-line-clamp: 2;
-white-space: pre-wrap;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    white-space: pre-wrap;
 }
-.truncate{
+
+.truncate {
     overflow: hidden;
     height: 100px;
 }
-.home-article h2{
-font-size: 42px;
-max-height: 101px;
+
+.home-article h2 {
+    font-size: 42px;
+    max-height: 101px;
 
 }
-.home-article{
-    
+.home-article h2:hover{
+color: #6D071A;
+}
+
+.home-article {
+
     height: auto;
 }
-.article-txt :not(.endbox){
+
+.article-txt :not(.endbox) {
     margin: 0;
 }
-.article-txt{
+
+.article-txt {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     height: 238px;
 }
-h2 .endbox{
+
+h2 .endbox {
     margin-top: 0px;
     margin-bottom: 25px;
-    color:#6D071A;
+    color: #6D071A;
 }
-.bs-link:hover{
+
+.bs-link:hover {
 
     color: #6D071A;
 }
 
-h3 .endbox {    margin-top: 0px;
+h3 .endbox {
+    margin-top: 0px;
     margin-bottom: 25px;
     color: black;
- }
+}
 
 
 
 
 
-@media (max-width:960px) { 
+@media (max-width:960px) {
 
-    .colonne-d *{
-        width: calc(100%);;
+    .colonne-d * {
+        width: calc(100%);
+        ;
     }
+
     .colonne-d {
-        width: calc(100% - 60px);;
+        width: calc(100% - 60px);
+        ;
         margin-left: 30px;
     }
-    .inscription-i{
+
+    .inscription-i {
         height: 80px;
         font-size: 18px;
     }
-    .inscription-form{
+
+    .inscription-form {
         margin-left: 0;
     }
-.share{
-    display: none;
 
-}
-.admin-article{
-    width: 100%;
-}
-.admin-article button{
-    width: 70%;
-}
-.colonne-d h3{
-    font-size: 26px;
-}
-.colonne-d h4{
-    font-size: 25px;
-}
-.colonne-d p{
-    font-size: 18px;
-}
-    .article-pres{
-    flex-direction: row-reverse;
-    margin: 0;
-    width: calc(100% - 60px);;
-        border: none;
-    justify-content: space-between;
-    margin-left: 30px;
+    .share {
+        display: none;
+
     }
-    .home-article{
+
+    .admin-article {
+        width: 100%;
+    }
+
+    .admin-article button {
+        width: 70%;
+    }
+
+    .colonne-d h3 {
+        font-size: 26px;
+    }
+
+    .colonne-d h4 {
+        font-size: 25px;
+    }
+
+    .colonne-d p {
+        font-size: 18px;
+    }
+
+    .article-pres {
+        flex-direction: row-reverse;
+        margin: 0;
+        width: calc(100% - 60px);
+        ;
+        border: none;
+        justify-content: space-between;
+        margin-left: 30px;
+    }
+
+    .home-article {
         display: flex;
         flex-direction: column;
         align-content: center;
         border-bottom: solid #6D071A;
     }
-    .home-article p{
+
+    .home-article p {
         font-size: 18px;
-        
-        }
-        .home-article h3{
-            display: none;
-        
-        }
-        .home-article h2{
-            font-size: 24px; 
-        }
-        .article-pres img{
-            width: 145px;
-            height: 92px;
-        }
-        .article-img{
-            width: 145px;
-            height: 92px;
-            margin: 0px;
-        }
-        .article-txt{
-            height: 92px;
-            margin-bottom: 50px;
-        }
-        
-.endbox{
-    margin-top: 0px;
-    margin-bottom: 5px;
+
+    }
+
+    .home-article h2 {
+        font-size: 24px;
+    }
+
+    .article-pres img {
+        width: 145px;
+        height: 92px;
+    }
+
+    .article-img {
+        width: 145px;
+        height: 92px;
+        margin: 0px;
+    }
+
+    .article-txt {
+        height: 92px;
+        margin-bottom: 50px;
+    }
+
+    .endbox {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .cercle-d-a-left,
+    .cercle-d-a-right {
+        display: none;
+    }
+
+    .colonne-d>* {
+        border: none;
+    }
+
+    .actus {
+        border-bottom: solid #6D071A;
+    }
+
+    .cercle-d-a-left-m {
+        position: relative;
+        background-color: #6D071A;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        top: 7.5px;
+    }
 }
 
-.cercle-d-a-left, .cercle-d-a-right{
-    display: none;
-}
-.colonne-d > *{
-    border: none;
-}
-.actus{
-    border-bottom: solid #6D071A;
-}
-.cercle-d-a-left-m{
-    position: relative;
-    background-color: #6D071A;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    top: 7.5px;
-}
-  }
-
-.article-txt{
+.article-txt {
     width: 50vw;
 }
 
@@ -322,6 +382,7 @@ h3 .endbox {    margin-top: 0px;
     margin-top: 272px;
     margin-left: calc(68.4vw - 8px);
 }
+
 .cercle-d-a-left {
     position: absolute;
     background-color: #6D071A;

@@ -3,7 +3,7 @@ include '../../../header.php';
 
 $thems =sql_select('thematique','*');
 $Mots = sql_select('MOTCLE','*');
-$files =sql_select('Articles','*');
+$files =sql_select('Article','*');
 
 // foreach ($thems as $them)
                              
@@ -45,12 +45,6 @@ $files =sql_select('Articles','*');
     </div>
 
     <?php
-    // sql_select('ARTICLE INNER JOIN MOTCLEARTICLE ON article.numArt = motclearticle.numArt');
-    // sql_select('MOTCLE INNER JOIN MOTCLEARTICLE ON article.numMotCle = motclearticle.libMotCle');
-
-
-
-    // sql_select('ARTICLE INNER JOIN THEMATIQUE ON article.numArt = thematique.numArt');
 
 
     ?>
@@ -138,18 +132,7 @@ $files =sql_select('Articles','*');
                                 
                             
                                 <label for="<?php echo $Mot['numMotCle'];?>"><input type="checkbox" name="" id="" required checked><h3 class="nom-form"><?php echo $Mot['libMotCle']; } ?></h3><br></label>     </div>
-                            <!-- <div>
-                                <input type="checkbox" id="key" name="key">
-                                <label for="key"><h3 class="nom-form">L'acteur-clé</h3></label>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="mouve" name="mouve">
-                                <label for="mouve"><h3 class="nom-form">Le mouvement émergeant</h3></label>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="eye" name="eye">
-                                <label for="eye"><h3 class="nom-form">L'insolite / le clin d'oeil</h3></label>
-                            </div> -->
+                           
                         </fieldset>
                     </div>
                 </div>
