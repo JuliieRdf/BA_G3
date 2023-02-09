@@ -30,7 +30,4 @@ sql_insert('ARTICLE','dtCreArt,libTitrArt,libChapoArt,libAccrochArt,parag1Art,li
 
 sql_insert('MOTCLE','numMotCle',"'$numMotCle'");
 
-if(isset($_FILES)) {
-    $path = upload_image($_FILES);
-    }
 header('Location: ../../views/backend/articles/list.php');
