@@ -128,6 +128,7 @@ $files = sql_select('Article', '*');
                             <h3 class="nom-form">Photo</h3>
                         </label>
                         <input id="urlPhotArt" class="form-control form-control-lg" type="file" accept="image/*" name="file" required> <!--Image-->
+
                     </div>
                     <div class="mb-5">
                         <label for="numThem">
@@ -141,6 +142,8 @@ $files = sql_select('Article', '*');
                                                                                 } ?></option>
                         </select>
                     </div>
+
+
                     <div class="mb-5">
                         <fieldset>
                             <legend>

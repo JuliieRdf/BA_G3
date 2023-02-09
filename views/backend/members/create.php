@@ -1,7 +1,7 @@
 <?php
 include '../../../header.php';
 
-$membre = sql_select("MEMBRE INNER JOIN statut ON membre.numStat = statut.numStat","*");
+$statut = sql_select("statut", "*");
 
 
 
@@ -60,44 +60,50 @@ $membre = sql_select("MEMBRE INNER JOIN statut ON membre.numStat = statut.numSta
                             <h3 class="nom-form">Mot de passe (il faut MAJ, min, chiffre, charactere special et minimum - chractere)</h3>
                         </label>
                         <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="6" maxlength="30" required pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}">
-                    
-                            <div class="mb-5">
+
+                        <div class="mb-5">
                             <label for="numStat">
                                 <h3 class="nom-form">Choix du statut</h3>
                             </label>
                             <select class="form-control form-control-lg" name="numStat" id="numStat" required>
-                                <?php ?>
-                                <option value="<?php echo $membre['numStat']; ?>"> 
-                                <?php echo $membre['libStat']; ?></option>
+                                <option>Choisissez une statut</option>
+                                <?php foreach ($statut as $stat) { ?>
+                                    <option value="<?php echo $stat['numStat']; ?>">
+                                    <?php echo $stat['libStat'];
+                                } ?></option>
 
                             </select>
                         </div>
-                        </div>
+
+
+
+
                     </div>
-                    <div class="form-group mt-2">
-                        <button type="submit" class="btn btn-success">Créer</button>
-                    </div>
             </div>
-            <div class="col-1"></div>
-            <div class="col-1 ">
-                <div class="deco-hori-d-member"></div>
-            </div>
-
-            </form>
-
-        </div>
-
-        <div class="row">
-            <div class="col-3">
-                <div class="deco-verti-bas">
-                    <div class="cercle-g"></div>
-                </div>
-            </div>
-            <div class="col-6"></div>
-            <div class="col-3">
-                <div class="deco-verti-bas">
-                    <div class="cercle-d"></div>
-                </div>
+            <div class="form-group mt-2">
+                <button type="submit" class="btn btn-success">Créer</button>
             </div>
         </div>
-        <?php include '../../../footer.php'; ?>
+        <div class="col-1"></div>
+        <div class="col-1 ">
+            <div class="deco-hori-d-member"></div>
+        </div>
+
+        </form>
+
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            <div class="deco-verti-bas">
+                <div class="cercle-g"></div>
+            </div>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-3">
+            <div class="deco-verti-bas">
+                <div class="cercle-d"></div>
+            </div>
+        </div>
+    </div>
+    <?php include '../../../footer.php'; ?>

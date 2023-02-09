@@ -24,9 +24,9 @@ $passMemb = sql_select("MEMBRE", "passMemb", "numMemb = $numMemb")[0]['passMemb'
 
 $eMailMemb = sql_select("MEMBRE", "eMailMemb", "numMemb = $numMemb")[0]['eMailMemb'];
 
-$numStat = sql_select("MEMBRE", "numStat", "numMemb = $numMemb")[0]['numStat'];
+$libStat = sql_select("MEMBRE INNER JOIN statut ON membre.numStat = statut.numStat", "*", "numMemb = $numMemb")[0]['libStat'];
 
-
+$statut = sql_select("statut", "*");
 
 ?>
 
@@ -85,13 +85,15 @@ $numStat = sql_select("MEMBRE", "numStat", "numMemb = $numMemb")[0]['numStat'];
                                 <h3 class="nom-form">Choix du statut</h3>
                             </label>
                             <select class="form-control form-control-lg" name="numStat" id="numStat" required>
-                                <option value="<?php echo $numStat ?>"><?php echo $numStat ?></option>
-                                <option value="1">Administrateur</option>
-                                <option value="2">Modérateur</option>
-                                <option value="3">Membre</option>
+                                <option>Statut actuel : <?php echo $libStat ?></option>
+                                <?php foreach ($statut as $stat) { ?>
+                                    <option value="<?php echo $stat['numStat']; ?>">
+                                    <?php echo $stat['libStat'];
+                                } ?></option>
                             </select>
                         </div>
                     </div>
+
                     <div class="form-group mt-2">
                         <button type="submit" class="btn btn-success">Modifier</button>
                     </div>
