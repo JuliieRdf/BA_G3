@@ -14,6 +14,8 @@ $lastP2 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[1]['urlPhotArt'];
 $lastP3 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[2]['urlPhotArt']; // Sélectionne l'avant avant dernière photo
 
 
+
+
 ?>
 
 <html>

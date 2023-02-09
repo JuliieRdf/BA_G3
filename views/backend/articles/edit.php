@@ -74,27 +74,14 @@ $libMotCles = sql_select('MotClearticle INNER JOIN MotCle ON motClearticle.nummo
 ?>
 
 
-<?php 
 
-foreach ($MotCleArt as $MotCle) {
-    
-        print_r($MotCle['numMotCle']); };
-
-foreach ($libMotCles as $libMotCle) {
-            
-         echo $libMotCle['libMotCle']; 
-         } 
-
-
-
-?>
 
 <body>
 
     <div class="row">
         <div class="col-3"></div>
         <div class="col-6">
-            <h1 class="titre">Ajouter un nouvel article</h1>
+            <h1 class="titre">Modifier un article</h1>
         </div>
         <div class="col-3"></div>
     </div>
