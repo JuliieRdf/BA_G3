@@ -55,16 +55,17 @@ include '../../../header.php';
                             <h3 class="nom-form">Mot de passe (il faut MAJ, min, chiffre, charactere special et minimum - chractere)</h3>
                         </label>
                         <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="6" maxlength="30" required pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}">
-                        <div class="mb-5">
-                            <label for="statue">
-                                <h3 class="nom-form">Choix du statue</h3>
+                    
+                            <div class="mb-5">
+                            <label for="numStat">
+                                <h3 class="nom-form">Choix du statut</h3>
                             </label>
-                            <select class="form-control form-control-lg" name="pets" id="statue" required>
-                                <option value="">Choisissez un statue</option>
-                                <option value="dog">membre</option>
-                                <option value="cat">admin</option>
-                                <option value="hamster">jsp</option>
+                            <select class="form-control form-control-lg" name="numStat" id="numStat" required>
+                                <option value="1">Administrateur</option>
+                                <option value="2">Modérateur</option>
+                                <option value="3">Membre</option>
                             </select>
+                        </div>
                         </div>
                     </div>
                     <div class="form-group mt-2">
@@ -94,4 +95,3 @@ include '../../../header.php';
             </div>
         </div>
         <?php include '../../../footer.php'; ?>
-

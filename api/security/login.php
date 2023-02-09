@@ -17,6 +17,7 @@ $id= sql_select('MEMBRE', 'numMemb',"pseudoMemb = '$pseudoMembPost'")[0]['numMem
 $stat = sql_select('MEMBRE', 'numStat',"pseudoMemb = '$pseudoMembPost'")[0]['numStat'];
 
 
+
 if (password_verify($passMembPost, $password)) {
     $_SESSION["pseudo"] = $pseudoMembPost;
     $_SESSION["password"] = $passMembPost;
