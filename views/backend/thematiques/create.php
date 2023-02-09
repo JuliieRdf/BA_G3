@@ -37,7 +37,7 @@ include '../../../header.php';
         </div>
         <div class="col-8">
             <!--Form to create a new status-->
-            <form action="<?php echo ROOT_URL . '/api/status/create.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/thematiques/create.php' ?>" method="post">
                 <div class="form-group " style="padding-top: 10%;">
                     <label for="libThem"><h3 class="nom-form">Nom de la thématique</h3></label>
                     <input id="libThem" class="form-control" type="text" name="libThem" required>
