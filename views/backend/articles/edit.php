@@ -51,23 +51,10 @@ $urlPhotArt = sql_select("ARTICLE", "urlPhotArt", "numArt = $numArt")[0]['urlPho
 $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
 
 
+$thems = sql_select('thematique', '*');
 
 
-
-$members = sql_select('membre INNER JOIN statut ON membre.numStat = statut.numStat', "*");
-
-
-$MotCleArt = sql_select('ARTICLE INNER JOIN Motclearticle ON article.numArt = motclearticle.numArt ');
-
-
-
-$libMotCles = sql_select('MotClearticle INNER JOIN MotCle ON motClearticle.nummotcle = MotCle.nummotcle', "*");
-
-
-
-
-
-
+$Mots = sql_select('MOTCLE', '*');
 
 
 
@@ -75,15 +62,6 @@ $libMotCles = sql_select('MotClearticle INNER JOIN MotCle ON motClearticle.nummo
 
 
 <?php 
-
-foreach ($MotCleArt as $MotCle) {
-    
-        print_r($MotCle['numMotCle']); };
-
-foreach ($libMotCles as $libMotCle) {
-            
-         echo $libMotCle['libMotCle']; 
-         } 
 
 
 
@@ -196,21 +174,22 @@ foreach ($libMotCles as $libMotCle) {
                         <label for="numThem">
                             <h3 class="nom-form">Choix de la thématique</h3>
                         </label>
-                        <select class="form-control form-control-lg" name="numThem" id="numThem" required>
+                        <select class="form-control form-control-lg" name="numThem" id="numThem" mmrequired>
                             <option>Choisissez une thématique</option>
                             <?php foreach ($thems as $them) { ?>
                                 <option value="<?php echo $them['numThem'];  ?>"> <?php
-                                                                                    echo $them['libThem'];
-                                                                                } ?></option>
+                                                    echo $them['libThem'];
+                                                    } ?></option>
                         </select>
                     </div>
                     <div class="mb-5">
                         <fieldset>
                             <legend>
-                                <h3 class="nom-form">Choix des mots clés</h3>
+                                <h3 class="nom-form" >Choix des mots clés</h3>
                             </legend><?php foreach ($Mots as $Mot) { ?>
                                 <div>
-                                    <label for="<?php echo $Mot['numMotCle']; ?>"> <input style="margin-right: 10px;" type="checkbox" name="" id=""><?php echo $Mot['libMotCle'];  ?>
+                                    <label > 
+                                        <input name="numMotCle[]" value="<?php echo $Mot['numMotCle']; ?>" style="margin-right: 10px;" type="checkbox"><?php echo $Mot['libMotCle'];  ?>
                                     </label>
                                 </div>
                             <?php } ?>

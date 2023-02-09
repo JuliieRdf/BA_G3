@@ -156,13 +156,9 @@ $files = sql_select('Article', '*');
                                 </div>
                             <?php } ?>
                         </fieldset>
-
-
-
-
-
-
                     </div>
+
+
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-success">Valider</button>
