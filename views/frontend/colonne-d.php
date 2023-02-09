@@ -2,9 +2,7 @@
                     <div class="inscription">
                         <form class="inscription-form" action="">
 
-                            <label for="nom" style="font-family: 'Inter' ; font-size: 26px;">S'inscrire:</label><br>
-                            <input type="text" id="text" name="text" class="inscription-txt" placeholder="E-Mail"><br>
-                            <input type="submit" value="Poster" class="inscription-i">
+                            <button type="submit" value="Poster" class="inscription-i"><p>S'inscrire</p></button>
                         </form>
                     </div>
                     <div class="actus">
@@ -20,7 +18,6 @@
                         </a>
                         <p class="actus-p">Exit les bouchons, le scooter en libre service est en passe de devenir le
                             moyen de transport préféré des Bordelais...</p>
-                            <div class="cercle-d-a-left-m"></div>
                     </div>
 
                     <div class="share">
