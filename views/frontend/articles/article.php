@@ -2,23 +2,22 @@
 include '../../../header.php';
 ?>
 
-<body>
-  <?php
-  $numArts = $_GET['numArt'];
-  $pageart = sql_select("ARTICLE", "*", "numArt=$numArts");
-  ?>
-  <p class="date">
-    <?php echo ($pageart[0]["dtCreArt"]); ?>
-  </p>
-  <div class="gutter container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="titre-a">
-          <?php echo ($pageart[0]["libTitrArt"]); ?>
-        </h1>
-      </div>
-    </div>
-    <div class="row">
+ <body>
+   <?php
+    $numArts = $_GET['numArt'];
+    $pageart = sql_select("ARTICLE", "*", "numArt=$numArts");
+    $numMotCle = sql_select("motclearticle INNER JOIN motcle ON motclearticle.numMotCle = motcle.numMotCle", 
+    "*", "numArt=$numArts");
+  
+    ?>
+   <p class="date"><?php echo ($pageart[0]["dtCreArt"]); ?></p>
+   <div class="gutter container-fluid">
+     <div class="row">
+       <div class="col-12">
+         <h1 class="titre-a"> <?php echo ($pageart[0]["libTitrArt"]); ?></h1>
+       </div>
+     </div>
+     <div class="row">
 
       <div class="col-1 "></div>
       <div class="col-7 ">
@@ -76,23 +75,16 @@ include '../../../header.php';
       </div>
       <div cFlass="col-4"></div>
     </div>
-
-    <div class="row">
-      <div class="col-9"></div>
-      <div class="col-3">
-
-      </div>
-    </div>
-    <div class="row">
-      
-    </div>
-    <div class="row">
-      <div class="col-2"></div>
-      <div class="col-9">
-        <?php include 'commentaire.php'; ?>
-      </div>
-    </div>
-  </div>
+    <?php foreach ($numMotCle as $key => $value) {
+      echo ('#' .$value['libMotCle']. '<br>');
+    } ?>
+     <div class="row">
+       <div class="col-2"></div>
+       <div class="col-9">
+  <?php include 'commentaire.php'; ?>
+         
+       </div>
+     </div>
 
   </div>
   <?php include '../contact.php'; ?>
