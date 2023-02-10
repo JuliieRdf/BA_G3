@@ -57,10 +57,22 @@ $statut = sql_select("statut", "*");
                         <h3 class="nom-form">E-mail</h3>
                     </label>
                     <input id="eMailMemb" class="form-control" type="email" name="eMailMemb" required>
+
+                    <label for="confirmeMailMemb">
+                        <h3 class="nom-form">Cofirmer l'E-mail</h3>
+                    </label>
+                    <input id="confirmeMailMemb" class="form-control" type="email" name="confirmeMailMemb" required>
+
                     <label for="passMemb">
                         <h3 class="nom-form">Mot de passe <i style="font-size: 20px;">(il faut minimum une majuscule, une minuscule, un chiffre, un charactère special et plus de 6 charactères) </i> </h3>
                     </label>
                     <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="6" maxlength="30" required pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}">
+
+                    <label name="confirmpassMemb" for="confirmpassMemb">
+                    <h3  class="nom-form">Confirmer le mot de passe</h3>
+                    </label>
+                    <input id="confirmpassMemb" class="form-control" type="password" name="confirmpassMemb" minlength="6" maxlength="30" required pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}">
+
                     <div class="mb-5">
                         <label for="numStat">
                             <h3 class="nom-form">Choix du statut</h3>

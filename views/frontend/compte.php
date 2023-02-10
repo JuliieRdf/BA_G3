@@ -19,9 +19,7 @@ include '../../header.php';
         echo ($_SESSION["pseudo"]);
         ?>
         </h1>
-        <p><?php
-        echo ($_SESSION["stat"]);
-        ?></p>
+        
 
         <a class="btn btn-primary m-1" href="/views/backend/members/editM.php?numMemb=<?php echo ($_SESSION["id"]);  ?>" role="button">
         Changer les infos
