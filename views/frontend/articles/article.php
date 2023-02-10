@@ -42,10 +42,9 @@ include '../../../header.php';
         <p class="paragraphe">
           <?php echo ($pageart[0]["parag1Art"]); ?>
         </p>
-
       </div>
-      <div class="col-4">
-
+      <div class="col-1"></div>
+      <div class="col-3">
         <?php include '../colonne-d.php'; ?>
       </div>
 
