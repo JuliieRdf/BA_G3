@@ -197,6 +197,7 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     white-space: pre-wrap;
+    height: 60px;
 }
 
 .truncate {

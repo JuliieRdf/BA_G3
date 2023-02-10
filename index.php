@@ -14,6 +14,8 @@ $lastP2 = sql_select("article", "*", null, "dtCreArt DESC", 3)[1]['urlPhotArt'];
 $lastP3 = sql_select("article", "*", null, "dtCreArt DESC", 3)[2]['urlPhotArt']; // Sélectionne l'avant avant dernière photo
 
 
+
+
 ?>
 
 <html>
@@ -60,7 +62,9 @@ transform: translate(0px,-50px);">
 
     </section>
 
-    <?php $articles = sql_select("article", "*", null, "dtCreArt DESC"); ?>
+    <?php $articles = sql_select("article", "*", null, "dtCreArt DESC"); 
+           
+    ?>
 
     <div class="container-fluid" style="padding-left:  4.16vw; padding-right: 4.16vw;">
         <div class="row gx-12 ">
@@ -74,7 +78,7 @@ transform: translate(0px,-50px);">
                                 <a href="views/frontend/articles/article.php?numArt=<?php echo $article['numArt']; ?>">
                                     <h2 class="endbox"><?php echo $article['libTitrArt']; ?></h2>
                                 </a>
-                                <h3><?php echo $article['numThem']; ?></h3>
+                                
                                 <div class="truncate"><h3 class="endbox"><?php echo $article['libChapoArt']; ?></h3></div>
                                 <p><?php echo $article['dtCreArt']; ?></p>
                             </div>

@@ -101,8 +101,7 @@ require_once 'config.php';
             echo ('Se connecter');
           }
           ?>
-            <a class="btn btn-primary m-1" href="/views/backend/dashboard.php" role="button" style=" border-width : 0; background-color: #6D071A; line-height: 29px; text-align: center; color: #FFFFFF;">
-            :|</a>
+            
           
           </a>
           

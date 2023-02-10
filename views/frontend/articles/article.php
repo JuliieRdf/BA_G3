@@ -76,16 +76,13 @@ include '../../../header.php';
     <?php foreach ($numMotCle as $key => $value) {
       echo ('#' . $value['libMotCle'] . '<br>');
     } ?>
-     <div class="row">
-       <div class="col-9"></div>
-       <div class="col-3">
-         <div class="share2">
-           <button><img src="/../source/images/uploads/share.webp" alt="Bouton partager">
-             <p>Partagez</p>
-           </button>
+    <div class="row">
+       <div class="col-2"></div>
+       <div class="col-10"> <?php include 'commentaire.php'; ?></div>
          </div>
        </div>
      </div>
+    
 
   </div>
   <?php include '../contact.php'; ?>
