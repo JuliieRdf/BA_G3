@@ -28,6 +28,7 @@ include '../../../header.php';
         <p class="chapo">
           <?php echo ($pageart[0]["libChapoArt"]); ?>
         </p>
+   
         <div class="article-img"><img src=<?php echo $pageart[0]['urlPhotArt']; ?> alt="Photo de l'article"></div>
         <p class="accroche">
           <?php echo ($pageart[0]["libAccrochArt"]); ?>
