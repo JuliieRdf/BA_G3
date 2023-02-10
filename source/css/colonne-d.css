@@ -96,25 +96,7 @@ margin: auto;
 .share button{
     margin-left: 2vw;
 }
-.share{
-    height: 146px;
-    width:  21.6vw;
-    display: flex;
 
-
-}
-.share button{
-    display: flex;
-    background: none;
-    border: none;
-    font-size: 42px;
-    
-}
-.share img{
-    
-    margin: auto;
-    margin-right: 20px;
-}
 .admin-article{
     height: 152px;
     width: 19.8vw;

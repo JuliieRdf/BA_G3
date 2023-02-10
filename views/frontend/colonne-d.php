@@ -19,4 +19,16 @@
                         <p class="actus-p">Exit les bouchons, le scooter en libre service est en passe de devenir le
                             moyen de transport préféré des Bordelais...</p>
                     </div>
+
+                    <div class="share">
+                        <button><img src="/../source/images/share.webp" alt="">
+                            <p>Partagez</p>
+                        </button>
+                    </div>
+
+                    <div class="admin-article">
+                        <button>
+                            <p>Créez un article</p>
+                        </button>
+                    </div>
                 </section>

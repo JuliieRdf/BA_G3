@@ -40,7 +40,7 @@ $statut = sql_select("statut", "*");
         <div class="col-8">
             <!--Form to create a new status-->
             <form action="<?php echo ROOT_URL . '/api/members/createA.php' ?>" method="post">
-                <div class="form-group ">
+                <div class="form-group" style="padding-top: 3%;">
                     <label for="prenomMemb">
                         <h3 class="nom-form">Prénom</h3>
                     </label>
