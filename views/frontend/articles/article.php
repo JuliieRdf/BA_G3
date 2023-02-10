@@ -30,16 +30,15 @@ include '../../../header.php';
     </div>
     <div class="row">
 
-       <div class="col-1 col-md-0"></div>
-       <div class="col-7 col-md-12">
+       <div class="col-1"></div>
+       <div class="col-7">
          <p class="chapo"> <?php echo ($pageart[0]["libChapoArt"]); ?></p>
-         <div class="article-img"><img src= <?php echo $pageart[0]['urlPhotArt']; ?> alt="Photo de l'article"></div>
+         <div class="article-img"><img src= <?php echo $pageart[0]['urlPhotArt']; ?> alt="Photo de l'article" height="400px" width="auto"></div>
          <p class="accroche"> <?php echo ($pageart[0]["libAccrochArt"]); ?></p>
          <p class="paragraphe"><?php echo ($pageart[0]["parag1Art"]); ?></p>
-
       </div>
       <div class="col-1"></div>
-      <div class="col-3">
+      <div class="col-1">
         <?php include '../colonne-d.php'; ?>
       </div>
 
