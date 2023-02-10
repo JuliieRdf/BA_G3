@@ -1,3 +1,5 @@
+<head><link rel="stylesheet" href="../../../source/css/articles-col.css"></head>
+
 <?php
 include '../../../header.php';
 ?>

@@ -1,137 +1,143 @@
 .nom-form {
-    margin-top: 2vh;
+  margin-top: 2vh;
   margin-left: 1vh;
-  }
-  
-  
-  
-  .titre {
-      margin-top: 8vh;
-      border: 3px solid black;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      text-align: center;
-      font-family: 'Verdana';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 46px;
-      line-height: 51px;
-      text-align: center;
-      color: #000000;
-  
-  }
-  .deco-verti-bas{
-    margin-bottom: 30% ;
-    background-color: #6D071A;
-    height: 3px;
-  }
-  
-  
-  .deco-verti-haut{
-      margin-top: 30% ;
-      background-color: #6D071A;
-      height: 3px;
-      
-  }
+}
 
 
-  .cercle-g{
-    margin-top: -6px;
-    float: right;
-      background-color: #6D071A;
-      border-radius:50%;
-      width:15px;
-      height:15px;
-    }
-    .cercle-d{
-      margin-top: -6px;
-      float: left;
-      background-color: #6D071A;
-      border-radius:50%;
-      width:15px;
-      height:15px;
-    }
-  
-    .deco-hori-g-login{
-  
-      border-right: 3px solid #6D071A;
-      padding-top: 500px;
-    }
-    .deco-hori-d-login{
-    border-left: 3px solid #6D071A;
-    padding-top: 500px;
-    }
 
-.deco-hori-g-create{
+.titre {
+  margin-top: 8vh;
+  border: 3px solid black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 51px;
+  text-align: center;
+  color: #000000;
+
+}
+
+.deco-verti-bas {
+  margin-bottom: 30%;
+  background-color: #6D071A;
+  height: 3px;
+}
+
+
+.deco-verti-haut {
+  margin-top: 30%;
+  background-color: #6D071A;
+  height: 3px;
+
+}
+
+
+.cercle-g {
+  margin-top: -6px;
+  float: right;
+  background-color: #6D071A;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.cercle-d {
+  margin-top: -6px;
+  float: left;
+  background-color: #6D071A;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.deco-hori-g-login {
+
+  border-right: 3px solid #6D071A;
+  padding-top: 500px;
+}
+
+.deco-hori-d-login {
+  border-left: 3px solid #6D071A;
+  padding-top: 500px;
+}
+
+.deco-hori-g-create {
 
   border-right: 3px solid #6D071A;
   padding-top: 3100px;
 }
-.deco-hori-d-create{
-border-left: 3px solid #6D071A;
-padding-top: 3100px;
+
+.deco-hori-d-create {
+  border-left: 3px solid #6D071A;
+  padding-top: 3100px;
 }
 
 
-    .deco-hori-g-member {
+.deco-hori-g-member {
 
-      border-right: 3px solid #6D071A;
-      padding-top: 750px;
-  }
-  
-  .deco-hori-d-member {
-      border-left: 3px solid #6D071A;
-      padding-top: 750px;
-  }
-  .deco-hori-g-signup {
-    border-right: 3px solid #6D071A;
-    padding-top: 900px;
-  }
-  
-  .deco-hori-d-signup {
-    border-right: 3px solid #6D071A;
-    padding-top: 900px;
-  }
-  .deco-hori-g{
-  
-      border-right: 3px solid #6D071A;
-      padding-top: 500px;
-  }
-  .deco-hori-d{
-    border-left: 3px solid #6D071A;
-    padding-top: 500px;
-  }
-  
-
-  .deco-hori-g-dash{
-  
-    border-right: 3px solid #6D071A;
-    padding-top: 550px;
+  border-right: 3px solid #6D071A;
+  padding-top: 750px;
 }
-.deco-hori-d-dash{
+
+.deco-hori-d-member {
+  border-left: 3px solid #6D071A;
+  padding-top: 750px;
+}
+
+.deco-hori-g-signup {
+  border-right: 3px solid #6D071A;
+  padding-top: 900px;
+}
+
+.deco-hori-d-signup {
+  border-right: 3px solid #6D071A;
+  padding-top: 900px;
+}
+
+.deco-hori-g {
+
+  border-right: 3px solid #6D071A;
+  padding-top: 500px;
+}
+
+.deco-hori-d {
+  border-left: 3px solid #6D071A;
+  padding-top: 500px;
+}
+
+.deco-hori-g-dash {
+
+  border-right: 3px solid #6D071A;
+  padding-top: 550px;
+}
+
+.deco-hori-d-dash {
   border-left: 3px solid #6D071A;
   padding-top: 550px;
 }
-  .row{
-    margin-right:0;
+
+.row {
+  margin-right: 0;
+}
+
+@media(max-width:1024px) {
+  .titre {
+    margin-top: 8vh;
+    border: 3px solid black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+
+
   }
-  
-  @media(max-width:1024px) {
-    .titre {
-      margin-top: 8vh;
-      border: 3px solid black;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      font-family: 'Verdana';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 29px;
-      text-align: center;
-      
-  
-  
-  }
-  }
-  
-  
+}
