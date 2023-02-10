@@ -90,7 +90,6 @@ transform: translate(0px,-50px);">
                                 <p><?php echo $article['dtCreArt']; ?></p>
                             </div>
                             <div class="cercle-d-a-left"></div>
-                            <div class="cercle-d-a-right"></div>
                         </div>
                     <?php } ?>
                 </section>
