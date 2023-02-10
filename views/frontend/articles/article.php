@@ -6,38 +6,30 @@
 include '../../../header.php';
 ?>
 
-<body>
-  <?php
-  $numArts = $_GET['numArt'];
-  $pageart = sql_select("article", "*", "numArt=$numArts");
-  $numMotCle = sql_select(
-    "motclearticle INNER JOIN motcle ON motclearticle.numMotCle = motcle.numMotCle",
-    "*",
-    "numArt=$numArts"
-  );
+ <body>
+   <?php
+    $numArts = $_GET['numArt'];
+    $pageart = sql_select("ARTICLE", "*", "numArt=$numArts");
+    $numMotCle = sql_select("motclearticle INNER JOIN motcle ON motclearticle.numMotCle = motcle.numMotCle", 
+    "*", "numArt=$numArts");
+  
+    ?>
+   <p class="date"><?php echo ($pageart[0]["dtCreArt"]); ?></p>
+   <div class="gutter container-fluid">
+     <div class="row">
+       <div class="col-12">
+         <h1 class="titre-a"> <?php echo ($pageart[0]["libTitrArt"]); ?></h1>
+       </div>
+     </div>
+     <div class="row">
 
-  ?>
-  <p class="date"><?php echo ($pageart[0]["dtCreArt"]); ?></p>
-  <div class="gutter container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="titre-a"> <?php echo ($pageart[0]["libTitrArt"]); ?></h1>
-      </div>
-    </div>
-    <div class="row">
+       <div class="col-1 col-md-0"></div>
+       <div class="col-7 col-md-12">
+         <p class="chapo"> <?php echo ($pageart[0]["libChapoArt"]); ?></p>
+         <div class="article-img"><img src= <?php echo $pageart[0]['urlPhotArt']; ?> alt="Photo de l'article"></div>
+         <p class="accroche"> <?php echo ($pageart[0]["libAccrochArt"]); ?></p>
+         <p class="paragraphe"><?php echo ($pageart[0]["parag1Art"]); ?></p>
 
-      <div class="col-1 "></div>
-      <div class="col-7 ">
-        <p class="chapo">
-          <?php echo ($pageart[0]["libChapoArt"]); ?>
-        </p>
-        <div class="article-img"><img src=<?php echo $pageart[0]['urlPhotArt']; ?> alt="Photo de l'article"></div>
-        <p class="accroche">
-          <?php echo ($pageart[0]["libAccrochArt"]); ?>
-        </p>
-        <p class="paragraphe">
-          <?php echo ($pageart[0]["parag1Art"]); ?>
-        </p>
       </div>
       <div class="col-1"></div>
       <div class="col-3">
@@ -85,8 +77,16 @@ include '../../../header.php';
     <?php foreach ($numMotCle as $key => $value) {
       echo ('#' . $value['libMotCle'] . '<br>');
     } ?>
-    </p>
-    </div>
+     <div class="row">
+       <div class="col-9"></div>
+       <div class="col-3">
+         <div class="share2">
+           <button><img src="/../source/images/uploads/share.webp" alt="Bouton partager">
+             <p>Partagez</p>
+           </button>
+         </div>
+       </div>
+     </div>
 
   </div>
   <?php include '../contact.php'; ?>
