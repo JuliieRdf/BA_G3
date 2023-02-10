@@ -5,23 +5,17 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
-
  
 $prenomMemb = sql_escape($_POST['prenomMemb']);
 $nomMemb = sql_escape($_POST['nomMemb']);
 $pseudoMemb = sql_escape($_POST['pseudoMemb']);
-
 $pseudoExist = sql_select('Membre', '*', "pseudoMemb= '$pseudoMemb'");
-
-
-
-
-
 $passCMemb = password_hash($passMemb, PASSWORD_DEFAULT);
 $eMailMemb = sql_escape($_POST['eMailMemb']);
 $numStat = sql_escape($_POST['numStat']);
 $passMemb = sql_escape($_POST['passMemb']);
 $confirmpassMemb = sql_escape($_POST['confirmpassMemb']);
+$confirmeMailMemb = sql_escape($_POST['confirmeMailMemb']);
 
 
 if (isset($pseudoExist)){
@@ -36,7 +30,7 @@ if (isset($pseudoExist)){
         header('Location: ../../views/backend/security/login.php');
     } else {
         echo '<script> 
-        alert("Mot de passe ou pseudo non correspondant");
+        alert("Mot de passe ou email non correspondant");
         window.location.href="../../views/backend/security/signup.php";
          </script>';
     }
