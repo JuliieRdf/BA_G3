@@ -3,7 +3,7 @@
 
 // print_r($_POST); voir si on a bien reçu l'infos
 
-require_once $_SERVER['DOCUMENT_ROOT']. '/config.php';
+require_once . '/config.php';
 
 // $dtCreCom = sql_escape($_POST['dtCreCom']);
 $numCom = sql_escape($_POST['numCom']);

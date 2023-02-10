@@ -23,7 +23,7 @@ function curl($url, $type, $data = null, $headers = null) {
 
 function upload_image($files)
 {
-    $target_dir = $_SERVER['DOCUMENT_ROOT'] . '/src/images/uploads/';
+    $target_dir = require_once ROOT . '/../src/images/uploads/';
     $target_file = $target_dir . uniqid() . basename($files["file"]["name"]);
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
