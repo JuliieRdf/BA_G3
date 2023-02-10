@@ -14,7 +14,7 @@ include '../../../header.php';
 
 $numCom = $_GET['numCom'];
 
-$libTitrArt = sql_select("COMMENT", "libCom", "numCom = $numCom")[0]['libCom'];
+$libTitrArt = sql_select("comment", "libCom", "numCom = $numCom")[0]['libCom'];
 
 
 

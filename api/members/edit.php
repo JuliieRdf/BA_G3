@@ -16,7 +16,7 @@ $numStat = sql_escape($_POST['numStat']);
 
 
 
-sql_update('MEMBRE',"prenomMemb='$prenomMemb',nomMemb='$nomMemb',passMemb='$passCMemb',eMailMemb='$eMailMemb',numStat='$numStat'","numMemb =$numMemb");
+sql_update('membre',"prenomMemb='$prenomMemb',nomMemb='$nomMemb',passMemb='$passCMemb',eMailMemb='$eMailMemb',numStat='$numStat'","numMemb =$numMemb");
 
 
 header('Location: ../../views/backend/members/list.php');

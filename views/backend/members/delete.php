@@ -17,7 +17,7 @@ $numMemb = $_GET ['numMemb'];
 
 
 
-$prenomMemb = sql_select("MEMBRE", "prenomMemb","numMemb = $numMemb")[0]['prenomMemb'];
+$prenomMemb = sql_select("membre", "prenomMemb","numMemb = $numMemb")[0]['prenomMemb'];
 
 
 

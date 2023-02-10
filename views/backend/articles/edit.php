@@ -28,33 +28,32 @@ include '../../../header.php';
 
 $numArt = $_GET['numArt'];
 
-$libTitrArt = sql_select("ARTICLE", "libTitrArt", "numArt = $numArt")[0]['libTitrArt'];
+$libTitrArt = sql_select("article", "libTitrArt", "numArt = $numArt")[0]['libTitrArt'];
 
-$libChapoArt = sql_select("ARTICLE", "libChapoArt", "numArt = $numArt")[0]['libChapoArt'];
+$libChapoArt = sql_select("article", "libChapoArt", "numArt = $numArt")[0]['libChapoArt'];
 
-$libAccrochArt = sql_select("ARTICLE", "libAccrochArt", "numArt = $numArt")[0]['libAccrochArt'];
+$libAccrochArt = sql_select("article", "libAccrochArt", "numArt = $numArt")[0]['libAccrochArt'];
 
-$parag1Art = sql_select("ARTICLE", "parag1Art", "numArt = $numArt")[0]['parag1Art'];
+$parag1Art = sql_select("article", "parag1Art", "numArt = $numArt")[0]['parag1Art'];
 
-$libSsTitr1Art = sql_select("ARTICLE", "libSsTitr1Art", "numArt = $numArt")[0]['libSsTitr1Art'];
+$libSsTitr1Art = sql_select("article", "libSsTitr1Art", "numArt = $numArt")[0]['libSsTitr1Art'];
 
-$parag2Art = sql_select("ARTICLE", "parag2Art", "numArt = $numArt")[0]['parag2Art'];
+$parag2Art = sql_select("article", "parag2Art", "numArt = $numArt")[0]['parag2Art'];
 
-$libSsTitr2Art = sql_select("ARTICLE", "libSsTitr2Art", "numArt = $numArt")[0]['libSsTitr2Art'];
+$libSsTitr2Art = sql_select("article", "libSsTitr2Art", "numArt = $numArt")[0]['libSsTitr2Art'];
 
-$parag3Art = sql_select("ARTICLE", "parag3Art", "numArt = $numArt")[0]['parag3Art'];
+$parag3Art = sql_select("article", "parag3Art", "numArt = $numArt")[0]['parag3Art'];
 
-$libConclArt = sql_select("ARTICLE", "libConclArt", "numArt = $numArt")[0]['libConclArt'];
+$libConclArt = sql_select("article", "libConclArt", "numArt = $numArt")[0]['libConclArt'];
 
 
-
-$numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
+$numThem = sql_select("article", "numThem", "numArt = $numArt")[0]['numThem'];
 
 
 $thems = sql_select('thematique', '*');
 
 
-$Mots = sql_select('MOTCLE', '*');
+$Mots = sql_select('motcle', '*');
 
 
 

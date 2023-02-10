@@ -17,7 +17,7 @@
         <input type="submit" class="poster" value="Commentez">
     </form>
     <?php 
-     $commentaires = sql_select("COMMENT", "*", null, "dtCreCom DESC");
+     $commentaires = sql_select("comment", "*", null, "dtCreCom DESC");
      
 $auteur = sql_select("membre", "pseudoMemb","numMemb IN ( SELECT DISTINCT numMemb FROM comment) ");
 

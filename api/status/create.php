@@ -5,6 +5,6 @@
 
 require_once __DIR__ . '/../../config.php';
 $libStat = sql_escape($_POST['libStat']);
-sql_insert('STATUT','libStat',"'$libStat'");
+sql_insert('statut','libStat',"'$libStat'");
 
 header('Location: ../../views/backend/status/list.php');

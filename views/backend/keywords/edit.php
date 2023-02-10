@@ -5,17 +5,10 @@
 include '../../../header.php';
 
 
-//Security check
-//Level 1 mean administator in DB
-/* if (!check_access(1)) {
-    header('Location: /'); //Redirect to home
-    exit();
-} */
-
 $numMotCle = $_GET['numMotCle'];
-//$numStat = sql_select("STATUT","numStat")["4"]['numStat'];
 
-$libMotCle = sql_select("MOTCLE", "libMotCle", "numMotCle = $numMotCle")[0]['libMotCle'];
+
+$libMotCle = sql_select("motcle", "libMotCle", "numMotCle = $numMotCle")[0]['libMotCle'];
 
 
 ?>

@@ -5,13 +5,13 @@ sql_connect();
 //print_r(curl("https://reqres.in/api/users", "POST", '{"name": "morpheus", "job": "leader"}'));
 
 
-$lastT1 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[0]['libTitrArt'];  //Séletionne le dernier titre
-$lastT2 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[1]['libTitrArt']; // Sélectionne l'avant dernier titre
-$lastT3 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[2]['libTitrArt'];  // Sélectionne l'avant avant dernier titre
+$lastT1 = sql_select("article", "*", null, "dtCreArt DESC", 3)[0]['libTitrArt'];  //Séletionne le dernier titre
+$lastT2 = sql_select("article", "*", null, "dtCreArt DESC", 3)[1]['libTitrArt']; // Sélectionne l'avant dernier titre
+$lastT3 = sql_select("article", "*", null, "dtCreArt DESC", 3)[2]['libTitrArt'];  // Sélectionne l'avant avant dernier titre
 
-$lastP1 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[0]['urlPhotArt']; //Séletionne la dernière photo
-$lastP2 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[1]['urlPhotArt']; //Séletionne l'avant dernière photo
-$lastP3 = sql_select("Article", "*", null, "dtCreArt DESC", 3)[2]['urlPhotArt']; // Sélectionne l'avant avant dernière photo
+$lastP1 = sql_select("article", "*", null, "dtCreArt DESC", 3)[0]['urlPhotArt']; //Séletionne la dernière photo
+$lastP2 = sql_select("article", "*", null, "dtCreArt DESC", 3)[1]['urlPhotArt']; //Séletionne l'avant dernière photo
+$lastP3 = sql_select("article", "*", null, "dtCreArt DESC", 3)[2]['urlPhotArt']; // Sélectionne l'avant avant dernière photo
 
 
 ?>
@@ -60,7 +60,7 @@ transform: translate(0px,-50px);">
 
     </section>
 
-    <?php $articles = sql_select("ARTICLE", "*", null, "dtCreArt DESC"); ?>
+    <?php $articles = sql_select("article", "*", null, "dtCreArt DESC"); ?>
 
     <div class="container-fluid" style="padding-left:  4.16vw; padding-right: 4.16vw;">
         <div class="row gx-12 ">

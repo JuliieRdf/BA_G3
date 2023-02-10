@@ -8,6 +8,6 @@ $libMotCle = sql_escape($_POST['libMotCle']);
 $numMotCle =sql_escape( $_POST['numMotCle']);
 
 
-sql_update('MOTCLE',"libMotCle='$libMotCle'","numMotCle =$numMotCle");
+sql_update('motcle',"libMotCle='$libMotCle'","numMotCle =$numMotCle");
 
 header('Location: ../../views/backend/keywords/list.php');

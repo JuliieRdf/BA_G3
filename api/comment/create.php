@@ -18,6 +18,6 @@ $numArt = sql_escape($_POST['numArt']);
 // $notifComKOAff = sql_escape($_POST['notifComKOAff']);
 // $delLogiq = sql_escape($_POST['delLogiq']);
 // sql_insert('comment','dtCreCom,libCom,attModCom,dtModCom,notifComKOAff,delLogiq',"'$dtCreCom','$libCom','$attModCom','$dtModCom','$notifComKOAff','$delLogiq");
-sql_insert('COMMENT','libCom',"'$libCom'");
+sql_insert('comment','libCom',"'$libCom'");
 
 header('Location: ../../views/backend/comments/list.php');

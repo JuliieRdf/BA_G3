@@ -14,17 +14,17 @@ include '../../../header.php';
 
 $numMemb = $_GET['numMemb'];
 
-$prenomMemb = sql_select("MEMBRE", "prenomMemb", "numMemb = $numMemb")[0]['prenomMemb'];
+$prenomMemb = sql_select("membre", "prenomMemb", "numMemb = $numMemb")[0]['prenomMemb'];
 
-$nomMemb = sql_select("MEMBRE", "nomMemb", "numMemb = $numMemb")[0]['nomMemb'];
+$nomMemb = sql_select("membre", "nomMemb", "numMemb = $numMemb")[0]['nomMemb'];
 
-$pseudoMemb = sql_select("MEMBRE", "pseudoMemb", "numMemb = $numMemb")[0]['pseudoMemb'];
+$pseudoMemb = sql_select("membre", "pseudoMemb", "numMemb = $numMemb")[0]['pseudoMemb'];
 
-$passMemb = sql_select("MEMBRE", "passMemb", "numMemb = $numMemb")[0]['passMemb'];
+$passMemb = sql_select("membre", "passMemb", "numMemb = $numMemb")[0]['passMemb'];
 
-$eMailMemb = sql_select("MEMBRE", "eMailMemb", "numMemb = $numMemb")[0]['eMailMemb'];
+$eMailMemb = sql_select("membre", "eMailMemb", "numMemb = $numMemb")[0]['eMailMemb'];
 
-$numStat = sql_select("MEMBRE", "numStat", "numMemb = $numMemb")[0]['numStat'];
+$numStat = sql_select("membre", "numStat", "numMemb = $numMemb")[0]['numStat'];
 
 
 
