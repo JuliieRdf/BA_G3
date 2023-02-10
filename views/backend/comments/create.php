@@ -1,7 +1,7 @@
 <?php
 include '../../../header.php';
 
-$comments = sql_select("COMMENT", "*");
+$comments = sql_select("comment", "*");
 
 ?>
 

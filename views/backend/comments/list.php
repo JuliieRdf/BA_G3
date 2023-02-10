@@ -8,7 +8,7 @@ include '../../../header.php'; // contains the header and call to config.php
 } */
 
 //Load all statuses
-$comments = sql_select("COMMENT", "*");
+$comments = sql_select("comment", "*");
 ?>
 
 <!-- Bootstrap default layout to display all status in foreach -->

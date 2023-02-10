@@ -10,12 +10,12 @@ $pseudoMembPost = sql_escape($_POST['pseudoMemb']);
 $passMembPost = sql_escape($_POST['passMemb']);
 
 
-$password = sql_select("MEMBRE","passMemb","pseudoMemb = '$pseudoMembPost'")[0]['passMemb'];
-$email = sql_select('MEMBRE', 'eMailMemb',"pseudoMemb = '$pseudoMembPost'")[0]['eMailMemb'];
-$prenom = sql_select("MEMBRE","prenomMemb","pseudoMemb = '$pseudoMembPost'")[0]['prenomMemb'];
-$nom = sql_select('MEMBRE', 'nomMemb',"pseudoMemb = '$pseudoMembPost'")[0]['nomMemb'];
-$id= sql_select('MEMBRE', 'numMemb',"pseudoMemb = '$pseudoMembPost'")[0]['numMemb'];
-$stat = sql_select('MEMBRE', 'numStat',"pseudoMemb = '$pseudoMembPost'")[0]['numStat'];
+$password = sql_select("membre","passMemb","pseudoMemb = '$pseudoMembPost'")[0]['passMemb'];
+$email = sql_select('membre', 'eMailMemb',"pseudoMemb = '$pseudoMembPost'")[0]['eMailMemb'];
+$prenom = sql_select("membre","prenomMemb","pseudoMemb = '$pseudoMembPost'")[0]['prenomMemb'];
+$nom = sql_select('membre', 'nomMemb',"pseudoMemb = '$pseudoMembPost'")[0]['nomMemb'];
+$id= sql_select('membre', 'numMemb',"pseudoMemb = '$pseudoMembPost'")[0]['numMemb'];
+$stat = sql_select('membre', 'numStat',"pseudoMemb = '$pseudoMembPost'")[0]['numStat'];
 
 
 

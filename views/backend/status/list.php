@@ -8,7 +8,7 @@ include '../../../header.php'; // contains the header and call to config.php
 } */
 
 //Load all statuses
-$statuses = sql_select("STATUT", "*");
+$statuses = sql_select("statut", "*");
 ?>
 
 <!-- Bootstrap default layout to display all status in foreach -->

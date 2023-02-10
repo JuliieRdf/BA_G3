@@ -27,7 +27,7 @@ if (isset($pseudoExist)){
         $confirmpassCMemb = password_hash($confirmpassMemb, PASSWORD_DEFAULT);
 
         sql_insert(
-            'MEMBRE',
+            'membre',
             'prenomMemb,nomMemb,pseudoMemb,passMemb,eMailMemb,numStat',
             "'$prenomMemb','$nomMemb','$pseudoMemb','$confirmpassCMemb','$eMailMemb','3'"
         );

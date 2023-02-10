@@ -7,7 +7,7 @@ $numArt = $_POST['numArt'];
 
 sql_delete('motCleArticle', "numArt = $numArt");
 
-sql_delete('ARTICLE',"numArt = $numArt");
+sql_delete('article',"numArt = $numArt");
 
 
 

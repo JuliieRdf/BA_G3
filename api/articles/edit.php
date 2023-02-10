@@ -23,16 +23,16 @@ $numMotCle = sql_escape($_POST['numMotCle']);
 
 
 
-sql_update('ARTICLE',"libTitrArt='$libTitrArt',libChapoArt='$libChapoArt',libAccrochArt='$libAccrochArt',
+sql_update('article',"libTitrArt='$libTitrArt',libChapoArt='$libChapoArt',libAccrochArt='$libAccrochArt',
 parag1Art='$parag1Art',libSsTitr1Art='$libSsTitr1Art',parag2Art='$parag2Art',libSsTitr2Art='$libSsTitr2Art',
 parag3Art='$parag3Art',libConclArt='$libConclArt',urlPhotArt='$urlPhotArt',numThem='$numThem'",
 "numArt =$numArt");
 
 
-sql_delete('motCleArticle', "numArt = $numArt");
+sql_delete('motclearticle', "numArt = $numArt");
 
 foreach($numMotCle as $num){
-    sql_insert('MotCleArticle','numMotCle,numArt',"'$num','$numArt'");
+    sql_insert('motclearticle','nummotcle,numArt',"'$num','$numArt'");
     }
 
 

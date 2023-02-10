@@ -1,18 +1,12 @@
 <?php
 include '../../../header.php'; // contains the header and call to config.php
-//Security check
-//Level 1 mean administator in DB
-/* if (!check_access(1)) {
-    header('Location: /'); //Redirect to home
-    exit();
-} */
+
 
 //Load all statuses
 $members = sql_select('membre INNER JOIN statut ON membre.numStat = statut.numStat', "*");
 
 
 
-//sql_select('STATUT INNER JOIN MEMBRE ON statut.numStat = membre.numStat');
 ?>
 
 <!-- Bootstrap default layout to display all status in foreach -->

@@ -2,7 +2,7 @@
 include '../../../header.php';
 
 $thems = sql_select('thematique', '*');
-$Mots = sql_select('MOTCLE', '*');
+$Mots = sql_select('motcle', '*');
 $files = sql_select('Article', '*');
 
 // foreach ($thems as $them)
