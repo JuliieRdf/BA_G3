@@ -50,6 +50,7 @@ $libThem = sql_select("thematique", "libThem", "numThem = $numThem")[0]['libThem
             
             <form action="<?php echo ROOT_URL . '/api/thematiques/edit.php' ?>" method="post">
             <div class="form-group " style="padding-top: 10%;">
+            <input id="numThem" class="form-control" style="display: none;" type="text" name="numThem" value="<?php echo ($numThem); ?>" readonly="readonly">
                     <label for="libThem"><h3 class="nom-form">Nom de la thématique</h3></label>
                     <input id="libThem" class="form-control" type="text" name="libThem" required>
                 </div>
