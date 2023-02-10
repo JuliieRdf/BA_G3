@@ -3,7 +3,7 @@ include '../../../header.php';
 
 $thems = sql_select('thematique', '*');
 $Mots = sql_select('MOTCLE', '*');
-$files = sql_select('Article', '*');
+//$files = sql_select('article', '*');
 
 // foreach ($thems as $them)
 
@@ -61,7 +61,7 @@ $files = sql_select('Article', '*');
         </div>
         <div class="col-8">
             <!--Form to create a new status-->
-            <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <div class="mb-5">
                         <label for="dtCreArt">
@@ -127,7 +127,7 @@ $files = sql_select('Article', '*');
                         <label for="urlPhotArt">
                             <h3 class="nom-form">Photo</h3>
                         </label>
-                        <input id="urlPhotArt" class="form-control form-control-lg" type="file" accept="image/*" name="file" required> <!--Image-->
+                        <input id="file" class="form-control form-control-lg" type="file" accept="image/*" name="file" required> <!--Image-->
 
                     </div>
                     <div class="mb-5">

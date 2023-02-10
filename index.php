@@ -68,7 +68,7 @@ transform: translate(0px,-50px);">
                 <section class="home-article">
                     <?php foreach ($articles as $article) { ?>
                         <div class="article-pres">
-
+                        
                             <div class="article-img"><img src=<?php echo $article['urlPhotArt']; ?> alt="Photo de l'article"></div>
                             <div class="article-txt">
                                 <a href="views/frontend/articles/article.php?numArt=<?php echo $article['numArt']; ?>">

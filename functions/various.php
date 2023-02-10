@@ -23,10 +23,10 @@ function curl($url, $type, $data = null, $headers = null) {
 
 function upload_image($files)
 {
-    $target_dir = $_SERVER['DOCUMENT_ROOT'] . '/src/images/uploads/';
+    $target_dir = '/source/images/uploads/';
     $target_file = $target_dir . uniqid() . basename($files["file"]["name"]);
     $uploadOk = 1;
-    $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+    $imageFileType = strtolower(pathinfo($_SERVER['DOCUMENT_ROOT'] .$target_file, PATHINFO_EXTENSION));
 
     // Check if image file is a actual image or fake image
     $check = getimagesize($files["file"]["tmp_name"]);
@@ -77,4 +77,3 @@ function upload_image($files)
         }
     }
 }
- 
