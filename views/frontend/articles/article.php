@@ -23,6 +23,7 @@ include '../../../header.php';
      </div>
      <div class="row">
 
+<<<<<<< Updated upstream
       <div class="col-1 "></div>
       <div class="col-7 ">
         <p class="chapo">
@@ -36,6 +37,15 @@ include '../../../header.php';
         <p class="paragraphe">
           <?php echo ($pageart[0]["parag1Art"]); ?>
         </p>
+=======
+       <div class="col-1 col-md-0"></div>
+       <div class="col-7 col-md-12">
+         <p class="chapo"> <?php echo ($pageart[0]["libChapoArt"]); ?></p>
+         <div class="article-img"><img src="../../../source/images/uploads/" <?php echo $pageart[0]['urlPhotArt']; ?> alt="Photo de l'article"></div>
+         <p class="accroche"> <?php echo ($pageart[0]["libAccrochArt"]); ?></p>
+         <p class="paragraphe"><?php echo ($pageart[0]["parag1Art"]); ?></p>
+
+>>>>>>> Stashed changes
       </div>
       <div class="col-1"></div>
       <div class="col-3">
