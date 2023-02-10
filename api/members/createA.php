@@ -11,7 +11,7 @@ $prenomMemb = sql_escape($_POST['prenomMemb']);
 $nomMemb = sql_escape($_POST['nomMemb']);
 $pseudoMemb = sql_escape($_POST['pseudoMemb']);
 $pseudoExist = sql_select('Membre', '*', "pseudoMemb= '$pseudoMemb'");
-$passCMemb = password_hash($passMemb, PASSWORD_DEFAULT);
+
 $eMailMemb = sql_escape($_POST['eMailMemb']);
 $numStat = sql_escape($_POST['numStat']);
 $passMemb = sql_escape($_POST['passMemb']);
@@ -23,10 +23,13 @@ if (isset($pseudoExist)) {
 
 
     if ($passMemb == $confirmpassMemb && $eMailMemb == $confirmeMailMemb) {
+
+        $confirmpassCMemb = password_hash($confirmpassMemb, PASSWORD_DEFAULT);
+
         sql_insert(
             'MEMBRE',
             'prenomMemb,nomMemb,pseudoMemb,passMemb,eMailMemb,numStat',
-            "'$prenomMemb','$nomMemb','$pseudoMemb','$passCMemb','$eMailMemb','$numStat'"
+            "'$prenomMemb','$nomMemb','$pseudoMemb','$passMembC','$eMailMemb','$numStat'"
         );
 
         header('Location: ../../views/backend/members/list');

@@ -38,10 +38,12 @@ include '../../../header.php';
             <form action="/api/security/login.php" method="post">
                 <div class="form-group" style="padding-top: 4%;">
                     <label for="pseudoMemb">
+                        
                         <h3 class="nom-form">Pseudonyme</h3>
                     </label>
                     <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" minlength="6" maxlength="30" required>
                     <label for="passMemb">
+
                         <h3 class="nom-form">Mot de passe</h3>
                     </label>
                     <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="6" maxlength="30" required pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}">
