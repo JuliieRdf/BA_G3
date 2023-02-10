@@ -4,7 +4,6 @@
 
 
 <?php 
-$_SESSION['currentArt'] = $numArts;
 ?>
 <div class="coms">
     <h2 style="margin-bottom:100px;">Commentaires</h2>
@@ -22,13 +21,18 @@ $_SESSION['currentArt'] = $numArts;
      
 $auteur = sql_select("membre", "pseudoMemb","numMemb IN ( SELECT DISTINCT numMemb FROM comment) ");
 
-    foreach ($commentaires as $commentaire){
+
+foreach ($commentaires as $commentaire){
         
         if ($commentaire['numArt'] == $numArts){
      ?>
         <div class="commentaire">
             <h2><?php
-            echo $auteur[$commentaire['numMemb']-1]['pseudoMemb'];
+            if ($auteur[$commentaire['numMemb']-1]['pseudoMemb']){
+            echo $auteur[$commentaire['numMemb']-1]['pseudoMemb'];}
+            else{
+                echo "<i>Utilisateur Supprimé</i>";
+            }
 
               ?></h2>
             <div class="com-box">
