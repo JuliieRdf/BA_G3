@@ -1,7 +1,7 @@
 <?php
 
 
-require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/../../config.php';
 
 
 $libCom = sql_escape($_POST['libCom']);

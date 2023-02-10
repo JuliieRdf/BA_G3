@@ -4,7 +4,7 @@
 
 // print_r($_POST); voir si on a bien reçu l'infos
 
-require_once __DIR__ . '../../../config.php';
+require_once __DIR__ . '/../../config.php';
 
 
 if(isset($_FILES)) {
