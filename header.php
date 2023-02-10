@@ -76,11 +76,12 @@ require_once 'config.php';
 
           <?php 
           
-          if(isset($_SESSION["stat"]) && $_SESSION ==  1) {?>
+          if(isset($_SESSION["stat"]) && $_SESSION["stat"] ==  1) {?>
           <a class="btn btn-primary m-1" href="/views/backend/dashboard.php" role="button" style=" border-width : 0; background-color: #6D071A; line-height: 29px; text-align: center; color: #FFFFFF;">
           Admin</a>
 
           <?php } ?>
+
           <a class="btn btn-primary m-1" href="          
           <?php 
           if(isset($_SESSION["pseudo"])){
