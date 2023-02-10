@@ -3,7 +3,7 @@
 
 
 
-require_once __DIR__ . '/../../../config.php';
+require_once __DIR__ . '/../../config.php';
 
 
 $pseudoMembPost = sql_escape($_POST['pseudoMemb']);

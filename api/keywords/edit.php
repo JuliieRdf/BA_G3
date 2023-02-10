@@ -1,7 +1,7 @@
 <?php
 
 
-require_once __DIR__ . '/../../../config.php';
+require_once __DIR__ . '/../../config.php';
 
 
 $libMotCle = sql_escape($_POST['libMotCle']);

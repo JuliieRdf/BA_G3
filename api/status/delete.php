@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/../../../config.php';
+require_once __DIR__ . '/../../config.php';
 
 $numStat = sql_escape($_POST['numStat']);
 

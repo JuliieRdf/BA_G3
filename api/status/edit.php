@@ -4,7 +4,7 @@
 
 
 
-require_once __DIR__ . '/../../../config.php';
+require_once __DIR__ . '/../../config.php';
 
 
 $libStat = sql_escape($_POST['libStat']);

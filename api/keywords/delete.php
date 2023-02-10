@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/../../../config.php';
+require_once __DIR__ . '/../../config.php';
 
 $numMotCle = sql_escape($_POST['numMotCle']);
 

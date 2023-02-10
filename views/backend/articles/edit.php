@@ -46,7 +46,7 @@ $parag3Art = sql_select("ARTICLE", "parag3Art", "numArt = $numArt")[0]['parag3Ar
 
 $libConclArt = sql_select("ARTICLE", "libConclArt", "numArt = $numArt")[0]['libConclArt'];
 
-$urlPhotArt = sql_select("ARTICLE", "urlPhotArt", "numArt = $numArt")[0]['urlPhotArt'];
+
 
 $numThem = sql_select("ARTICLE", "numThem", "numArt = $numArt")[0]['numThem'];
 
@@ -164,12 +164,8 @@ $Mots = sql_select('MOTCLE', '*');
                         </label>
                         <textarea cols="30" rows="4" id="libConclArt" class="form-control" type="text" name="libConclArt" minlength="1" maxlength="500" required><?php echo $libConclArt ?></textarea> <!--conclusion 500-->
                     </div>
-                    <div class="mb-5">
-                        <label for="urlPhotArt">
-                            <h3 class="nom-form">Photo</h3>
-                        </label>
-                        <input id="urlPhotArt" class="form-control form-control-lg" type="file" accept="image/*" name="file" required value="<?php echo $urlPhotArt ?>"> <!--Image-->
-                    </div>
+                    
+                    
                     <div class="mb-5">
                         <label for="numThem">
                             <h3 class="nom-form">Choix de la thématique</h3>
