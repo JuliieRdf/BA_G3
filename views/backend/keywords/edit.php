@@ -11,6 +11,7 @@ $numMotCle = $_GET['numMotCle'];
 $libMotCle = sql_select("motcle", "libMotCle", "numMotCle = $numMotCle")[0]['libMotCle'];
 
 
+
 ?>
 
 <body>
@@ -37,9 +38,8 @@ $libMotCle = sql_select("motcle", "libMotCle", "numMotCle = $numMotCle")[0]['lib
             </div>
         </div>
     </div>
-    <!--Form to delete status-->
+    <!--Form to edit motcle-->
 
-    <form action="<?php echo ROOT_URL . '/api/Keywords/edit.php' ?>" method="post">
         <div class="row">
             <div class="col-1">
                 <div class="deco-hori-g"></div>
@@ -48,9 +48,10 @@ $libMotCle = sql_select("motcle", "libMotCle", "numMotCle = $numMotCle")[0]['lib
             </div>
             <div class="col-8">
                 <!--Form to create a new status-->
-                <form action="<?php echo ROOT_URL . '/api/status/create.php' ?>" method="post">
+                <form action="<?php echo ROOT_URL . '/api/keywords/edit.php' ?>" method="post">
                     <div class="form-group " style="padding-top: 10%;">
-                        <label for="libNotCle">
+                    <input id="numMotCle" class="form-control" style="display: none;" type="text" name="numMotCle" value="<?php echo ($numMotCle); ?>" readonly="readonly">
+                        <label for="libMotCle">
                             <h3 class="nom-form">Nom du mot clé</h3>
                         </label>
                         <input id="libMotCle" class="form-control" type="text" name="libMotCle" required>

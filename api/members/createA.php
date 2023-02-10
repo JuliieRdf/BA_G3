@@ -29,7 +29,7 @@ if (isset($pseudoExist)) {
         sql_insert(
             'membre',
             'prenomMemb,nomMemb,pseudoMemb,passMemb,eMailMemb,numStat',
-            "'$prenomMemb','$nomMemb','$pseudoMemb','$passMembC','$eMailMemb','$numStat'"
+            "'$prenomMemb','$nomMemb','$pseudoMemb','$confirmpassCMemb','$eMailMemb','$numStat'"
         );
 
         header('Location: ../../views/backend/members/list');
