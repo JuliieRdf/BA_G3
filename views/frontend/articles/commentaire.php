@@ -1,18 +1,14 @@
-<?php
-  include '../../../header.php';
-sql_connect();?>
 
 
 
-<style>.com-box{
-    border: 3px;
-    border: solid;
-    width: 68.33vw;
-    min-height: 200px;
-}</style>
+
+
 
 <div class="coms">
-    <h2>Commentaires</h2>
+    <h2 style="margin-bottom:100px;">Commentaires</h2>
+    <form action="">
+        
+    </form>
     <?php 
      $commentaires = sql_select("COMMENT", "*", null, "dtCreCom DESC");
      
