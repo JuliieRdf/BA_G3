@@ -39,7 +39,7 @@ function upload_image($files)
     }
 
     // Check if file already exists
-    if (file_exists($_SERVER['DOCUMENT_ROOT'] .$target_file)) {
+    if (file_exists($target_file)) {
         exit("Sorry, file already exists.");
         return 0;
         $uploadOk = 0;
@@ -68,8 +68,8 @@ function upload_image($files)
         return 0;
         // if everything is ok, try to upload file
     } else {
-        if (move_uploaded_file($files["file"]["tmp_name"],$_SERVER['DOCUMENT_ROOT'] . $target_file)) {
-            $path =  $target_file;
+        if (move_uploaded_file($files["file"]["tmp_name"], $target_file)) {
+            $path = '/src/images/uploads/' . basename($files["file"]["name"]);
             return $path;
         } else {
             exit("Sorry, there was an error uploading your file.");
@@ -77,4 +77,3 @@ function upload_image($files)
         }
     }
 }
- 
