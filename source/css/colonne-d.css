@@ -93,28 +93,8 @@ margin: auto;
     flex-direction: column;
     width: 21.8vw;
 }
-.share button{
-    margin-left: 2vw;
-}
-.share{
-    height: 146px;
-    width:  21.6vw;
-    display: flex;
 
 
-}
-.share button{
-    display: flex;
-    background: none;
-    border: none;
-    font-size: 42px;
-    
-}
-.share img{
-    
-    margin: auto;
-    margin-right: 20px;
-}
 .admin-article{
     height: 152px;
     width: 19.8vw;
@@ -131,17 +111,15 @@ margin: auto;
     color: white;
     height: 111px;
 }
-.inscription, .actus, .share ,.admin-article{
+.inscription, .actus,.admin-article{
     width: 110%;
     border: solid #6D071A; 
-    border-width: 3px;
+    border-width: 4px;
 }
 .admin-article{
 transform: translate(0,-9px);
 }
-.share{
-transform: translate(0,-6px);
-}
+
 .actus{
 transform: translate(0,-3px);
 }
@@ -151,7 +129,7 @@ transform: translate(0,-3px);
     border-bottom:solid #6D071A;
     border-width: 3px;
 }
-
+  
 
 
 
@@ -174,10 +152,7 @@ transform: translate(0,-3px);
     .inscription-form{
         margin-left: 0;
     }
-.share{
-    display: none;
 
-}
 .admin-article{
     width: 100%;
 }
@@ -206,15 +181,7 @@ transform: translate(0,-3px);
     width: 50vw;
 }
 
-.cercle-d-a-right {
-    position: absolute;
-    background-color: #6D071A;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    margin-top: 272px;
-    margin-left: calc(68.4vw - 8px);
-}
+
 .cercle-d-a-left {
     position: absolute;
     background-color: #6D071A;

@@ -12,7 +12,7 @@ include '../../../header.php';
     exit();
 } */
 
-$numStat = $_GET ['numStat'];
+$numStat = $_GET['numStat'];
 //$numStat = sql_select("STATUT","numStat")["4"]['numStat'];
 
 $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
@@ -54,9 +54,9 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
         <div class="col-8">
             <!--Form to create a new status-->
             <form action="<?php echo ROOT_URL . '/api/status/edit.php' ?>" method="post">
-            <div class="form-group " style="padding-top: 10%;">
-                    <input id="numStat" class="form-control" style="display: none;" type="text" name="numStat" value="<?php echo($numStat); ?>" readonly="readonly">
-                        <h3 class="nom-form">Nom du nouveau statut</h3>
+                <div class="form-group " style="padding-top: 10%;">
+                    <input id="numStat" class="form-control" style="display: none;" type="text" name="numStat" value="<?php echo ($numStat); ?>" readonly="readonly">
+                    <h3 class="nom-form">Nom du nouveau statut</h3>
                     </label>
                     <input id="libStat" class="form-control" type="text" name="libStat" required>
                 </div>
@@ -70,7 +70,7 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
             <div class="deco-hori-d"></div>
         </div>
     </div>
-    </div>
+
 
 
 
@@ -92,4 +92,5 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
     </div>
     <?php include '../../../footer.php'; ?>
     </div>
-</div>
+    </div>
+</body>

@@ -37,7 +37,7 @@ include '../../../header.php';
         </div>
         <div class="col-8">
             <!--Form to create a new status-->
-            <form action="<?php echo ROOT_URL . '/api/status/create.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/keywords/create.php' ?>" method="post">
                 <div class="form-group " style="padding-top: 10%;">
                     <label for="libNotCle">
                         <h3 class="nom-form">Nom du mot clé</h3>
@@ -54,7 +54,7 @@ include '../../../header.php';
             <div class="deco-hori-d"></div>
         </div>
     </div>
-    </div>
+
 
 
 
@@ -78,3 +78,4 @@ include '../../../header.php';
 
 
     <?php include '../../../footer.php'; ?>
+</body>

@@ -72,7 +72,6 @@ $libMotCle = sql_select("MOTCLE", "libMotCle", "numMotCle = $numMotCle")[0]['lib
                 <div class="deco-hori-d"></div>
             </div>
         </div>
-        </div>
 
 
 
@@ -96,3 +95,4 @@ $libMotCle = sql_select("MOTCLE", "libMotCle", "numMotCle = $numMotCle")[0]['lib
 
 
         <?php include '../../../footer.php'; ?>
+</body>

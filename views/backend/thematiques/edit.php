@@ -70,7 +70,6 @@ $libThem = sql_select("THEMATIQUE", "libThem", "numThem = $numThem")[0]['libThem
             <div class="deco-hori-d"></div>
         </div>
     </div>
-    </div>
 
 
 
@@ -96,5 +95,5 @@ $libThem = sql_select("THEMATIQUE", "libThem", "numThem = $numThem")[0]['libThem
 <?php include '../../../footer.php'; ?>
 
             
-
+</body>
 

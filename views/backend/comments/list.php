@@ -37,6 +37,8 @@ $comments = sql_select("COMMENT", "*");
                             <td><?php echo $comment['dtModCom']; ?></td>
                             <td><?php echo $comment['notifComKOAff']; ?></td>
                             <td><?php echo $comment['delLogiq']; ?></td>
+                            <td><?php echo $comment['numMemb']; ?></td>
+                            
                             <td>
                                 <a href="edit.php?numCom=<?php echo $comment['numCom']; ?>" class="btn btn-primary">Modifier</a>
                                 <a href="delete.php?numCom=<?php echo $comment['numCom']; ?>" class="btn btn-danger">Supprimer</a>

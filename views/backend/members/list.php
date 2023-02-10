@@ -8,7 +8,7 @@ include '../../../header.php'; // contains the header and call to config.php
 } */
 
 //Load all statuses
-$members = sql_select('membre INNER JOIN statut ON membre.libStat = statut.libStat', "*");
+$members = sql_select('membre INNER JOIN statut ON membre.numStat = statut.numStat', "*");
 
 
 

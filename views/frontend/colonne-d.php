@@ -1,8 +1,8 @@
 <section class="colonne-d">
                     <div class="inscription">
-                        <form class="inscription-form" action="">
+                        <form class="inscription-form"  action="">
 
-                            <button type="submit" value="Poster" class="inscription-i"><p>S'inscrire</p></button>
+                            <a href="/views/backend/security/signup.php"><button type="button" value="Poster" class="inscription-i" >S'inscrire</button></a>
                         </form>
                     </div>
                     <div class="actus">
@@ -18,17 +18,5 @@
                         </a>
                         <p class="actus-p">Exit les bouchons, le scooter en libre service est en passe de devenir le
                             moyen de transport préféré des Bordelais...</p>
-                    </div>
-
-                    <div class="share">
-                        <button><img src="/../source/images/share.webp" alt="">
-                            <p>Partagez</p>
-                        </button>
-                    </div>
-
-                    <div class="admin-article">
-                        <button>
-                            <p>Créez un article</p>
-                        </button>
                     </div>
                 </section>

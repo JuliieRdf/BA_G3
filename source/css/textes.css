@@ -59,11 +59,25 @@ h3 {
         font-size: 20px;
     }
 }
-a{
+
+h3.theme {
+    font-family: 'karla';
+    font-style: italic;
+    font-size: 25px;
+}
+
+@media(max-width:1024px) {
+    h3.theme {
+        font-size: 20px;
+    }
+}
+
+a {
     color: #6D071A;
     text-decoration: #6D071A;
     text-decoration: underline;
 }
+
 .nom-form {
     font-family: 'karla';
     font-size: 25px;
@@ -114,6 +128,7 @@ label {
         display: none;
     }
 }
+
 @media(max-width:1024px) {
     .chapo {
         width: 100%;
@@ -125,14 +140,17 @@ label {
         flex: 0 0 auto;
         width: 0%;
     }
+
     .col-md-1 {
         flex: 0 0 auto;
         width: 8.33333333%;
     }
+
     .col-md-10 {
         flex: 0 0 auto;
         width: 83.33333333%;
     }
+
     .col-md-12 {
         flex: 0 0 auto;
         width: 100%;

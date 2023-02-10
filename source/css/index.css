@@ -148,7 +148,6 @@
 
 .inscription,
 .actus,
-.share,
 .admin-article {
     width: 110%;
     border: solid #6D071A;
@@ -268,11 +267,6 @@ h3 .endbox {
 
     .inscription-form {
         margin-left: 0;
-    }
-
-    .share {
-        display: none;
-
     }
 
     .admin-article {

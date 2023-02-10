@@ -128,6 +128,7 @@ $files = sql_select('Article', '*');
                             <h3 class="nom-form">Photo</h3>
                         </label>
                         <input id="urlPhotArt" class="form-control form-control-lg" type="file" accept="image/*" name="file" required> <!--Image-->
+
                     </div>
                     <div class="mb-5">
                         <label for="numThem">
@@ -137,28 +138,27 @@ $files = sql_select('Article', '*');
                             <option>Choisissez une thématique</option>
                             <?php foreach ($thems as $them) { ?>
                                 <option value="<?php echo $them['numThem'];  ?>"> <?php
-                                                                                    echo $them['libThem'];
-                                                                                } ?></option>
+                                                    echo $them['libThem'];
+                                                    } ?></option>
                         </select>
                     </div>
+
+
                     <div class="mb-5">
                         <fieldset>
                             <legend>
-                                <h3 class="nom-form">Choix des mots clés</h3>
+                                <h3 class="nom-form" >Choix des mots clés</h3>
                             </legend><?php foreach ($Mots as $Mot) { ?>
                                 <div>
-                                    <label for="<?php echo $Mot['numMotCle']; ?>"> <input style="margin-right: 10px;" type="checkbox" name="" id=""><?php echo $Mot['libMotCle'];  ?>
+                                    <label > 
+                                        <input name="numMotCle[]" value="<?php echo $Mot['numMotCle']; ?>" style="margin-right: 10px;" type="checkbox"><?php echo $Mot['libMotCle'];  ?>
                                     </label>
                                 </div>
                             <?php } ?>
                         </fieldset>
-
-
-
-
-
-
                     </div>
+
+
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-success">Valider</button>
