@@ -1,7 +1,0 @@
-DB_HOST=localhost
-DB_USER=etummiuser_db_03
-DB_PASSWORD=mmi-etu
-DB_DATABASE=db_mmi_03
-
-#APP SETTINGS
-APP_DEBUG=true
